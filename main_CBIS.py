@@ -48,40 +48,40 @@ df = pd.read_csv(dataframe_directory)
 # print(df)
 
 # Algo 1 (run this if first time)
-for i in range(len(df)):
-    print(i)
-    # print(f"Index: {i}, folder_name: {df['folder_name'].iloc[i]}, pathology: {df['pathology'].iloc[i]}, class_label: {df['class_label'].iloc[i]}")
-    curr_folder = os.path.join(data_folder, df['folder_name'].iloc[i])
-    curr_label = df['class_label'].iloc[i]
+# for i in range(len(df)):
+#     print(i)
+#     # print(f"Index: {i}, folder_name: {df['folder_name'].iloc[i]}, pathology: {df['pathology'].iloc[i]}, class_label: {df['class_label'].iloc[i]}")
+#     curr_folder = os.path.join(data_folder, df['folder_name'].iloc[i])
+#     curr_label = df['class_label'].iloc[i]
     
-    for root, _, files in os.walk(curr_folder):
-        # print(root)
-        for file in files:
-            if file.lower().endswith('.dcm'):
-                curr_file_path = os.path.join(root, file)
-                pixel_data, dicom_data = load_and_preprocess_dicom(curr_file_path)
-                normalized_data = normalize_intensity(pixel_data)
-                resampled_image = resample_to_resolution(normalized_data, dicom_data, RESAMPLE_RESOLUTION)
-                all_images.append(resampled_image)
-                all_labels.append(curr_label)
+#     for root, _, files in os.walk(curr_folder):
+#         # print(root)
+#         for file in files:
+#             if file.lower().endswith('.dcm'):
+#                 curr_file_path = os.path.join(root, file)
+#                 pixel_data, dicom_data = load_and_preprocess_dicom(curr_file_path)
+#                 normalized_data = normalize_intensity(pixel_data)
+#                 resampled_image = resample_to_resolution(normalized_data, dicom_data, RESAMPLE_RESOLUTION)
+#                 all_images.append(resampled_image)
+#                 all_labels.append(curr_label)
 
 
 
 
-# Save the list to the pickle file
-with open(images_pickle, 'wb') as pickle_file:
-    pickle.dump(np.array(all_images), pickle_file)
+# # Save the list to the pickle file
+# with open(images_pickle, 'wb') as pickle_file:
+#     pickle.dump(np.array(all_images), pickle_file)
 
-with open(labels_pickle, 'wb') as pickle_file:
-    pickle.dump(np.array(all_labels), pickle_file)
+# with open(labels_pickle, 'wb') as pickle_file:
+#     pickle.dump(np.array(all_labels), pickle_file)
 
 # # Algo 3 (Pickle) (use this for quicker retrieval of data after Algo 1 was done before)
 
 # # Load the list from the pickle file
-# with open(images_pickle, 'rb') as image_pickle_file:
-#     all_images = pickle.load(image_pickle_file)
-# with open(labels_pickle, 'rb') as label_pickle_file:
-#     all_labels = pickle.load(label_pickle_file)
+with open(images_pickle, 'rb') as image_pickle_file:
+    all_images = pickle.load(image_pickle_file)
+with open(labels_pickle, 'rb') as label_pickle_file:
+    all_labels = pickle.load(label_pickle_file)
 
 
 
@@ -99,9 +99,9 @@ model, criterion, optimizer = createModel(num_input_channels = 1, num_classes=NU
 train_accuracy_history, train_loss_history, val_accuracy_history, val_loss_history, val_preds, val_targets = train(model, train_loader, val_loader, device, criterion, optimizer, epochs = NUM_EPOCHS)
 
 print(f"---Averages---")
-print(f"{sum(train_accuracy_history) / len(train_accuracy_history)}")
-print(f"{sum(train_loss_history) / len(train_loss_history)}")
-print(f"{sum(val_accuracy_history) / len(val_accuracy_history)}")
-print(f"{sum(val_loss_history) / len(val_loss_history)}")
+print(f"Train Accuracy: {sum(train_accuracy_history) / len(train_accuracy_history)}")
+print(f"Train Loss: {sum(train_loss_history) / len(train_loss_history)}")
+print(f"Validation Accuracy: {sum(val_accuracy_history) / len(val_accuracy_history)}")
+print(f"Validation Loss: {sum(val_loss_history) / len(val_loss_history)}")
 
 plotGraph(train_accuracy_history, train_loss_history, val_accuracy_history, val_loss_history, NUM_EPOCHS, val_preds, val_targets)
