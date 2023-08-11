@@ -19,7 +19,7 @@ def plotGraph(train_loss_history, train_accuracy_history, val_loss_history, val_
     # Accuracy and Losses
 
     # Create subplots
-    fig, (ax1, ax2) = plt.subplots(1, 3, figsize=(15, 6))
+    fig, (ax1, ax2) = plt.subplots(1, 3)
 
     # Plot ROC AUC curve and PR AUC curve
     ax1.plot(fpr, tpr, color='darkorange', lw=2, label='ROC curve (area = %0.2f)' % roc_auc)
