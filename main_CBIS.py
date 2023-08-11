@@ -15,7 +15,7 @@ import pickle
 BATCH_SIZE = 32
 NUM_CLASSES= 2
 LEARNING_RATE = 1e-4
-NUM_EPOCHS = 100
+NUM_EPOCHS = 300
 all_images = []
 all_labels = []
 train_images = []
