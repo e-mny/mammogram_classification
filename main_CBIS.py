@@ -26,14 +26,14 @@ train_loss_history = []
 val_loss_history = []
 train_accuracy_history = []
 val_accuracy_history = []
-data_folder = '/Users/enoch/Library/CloudStorage/OneDrive-NanyangTechnologicalUniversity/CNYang/OFYP/Coding/Data/CBIS-DDSM'
+data_folder = '/home/emok/sq58_scratch/emok/Data/CBIS-DDSM/CBIS-DDSM'
 RESAMPLE_RESOLUTION = (224, 224)
 TRAIN_RATIO = 0.7  # 70% for training
 TEST_RATIO = 0.2   # 20% for testing
 VAL_RATIO = 0.1    # 10% for validation
 
 # Check if GPU is available
-device = "mps" if torch.backends.mps.is_available() else "cpu"
+device = "cuda" if torch.cuda.is_available() else "cpu"
 print(f"Device: {device}")
 
 

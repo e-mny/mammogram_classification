@@ -2,12 +2,8 @@
 import pickle
 import torch
 import pandas as pd
-import numpy as np
 import os
 from data_loading.data_loader import createDataLoaders
-from data_preprocess.dicom_conversion import load_and_preprocess_dicom
-from data_preprocess.normalize_intensity import normalize_intensity
-from data_preprocess.resample import resample_to_resolution
 from train.train_loader import train
 from models.create_model import createModel
 from performance.show_graph import plotGraph
@@ -24,7 +20,7 @@ train_images = []
 val_images = []
 train_labels =[]
 val_labels =[]
-home_dir = '/Users/enoch/Library/CloudStorage/OneDrive-NanyangTechnologicalUniversity/CNYang/OFYP/Coding/Data/CMMD/'
+home_dir = '/home/emok/sq58_scratch/emok/Data/CMMD/CMMD/'
 data_folder = os.path.join(home_dir, 'dataset/CMMD')
 RESAMPLE_RESOLUTION = (224, 224)
 TRAIN_RATIO = 0.7  # 70% for training
@@ -32,7 +28,7 @@ TEST_RATIO = 0.2   # 20% for testing
 VAL_RATIO = 0.1    # 10% for validation
 
 # Check if GPU is available
-device = "mps" if torch.backends.mps.is_available() else "cpu"
+device = "cuda" if torch.cuda.is_available() else "cpu"
 print(f"Device: {device}")
 
 
