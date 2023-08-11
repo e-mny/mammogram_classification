@@ -5,6 +5,9 @@ import pandas as pd
 import numpy as np
 import os
 from data_loading.data_loader import createDataLoaders
+from data_preprocess.dicom_conversion import load_and_preprocess_dicom
+from data_preprocess.normalize_intensity import normalize_intensity
+from data_preprocess.resample import resample_to_resolution
 from train.train_loader import train
 from models.create_model import createModel
 from performance.show_graph import plotGraph
@@ -45,40 +48,40 @@ df = pd.read_csv(dataframe_directory)
 # print(df)
 
 # Algo 1 (run this if first time)
-# for i in range(len(df)):
-#     print(i)
-#     # print(f"Index: {i}, folder_name: {df['folder_name'].iloc[i]}, pathology: {df['pathology'].iloc[i]}, class_label: {df['class_label'].iloc[i]}")
-#     curr_folder = os.path.join(data_folder, df['folder_name'].iloc[i])
-#     curr_label = df['class_label'].iloc[i]
+for i in range(len(df)):
+    print(i)
+    # print(f"Index: {i}, folder_name: {df['folder_name'].iloc[i]}, pathology: {df['pathology'].iloc[i]}, class_label: {df['class_label'].iloc[i]}")
+    curr_folder = os.path.join(data_folder, df['folder_name'].iloc[i])
+    curr_label = df['class_label'].iloc[i]
     
-#     for root, _, files in os.walk(curr_folder):
-#         # print(root)
-#         for file in files:
-#             if file.lower().endswith('.dcm'):
-#                 curr_file_path = os.path.join(root, file)
-#                 pixel_data, dicom_data = load_and_preprocess_dicom(curr_file_path)
-#                 normalized_data = normalize_intensity(pixel_data)
-#                 resampled_image = resample_to_resolution(normalized_data, dicom_data, RESAMPLE_RESOLUTION)
-#                 all_images.append(resampled_image)
-#                 all_labels.append(curr_label)
+    for root, _, files in os.walk(curr_folder):
+        # print(root)
+        for file in files:
+            if file.lower().endswith('.dcm'):
+                curr_file_path = os.path.join(root, file)
+                pixel_data, dicom_data = load_and_preprocess_dicom(curr_file_path)
+                normalized_data = normalize_intensity(pixel_data)
+                resampled_image = resample_to_resolution(normalized_data, dicom_data, RESAMPLE_RESOLUTION)
+                all_images.append(resampled_image)
+                all_labels.append(curr_label)
 
 
 
 
 # Save the list to the pickle file
-# with open(images_pickle, 'wb') as pickle_file:
-#     pickle.dump(np.array(all_images), pickle_file)
+with open(images_pickle, 'wb') as pickle_file:
+    pickle.dump(np.array(all_images), pickle_file)
 
-# with open(labels_pickle, 'wb') as pickle_file:
-#     pickle.dump(np.array(all_labels), pickle_file)
+with open(labels_pickle, 'wb') as pickle_file:
+    pickle.dump(np.array(all_labels), pickle_file)
 
 # # Algo 3 (Pickle) (use this for quicker retrieval of data after Algo 1 was done before)
 
 # # Load the list from the pickle file
-with open(images_pickle, 'rb') as image_pickle_file:
-    all_images = pickle.load(image_pickle_file)
-with open(labels_pickle, 'rb') as label_pickle_file:
-    all_labels = pickle.load(label_pickle_file)
+# with open(images_pickle, 'rb') as image_pickle_file:
+#     all_images = pickle.load(image_pickle_file)
+# with open(labels_pickle, 'rb') as label_pickle_file:
+#     all_labels = pickle.load(label_pickle_file)
 
 
 
