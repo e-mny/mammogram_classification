@@ -86,4 +86,4 @@ def train(model, train_loader, val_loader, device, criterion, optimizer, epochs)
             f"Validation F1-score: {val_f1:.4f}")
 
 
-        return train_accuracy_history, train_loss_history, val_accuracy_history, val_loss_history, val_preds, val_targets
+    return train_accuracy_history, train_loss_history, val_accuracy_history, val_loss_history, val_preds, val_targets
