@@ -39,7 +39,7 @@ def plotGraph(train_loss_history, train_accuracy_history, val_loss_history, val_
     ax2.plot(range(1, num_epochs+1), val_loss_history, label='Validation Loss')
     ax2.set_xlabel('Epochs')
     ax2.set_ylabel('Loss')
-    ax2.title('Training and Validation Loss')
+    ax2.set_title('Training and Validation Loss')
     ax2.legend()
 
     # ax2.subplot(1, 2, 2)
@@ -47,7 +47,7 @@ def plotGraph(train_loss_history, train_accuracy_history, val_loss_history, val_
     ax3.plot(range(1, num_epochs+1), val_accuracy_history, label='Validation Accuracy')
     ax3.set_xlabel('Epochs')
     ax3.set_ylabel('Accuracy')
-    ax3.title('Training and Validation Accuracy')
+    ax3.set_title('Training and Validation Accuracy')
     ax3.legend()
 
     plt.tight_layout()
