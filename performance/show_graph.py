@@ -19,7 +19,9 @@ def plotGraph(train_loss_history, train_accuracy_history, val_loss_history, val_
     # Accuracy and Losses
 
     # Create subplots
+    
     fig, ax = plt.subplots(1, 3)
+    fig.set_figure = (15, 6)
     ax1, ax2, ax3 = ax
 
     # Plot ROC AUC curve and PR AUC curve
@@ -55,3 +57,4 @@ def plotGraph(train_loss_history, train_accuracy_history, val_loss_history, val_
     timenow = datetime.datetime.now()
     formatted_datetime = timenow.strftime("%d-%m-%Y_%H%M%S")
     plt.savefig(f"./results/{formatted_datetime}.png")
+
