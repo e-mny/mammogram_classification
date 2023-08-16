@@ -85,8 +85,8 @@ for root, dirs, files in os.walk(data_folder):
 # # Algo 3 (Pickle) (use this for quicker retrieval of data after Algo 1 was done before)
 
 # Path to the pickle file
-label_file_path = os.path.join(data_folder, 'label_data.pickle')
-image_file_path = os.path.join(data_folder, 'image_data.pickle')
+label_file_path = os.path.join(home_dir, 'label_data.pickle')
+image_file_path = os.path.join(home_dir, 'image_data.pickle')
 
 # # Load the list from the pickle file
 with open(image_file_path, 'rb') as image_pickle_file:
