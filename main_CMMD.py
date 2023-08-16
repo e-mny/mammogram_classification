@@ -11,6 +11,7 @@ from train.train_loader import train
 from models.create_model import createModel
 from performance.show_graph import plotGraph
 import pickle
+import numpy as np
 
 ## CONSTANTS
 BATCH_SIZE = 32
@@ -37,6 +38,9 @@ print(f"Device: {device}")
 
 
 
+# Path to the pickle file
+label_file_path = os.path.join(home_dir, 'label_data.pickle')
+image_file_path = os.path.join(home_dir, 'image_data.pickle')
 dataframe_directory = os.path.join(home_dir, 'cleaned_clinicaldata.csv')
 df = pd.read_csv(dataframe_directory)
 
@@ -81,13 +85,15 @@ for root, dirs, files in os.walk(data_folder):
                 image_label = df.at[index, 'class_label']
                 all_labels.append(image_label)
 
+# Save the list to the pickle file
+with open(image_file_path, 'wb') as pickle_file:
+    pickle.dump(np.array(all_images), pickle_file)
+
+with open(label_file_path, 'wb') as pickle_file:
+    pickle.dump(np.array(all_labels), pickle_file)
+
 
 # # Algo 3 (Pickle) (use this for quicker retrieval of data after Algo 1 was done before)
-
-# Path to the pickle file
-label_file_path = os.path.join(home_dir, 'label_data.pickle')
-image_file_path = os.path.join(home_dir, 'image_data.pickle')
-
 # # Load the list from the pickle file
 with open(image_file_path, 'rb') as image_pickle_file:
     all_images = pickle.load(image_pickle_file)
