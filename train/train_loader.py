@@ -79,7 +79,7 @@ def train(model, train_loader, val_loader, device, criterion, optimizer, epochs)
         
         print(f"Epoch [{epoch+1}/{epochs}] - "
             f"Train Loss: {train_loss_history[-1]:.4f}, Train Accuracy: {train_accuracy:.4f} - "
-            f"Validation Loss: {val_loss_history[-1]:.4f}, Validation Accuracy: {val_accuracy:.4f}"
+            f"Validation Loss: {val_loss_history[-1]:.4f}, "
             f"Validation Accuracy: {val_accuracy_score:.4f}, "
             f"Validation Precision: {val_precision:.4f}, "
             f"Validation Recall: {val_recall:.4f}, "

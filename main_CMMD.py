@@ -20,8 +20,9 @@ train_images = []
 val_images = []
 train_labels =[]
 val_labels =[]
-home_dir = '/home/emok/sq58_scratch/emok/Data/CMMD/CMMD/'
-data_folder = os.path.join(home_dir, 'dataset/CMMD')
+data_folder = '/home/emok/sq58_scratch/emok/Data/CMMD/CMMD/'
+dataset_name = data_folder.split("/")[-2]
+data_folder = os.path.join(data_folder, 'dataset/CMMD')
 RESAMPLE_RESOLUTION = (224, 224)
 TRAIN_RATIO = 0.7  # 70% for training
 TEST_RATIO = 0.2   # 20% for testing
@@ -33,7 +34,7 @@ print(f"Device: {device}")
 
 
 
-dataframe_directory = os.path.join(home_dir, 'cleaned_clinicaldata.csv')
+dataframe_directory = os.path.join(data_folder, 'cleaned_clinicaldata.csv')
 df = pd.read_csv(dataframe_directory)
 
 # Algo 1 (run this if first time)
@@ -81,8 +82,8 @@ df = pd.read_csv(dataframe_directory)
 # # Algo 3 (Pickle) (use this for quicker retrieval of data after Algo 1 was done before)
 
 # Path to the pickle file
-label_file_path = os.path.join(home_dir, 'label_data.pickle')
-image_file_path = os.path.join(home_dir, 'image_data.pickle')
+label_file_path = os.path.join(data_folder, 'label_data.pickle')
+image_file_path = os.path.join(data_folder, 'image_data.pickle')
 
 # # Load the list from the pickle file
 with open(image_file_path, 'rb') as image_pickle_file:
@@ -103,9 +104,9 @@ model, criterion, optimizer = createModel(num_input_channels = 1, num_classes=NU
 train_accuracy_history, train_loss_history, val_accuracy_history, val_loss_history, val_preds, val_targets = train(model, train_loader, val_loader, device, criterion, optimizer, epochs = NUM_EPOCHS)
 
 print(f"---Averages---")
-print(f"{sum(train_accuracy_history) / len(train_accuracy_history)}")
-print(f"{sum(train_loss_history) / len(train_loss_history)}")
-print(f"{sum(val_accuracy_history) / len(val_accuracy_history)}")
-print(f"{sum(val_loss_history) / len(val_loss_history)}")
+print(f"Train Accuracy: {sum(train_accuracy_history) / len(train_accuracy_history)}")
+print(f"Train Loss: {sum(train_loss_history) / len(train_loss_history)}")
+print(f"Validation Accuracy: {sum(val_accuracy_history) / len(val_accuracy_history)}")
+print(f"Validation Loss: {sum(val_loss_history) / len(val_loss_history)}")
 
-plotGraph(train_accuracy_history, train_loss_history, val_accuracy_history, val_loss_history, NUM_EPOCHS, val_preds, val_targets)
+plotGraph(dataset_name, train_accuracy_history, train_loss_history, val_accuracy_history, val_loss_history, NUM_EPOCHS, val_preds, val_targets)
