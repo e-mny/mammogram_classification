@@ -30,6 +30,7 @@ val_loss_history = []
 train_accuracy_history = []
 val_accuracy_history = []
 data_folder = '/home/emok/sq58_scratch/emok/Data/CBIS-DDSM/'
+dataset_name = data_folder.split("/")[-2]
 RESAMPLE_RESOLUTION = (224, 224)
 TRAIN_RATIO = 0.7  # 70% for training
 TEST_RATIO = 0.2   # 20% for testing
@@ -104,4 +105,4 @@ print(f"Train Loss: {sum(train_loss_history) / len(train_loss_history)}")
 print(f"Validation Accuracy: {sum(val_accuracy_history) / len(val_accuracy_history)}")
 print(f"Validation Loss: {sum(val_loss_history) / len(val_loss_history)}")
 
-plotGraph(train_accuracy_history, train_loss_history, val_accuracy_history, val_loss_history, NUM_EPOCHS, val_preds, val_targets)
+plotGraph(dataset_name, train_accuracy_history, train_loss_history, val_accuracy_history, val_loss_history, NUM_EPOCHS, val_preds, val_targets)

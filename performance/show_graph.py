@@ -3,7 +3,7 @@ import datetime
 from sklearn.metrics import roc_curve, auc, precision_recall_curve
 
 
-def plotGraph(train_loss_history, train_accuracy_history, val_loss_history, val_accuracy_history, num_epochs, y_test, y_prob):
+def plotGraph(dataset_name, train_loss_history, train_accuracy_history, val_loss_history, val_accuracy_history, num_epochs, y_test, y_prob):
     print("Plotting graph now")
 
     # AUC & PRAUC
@@ -56,5 +56,5 @@ def plotGraph(train_loss_history, train_accuracy_history, val_loss_history, val_
     plt.show()
     timenow = datetime.datetime.now()
     formatted_datetime = timenow.strftime("%d-%m-%Y_%H%M%S")
-    plt.savefig(f"./results/{formatted_datetime}.png")
+    plt.savefig(f"./results/{formatted_datetime}_{dataset_name}.png")
 
