@@ -20,8 +20,8 @@ def plotGraph(dataset_name, train_accuracy_history, train_loss_history, val_accu
 
     # Create subplots
     
-    fig, ax = plt.subplots(1, 3)
-    fig.set_figure = (15, 6)
+    fig, ax = plt.subplots(1, 3, figsize=(15,20))
+    fig.set_figure = (6, 30)
     ax1, ax2, ax3 = ax
 
     # Plot ROC AUC curve and PR AUC curve
