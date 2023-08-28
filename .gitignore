@@ -1,1 +1,6 @@
 */__pycache__
+slurm*
+*-job
+*.sh
+results/
+sbatchlog/*

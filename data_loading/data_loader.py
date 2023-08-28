@@ -2,6 +2,8 @@ import torch
 import numpy as np
 from torch.utils.data import Dataset, DataLoader, TensorDataset
 import torchvision.transforms as transforms
+from data_loading.displayImage import displayRandomSample
+import torchvision.transforms.functional as F
 
 class CustomDatasetClass(Dataset):
     def __init__(self, images, labels, transform=None):
@@ -26,12 +28,21 @@ class CustomDatasetClass(Dataset):
             return image, label
 
 # Define transformations
-transform = transforms.Compose([
+train_transform = transforms.Compose([
+    # transforms.ToPILImage(),  # Convert tensor to PIL Image
     transforms.ToTensor(),
-    transforms.RandomHorizontalFlip(),
-    transforms.RandomRotation(degrees=45),
-    transforms.ColorJitter(brightness=0.2, contrast=0.2, saturation=0.2, hue=0.1),
+    transforms.Lambda(lambda img: transforms.functional.adjust_sharpness(img, 2.0)),  # Adjust sharpness
+    # transforms.ToTensor(),
+    # transforms.ColorJitter(contrast= 2.0),
+
+    # transforms.RandomHorizontalFlip(),
+    # transforms.RandomRotation(degrees=45),
+    # transforms.ColorJitter(brightness=0.2, contrast=0.2, saturation=0.2, hue=0.1),
     # transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+])
+
+val_transform = transforms.Compose([
+    transforms.ToTensor()
 ])
 
 def createDataLoaders(all_images, all_labels, training_ratio, val_ratio, batch_size):
@@ -40,29 +51,52 @@ def createDataLoaders(all_images, all_labels, training_ratio, val_ratio, batch_s
     train_images = np.array(all_images[:train_upper_lim], dtype=np.float32)
     train_labels = np.array(all_labels[:train_upper_lim], dtype=np.int8)
 
-    # Append normalized values to val_images
-    val_upper_lim = int((training_ratio + val_ratio) * len(all_images))
-    val_images = np.array(all_images[train_upper_lim:val_upper_lim], dtype=np.float32)
-    val_labels = np.array(all_labels[train_upper_lim:val_upper_lim], dtype=np.int8)
+    # TRAIN / VALIDATION / TEST
+    # # Append normalized values to val_images
+    # val_upper_lim = int((training_ratio + val_ratio) * len(all_images))
+    # val_images = np.array(all_images[train_upper_lim:val_upper_lim], dtype=np.float32)
+    # val_labels = np.array(all_labels[train_upper_lim:val_upper_lim], dtype=np.int8)
+
+
+    # TRAIN / VALIDATION
+    val_images = np.array(all_images[train_upper_lim:], dtype=np.float32)
+    val_labels = np.array(all_labels[train_upper_lim:], dtype=np.int8)
+
 
 
     # print(f"train_images: {train_images}\n\n")
     # print(f"train_labels: {train_labels}\n\n")
 
     # Convert lists to PyTorch tensors
-    train_images = torch.tensor(train_images, dtype=torch.float32)
-    train_labels = torch.tensor(train_labels, dtype=torch.int8)
-    val_images = torch.tensor(val_images, dtype=torch.float32)
-    val_labels = torch.tensor(val_labels, dtype=torch.int8)
+    train_images = torch.Tensor(train_images).float()
+    train_labels = torch.Tensor(train_labels).long()
+    val_images = torch.Tensor(val_images).float()
+    val_labels = torch.Tensor(val_labels).long()
 
+    # Calculate class frequencies
+    train_class_counts = np.bincount(train_labels)
+    val_class_counts = np.bincount(val_labels)
+
+    # Print class distribution
+    print("Training class distribution:")
+    for class_idx, count in enumerate(train_class_counts):
+        curr_class = "Malignant" if class_idx == 1 else "Benign"
+        print(f"Class {class_idx} ({curr_class}): {count} samples")
+
+    print("\nValidation class distribution:")
+    for class_idx, count in enumerate(val_class_counts):
+        curr_class = "Malignant" if class_idx == 1 else "Benign"
+        print(f"Class {class_idx} ({curr_class}): {count} samples")
+
+
+    print(f"Transforms on train: {train_transform}")
     # Create PyTorch DataLoader
-    train_dataset = CustomDatasetClass(train_images, train_labels, transform=transform)
+    train_dataset = CustomDatasetClass(train_images, train_labels, transform=train_transform)
     train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True)
-    val_dataset = CustomDatasetClass(val_images, val_labels, transform=transform)
+    val_dataset = CustomDatasetClass(val_images, val_labels, transform=val_transform)
     val_loader = DataLoader(val_dataset, batch_size=batch_size)
 
     print("Created DataLoaders")
+    displayRandomSample(train_loader, train_transform) # For visualizing transforms
 
     return train_loader, val_loader
-
-
