@@ -29,15 +29,14 @@ class CustomDatasetClass(Dataset):
 
 # Define transformations
 train_transform = transforms.Compose([
-    # transforms.ToPILImage(),  # Convert tensor to PIL Image
     transforms.ToTensor(),
-    transforms.Lambda(lambda img: transforms.functional.adjust_sharpness(img, 2.0)),  # Adjust sharpness
-    # transforms.ToTensor(),
-    # transforms.ColorJitter(contrast= 2.0),
-
+    # transforms.ColorJitter(brightness = 2, contrast= 2.0),
+    # transforms.RandomAffine(degrees=0, scale=(0.8, 1.2)),
+    # transforms.RandomVerticalFlip(),
     # transforms.RandomHorizontalFlip(),
-    # transforms.RandomRotation(degrees=45),
+    # transforms.RandomRotation(degrees=45, expand=True),
     # transforms.ColorJitter(brightness=0.2, contrast=0.2, saturation=0.2, hue=0.1),
+    transforms.Resize((224, 224))
     # transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
 ])
 
@@ -89,7 +88,7 @@ def createDataLoaders(all_images, all_labels, training_ratio, val_ratio, batch_s
         print(f"Class {class_idx} ({curr_class}): {count} samples")
 
 
-    print(f"Transforms on train: {train_transform}")
+    print(f"Transforms on Train dataset: {train_transform}")
     # Create PyTorch DataLoader
     train_dataset = CustomDatasetClass(train_images, train_labels, transform=train_transform)
     train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True)
@@ -97,6 +96,6 @@ def createDataLoaders(all_images, all_labels, training_ratio, val_ratio, batch_s
     val_loader = DataLoader(val_dataset, batch_size=batch_size)
 
     print("Created DataLoaders")
-    displayRandomSample(train_loader, train_transform) # For visualizing transforms
+    displayRandomSample(batch_size, all_images, train_transform) # For visualizing transforms
 
     return train_loader, val_loader

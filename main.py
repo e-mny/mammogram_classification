@@ -6,13 +6,13 @@ import torch.optim as optim
 import pandas as pd
 import numpy as np
 import os
-from data_loading.data_loader import createDataLoaders
+from data_loading.data_loader import createDataLoaders, train_transform
 from data_preprocess.dicom_conversion import load_and_preprocess_dicom
 from data_preprocess.normalize_intensity import normalize_intensity
 from data_preprocess.resample import resample_to_resolution
 from train.train_loader import train
 # from models.create_model import createModel
-from models.modelFactory import ModelFactory, printTrainableParams
+from models.modelFactory import ModelFactory, printTrainableParams, freezeLayers
 from performance.show_graph import plotGraph
 from sklearn.metrics import classification_report, precision_recall_fscore_support, confusion_matrix
 import pickle
@@ -30,7 +30,7 @@ parser = argparse.ArgumentParser(description="Description of your script.")
 parser.add_argument('--model', type=str, required=True, help='Model Name')
 parser.add_argument('--pretrained', type=bool, default=True, required=False, help='Pretrained Boolean (Default: True)')
 parser.add_argument('--dataset', type=str, required=True, help='Datasets: CBIS-DDSM / CMMD / RSNA / USF / VinDr')
-parser.add_argument('--num_epochs', type=float, default=200, required=False, help='Number of Epochs (Default: 200)')
+parser.add_argument('--num_epochs', type=int, default=200, required=False, help='Number of Epochs (Default: 200)')
 
 # Parse the command-line arguments
 args = parser.parse_args()
@@ -132,33 +132,40 @@ all_images = np.repeat(all_images[:, :, :, np.newaxis], 3, axis = 3)
 
 train_loader, val_loader = createDataLoaders(all_images, all_labels, training_ratio = TRAIN_RATIO, val_ratio = VAL_RATIO, batch_size = BATCH_SIZE)
 
-# Create a model
+# # Create a model
 modelFactoryObj = ModelFactory(model_name=MODEL, num_classes=NUM_CLASSES, input_channels=3, pretrained=PRETRAINED_BOOL)
 model = modelFactoryObj.create_model()
+model.name = DATASET
 
+# # Freeze layers
+# model = freezeLayers(model)
+
+# Print model architecture
+print(model)
 # Print trainable parameters
 printTrainableParams(model)
 
-# Print model architecture
-# print(model)
+
 
 # Define loss function and optimizer
 criterion = nn.CrossEntropyLoss()
 optimizer = optim.Adam(model.parameters(), lr=LEARNING_RATE)
 
 
-train_accuracy_history, train_loss_history, val_accuracy_history, val_loss_history, val_preds, val_targets = train(model, train_loader, val_loader, device, criterion, optimizer, epochs = NUM_EPOCHS)
+train_accuracy_history, train_loss_history, val_accuracy_history, val_loss_history, val_precision_history, val_recall_history, val_preds, val_targets = train(model, train_loader, val_loader, device, criterion, optimizer, epochs = NUM_EPOCHS)
 
 
 plotGraph(DATASET, MODEL, train_accuracy_history, train_loss_history, val_accuracy_history, val_loss_history, NUM_EPOCHS, val_preds, val_targets)
 
 
-# time_elapsed = time.time() - start_time 
 historyDict = {
+    'train_transform': train_transform,
     'train_accuracy': train_accuracy_history,
     'train_loss': train_loss_history,
     'val_accuracy': val_accuracy_history,
     'val_loss': val_loss_history,
+    'val_precision': val_precision_history,
+    'val_recall': val_recall_history
 }
 
 log_file.log(start_time, historyDict)

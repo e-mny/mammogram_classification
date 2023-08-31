@@ -4,3 +4,5 @@ slurm*
 *.sh
 results/
 sbatchlog/*
+data_loader/samples/
+visualization/samples/

@@ -1,12 +1,14 @@
 import torch 
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, confusion_matrix
-
+from visualization.explainPred import generateHeatMap
 
 def train(model, train_loader, val_loader, device, criterion, optimizer, epochs):
     train_loss_history = []
     train_accuracy_history = []
     val_loss_history = []
     val_accuracy_history = []
+    val_precision_history = []
+    val_recall_history = []
     print("Starting training now")
 
     for epoch in range(epochs):
@@ -63,7 +65,9 @@ def train(model, train_loader, val_loader, device, criterion, optimizer, epochs)
         val_loss_history.append(val_loss / len(val_loader))
         val_accuracy_score = accuracy_score(val_targets, val_preds)
         val_precision = precision_score(val_targets, val_preds, average='weighted')
+        val_precision_history.append(val_precision)
         val_recall = recall_score(val_targets, val_preds, average='weighted')
+        val_recall_history.append(val_recall)
         val_f1 = f1_score(val_targets, val_preds, average='weighted')
         val_confusion = confusion_matrix(val_targets, val_preds)
     
@@ -76,8 +80,8 @@ def train(model, train_loader, val_loader, device, criterion, optimizer, epochs)
             # f"Validation Recall: {val_recall:.4f}, "
             # f"Validation F1-score: {val_f1:.4f}")
 
-        
+    generateHeatMap(val_loader, model, device)
 
 
 
-    return train_accuracy_history, train_loss_history, val_accuracy_history, val_loss_history, val_preds, val_targets
+    return train_accuracy_history, train_loss_history, val_accuracy_history, val_loss_history, val_precision_history, val_recall_history, val_preds, val_targets
