@@ -46,6 +46,7 @@ print(f"MODEL: {MODEL}\t"
 
 
 ## CONSTANTS
+SEED = 42
 BATCH_SIZE = 32
 NUM_CLASSES= 2
 LEARNING_RATE = 1e-4
@@ -117,12 +118,12 @@ df = pd.read_csv(dataframe_directory)
 # # Algo 3 (Pickle) (use this for quicker retrieval of data after Algo 1 was done before)
 
 # # Load the list from the pickle file
-with open(images_pickle, 'rb') as image_pickle_file:
-    all_images = pickle.load(image_pickle_file)
-with open(labels_pickle, 'rb') as label_pickle_file:
-    all_labels = pickle.load(label_pickle_file)
+# with open(images_pickle, 'rb') as image_pickle_file:
+#     all_images = pickle.load(image_pickle_file)
+# with open(labels_pickle, 'rb') as label_pickle_file:
+#     all_labels = pickle.load(label_pickle_file)
 
-all_images = np.repeat(all_images[:, :, :, np.newaxis], 3, axis = 3)
+# all_images = np.repeat(all_images[:, :, :, np.newaxis], 3, axis = 3)
 
 
 # print(f"Check if len(all_images) == len(all_labels) == len(df)")
@@ -130,16 +131,49 @@ all_images = np.repeat(all_images[:, :, :, np.newaxis], 3, axis = 3)
 # print(f"all_labels: {len(all_labels)}") 
 # print(f"df: {len(df)}")
 
-train_loader, val_loader = createDataLoaders(all_images, all_labels, training_ratio = TRAIN_RATIO, val_ratio = VAL_RATIO, batch_size = BATCH_SIZE)
+train_loader, val_loader = createDataLoaders(batch_size = BATCH_SIZE, train_ratio = TRAIN_RATIO, seed = SEED)
 
 # # Create a model
 modelFactoryObj = ModelFactory(model_name=MODEL, num_classes=NUM_CLASSES, input_channels=3, pretrained=PRETRAINED_BOOL)
 model = modelFactoryObj.create_model()
-model.name = DATASET
 
 # # Freeze layers
 # model = freezeLayers(model)
 
+
+last_layer = None
+for layer in reversed(list(model.children())):
+    if isinstance(layer, nn.Linear):
+        last_layer = layer
+        break
+    elif isinstance(layer, nn.Sequential):
+        last_layer = layer[-1]
+        break
+
+if last_layer is not None:
+    num_features = last_layer.out_features
+else:
+    raise ValueError("No classifier layer found in the pretrained model.")
+
+classifier_layer = nn.Sequential(
+    nn.Linear(num_features, 512),
+    nn.ReLU(),
+    nn.Dropout(0.5),
+    nn.Linear(512, NUM_CLASSES)
+)
+
+class CombinedModel(nn.Module):
+    def __init__(self, base_model, classifier):
+        super(CombinedModel, self).__init__()
+        self.base_model = base_model
+        self.classifier = classifier
+    
+    def forward(self, x):
+        x = self.base_model(x)
+        x = self.classifier(x)
+        return x
+
+# model = CombinedModel(model, classifier_layer)
 # Print model architecture
 print(model)
 # Print trainable parameters

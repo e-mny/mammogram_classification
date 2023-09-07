@@ -51,10 +51,7 @@ class ModelFactory:
     def create_resnet18(self):
         model = models.resnet18(pretrained=self.pretrained)
         for name, param in model.named_parameters():
-            if "fc" in name:
-                param.requires_grad = True
-            else:
-                param.requires_grad = False
+            param.requires_grad = False
 
         num_features = model.fc.in_features
         model.fc = nn.Linear(num_features, self.num_classes)
@@ -63,26 +60,20 @@ class ModelFactory:
     def create_resnet34(self):
         model = models.resnet34(pretrained=self.pretrained)
         for name, param in model.named_parameters():
-            if "fc" in name:
-                param.requires_grad = True
-            else:
-                param.requires_grad = False
+            param.requires_grad = False
 
         
-        num_features = model.fc.in_features
-        model.fc = nn.Linear(num_features, self.num_classes)
+        # num_features = model.fc.in_features
+        # model.fc = nn.Linear(num_features, self.num_classes)
         return model
     
     def create_resnet50(self):
         model = models.resnet50(pretrained=self.pretrained)
         for name, param in model.named_parameters():
-            if "fc" in name:
-                param.requires_grad = True
-            else:
-                param.requires_grad = False
+            param.requires_grad = False
 
-        num_features = model.fc.in_features
-        model.fc = nn.Linear(num_features, self.num_classes)
+        # num_features = model.fc.in_features
+        # model.fc = nn.Linear(num_features, self.num_classes)
         return model
     
     def create_vgg16(self):
@@ -135,8 +126,8 @@ class ModelFactory:
         for param in model.parameters():
             param.requires_grad = False
             
-        num_features = model.fc.in_features
-        model.fc = nn.Linear(num_features, self.num_classes)
+        # num_features = model.fc.in_features
+        # model.fc = nn.Linear(num_features, self.num_classes)
         return model
     
     def create_wide_resnet50_2(self):
@@ -152,11 +143,7 @@ class ModelFactory:
         model = models.densenet121(pretrained=self.pretrained)
         model.features.conv0 = nn.Conv2d(in_channels=self.input_channels, out_channels=64, kernel_size=7, stride=2, padding=3, bias=False) # To adjust input size
         for name, param in model.named_parameters():
-            if "classifier" in name:
-                # param.requires_grad = True
-                break
-            else:
-                param.requires_grad = False
+            param.requires_grad = False
             
         
         num_ftrs = model.classifier.in_features
@@ -165,18 +152,11 @@ class ModelFactory:
 
     def create_efficientnet_b0(self):
         model = EfficientNet.from_pretrained('efficientnet-b0', num_classes=self.num_classes)
+        # model = EfficientNet.from_pretrained('efficientnet-b0')
         # Replace the first convolutional layer to accept single-channel input
         model._conv_stem = nn.Conv2d(in_channels=self.input_channels, out_channels=32, kernel_size=3, stride=2, padding=1, bias=False)
         for name, param in model.named_parameters():
-            if "_fc" in name:
-                # param.requires_grad = True
-                break
-            else:
-                param.requires_grad = False
-                
-        # print(dir(model))
-        for param in model._blocks[-3:]:
-            param.requires_grad = True
+            param.requires_grad = False
         num_ftrs = model._fc.in_features
         model._fc = nn.Linear(num_ftrs, self.num_classes)
         return model
@@ -199,8 +179,8 @@ class ModelFactory:
         #     print(param)
         #     param.requires_grad = True
         # Modify the final fully connected layer for custom number of classes
-        # num_features = model.classifier[1].in_features
-        # model.classifier[1] = nn.Linear(num_features, self.num_classes)
+        num_features = model.classifier[1].in_features
+        model.classifier[1] = nn.Linear(num_features, self.num_classes)
         model.classifier = nn.Sequential(
             nn.Dropout(p=0.2, inplace=False),
             nn.Linear(in_features=1280, out_features=2, bias=True)
@@ -232,11 +212,9 @@ class ModelFactory:
     def create_xception(self):
         model = timm.create_model("xception", pretrained=self.pretrained, in_chans=self.input_channels)
         for name, param in model.named_parameters():
-            if "fc" in name:
-                break
             param.requires_grad = False
-        num_features = model.fc.in_features
-        model.fc = nn.Linear(num_features, self.num_classes)
+        # num_features = model.fc.in_features
+        # model.fc = nn.Linear(num_features, self.num_classes)
         return model
 
 def printTrainableParams(model):

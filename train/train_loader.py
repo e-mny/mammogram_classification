@@ -10,14 +10,16 @@ def train(model, train_loader, val_loader, device, criterion, optimizer, epochs)
     val_precision_history = []
     val_recall_history = []
     print("Starting training now")
-
     for epoch in range(epochs):
         model.train()
         train_loss = 0.0
         correct_train = 0
         total_train = 0
-        
-        for inputs, labels in train_loader:
+        for batch_num, (inputs, labels) in enumerate(train_loader):
+            # print("In Train_loader")
+            # print(f"Current Batch: {batch_num}")
+            # print(inputs, labels)
+            # print(type(inputs), type(labels))
             model.to(device)
             labels = labels.type(torch.LongTensor)
             inputs, labels = inputs.to(device), labels.to(device)
@@ -32,6 +34,7 @@ def train(model, train_loader, val_loader, device, criterion, optimizer, epochs)
             _, predicted = torch.max(outputs.data, 1)
             total_train += labels.size(0)
             correct_train += (predicted == labels).sum().item()
+            batch_num += 1
         
         train_accuracy = correct_train / total_train
         train_loss_history.append(train_loss / len(train_loader))
@@ -80,7 +83,7 @@ def train(model, train_loader, val_loader, device, criterion, optimizer, epochs)
             # f"Validation Recall: {val_recall:.4f}, "
             # f"Validation F1-score: {val_f1:.4f}")
 
-    generateHeatMap(val_loader, model, device)
+    # generateHeatMap(val_loader, model, device)
 
 
 

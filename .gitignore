@@ -6,3 +6,5 @@ results/
 sbatchlog/*
 data_loader/samples/
 visualization/samples/
+*.err
+*.out

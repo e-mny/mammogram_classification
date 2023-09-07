@@ -1,0 +1,145 @@
+# import torch
+# import numpy as np
+# from torch.utils.data import Dataset, DataLoader, TensorDataset
+# import torchvision.transforms as transforms
+# from data_loading.displayImage import displaySample
+# import torchvision.transforms.functional as F
+
+# class CustomDatasetClass(Dataset):
+#     def __init__(self, images, labels, transform=None):
+#         self.images = images
+#         self.labels = labels
+#         self.transform = transform
+
+#     def __len__(self):
+#         # print(len(self.images))
+#         return len(self.images)
+
+#     def __getitem__(self, idx):
+#         # print(idx)
+#         image = self.images[idx].numpy()
+#         # print(image)
+#         label = self.labels[idx]
+
+#         if self.transform:
+#             transformed_sample = self.transform(image)
+#             return transformed_sample, label
+#         else:
+#             return image, label
+
+from torch.utils.data import Dataset
+from torchvision import transforms
+from PIL import Image
+import numpy as np
+import pandas as pd
+import os
+import pickle
+import pydicom
+from collections import Counter
+from torch.utils.data import Dataset, DataLoader
+from data_loading.displayImage import displaySample
+
+
+
+class CBISDataset(Dataset):
+    def __init__(self, transform=None):
+        self.data_dir = "/home/emok/sq58_scratch/emok/Data/CBIS-DDSM"
+        self.transform = transform
+        self.df_dir = os.path.join(self.data_dir, "whole_mammo_images_data.csv")
+        self.df = pd.read_csv(self.df_dir)
+        
+        # # Pickle Method
+        # self.images_pickle = os.path.join(self.data_dir, "image_data.pickle")
+        # self.labels_pickle = os.path.join(self.data_dir, "label_data.pickle")
+        # with open(self.images_pickle, 'rb') as pickle_file:
+        #     self.img_array = pickle.load(pickle_file)
+
+        # with open(self.label_pickle, 'rb') as pickle_file:
+        #     self.df_labels = pickle.load(pickle_file)
+            
+        # Loading straight from folders method
+        self.folder_name = self.df[['folder_name']]
+        self.df_labels = self.df[['class_label']]
+
+    def __len__(self):
+        return len(self.df)
+
+    def __getitem__(self, idx):
+        # Load and preprocess data sample at index idx
+        folder_name = self.folder_name.iloc[idx]
+        image_path = os.path.join(self.data_dir, "images", folder_name, "1-1.dcm")
+        label = self.df_labels.iloc[idx]
+        imageArr = self.load_dicom(image_path)
+
+        if self.transform:
+            imageArr = self.transform(imageArr)
+
+        return imageArr, label
+    
+    def load_dicom(dicom_path):
+        ds = pydicom.dcmread(dicom_path)
+        image = ds.pixel_array
+
+        # Convert to 8-bit grayscale
+        image = image - np.min(image)
+        image = (image / np.max(image) * 255).astype(np.uint8)
+
+        imagearray = Image.fromarray(image)
+        return imagearray
+
+# Define transformations
+train_transform = transforms.Compose([
+    transforms.ToTensor(),
+    # transforms.ColorJitter(brightness = 0.2, contrast= 0.2),
+    # transforms.RandomAffine(degrees=0, scale=(0.8, 1.2)),
+    # transforms.RandomVerticalFlip(),
+    # transforms.RandomHorizontalFlip(),
+    # transforms.RandomRotation(degrees=45, expand=False),
+    transforms.Resize((224, 224))
+    # transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+])
+
+val_transform = transforms.Compose([
+    transforms.ToTensor(),
+    transforms.Resize((224, 224))
+])
+
+def calcClassDistribution(train_loader, val_loader):
+    # Initialize counters for class distribution
+    train_class_distribution = Counter()
+    val_class_distribution = Counter()
+
+    # Iterate through the training DataLoader to count class occurrences
+    for _, labels in train_loader:
+        train_class_distribution.update(labels.tolist())
+
+    # Iterate through the validation DataLoader to count class occurrences
+    for _, labels in val_loader:
+        val_class_distribution.update(labels.tolist())
+
+    # Print class distribution for training DataLoader
+    print("Class distribution for training DataLoader:")
+    for class_label, count in train_class_distribution.items():
+        print(f"Class {class_label}: {count} samples")
+
+    # Print class distribution for validation DataLoader
+    print("\nClass distribution for validation DataLoader:")
+    for class_label, count in val_class_distribution.items():
+        print(f"Class {class_label}: {count} samples")
+
+def createDataLoaders(batch_size):
+
+    print(f"Transforms on Train dataset: {train_transform}")
+    # Create PyTorch DataLoader
+    train_dataset = CBISDataset(transform=train_transform)
+    train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True)
+    val_dataset = CBISDataset(transform=val_transform)
+    val_loader = DataLoader(val_dataset, batch_size=batch_size)
+
+    print("Created DataLoaders")
+    displaySample(train_loader, val_loader, train_transform) # For visualizing transforms
+    calcClassDistribution(train_loader, val_loader)
+
+    
+        
+    return train_loader, val_loader
