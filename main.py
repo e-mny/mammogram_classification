@@ -1,20 +1,22 @@
-# from model import DenseNet
-import pickle
 import torch
 import torch.nn as nn
 import torch.optim as optim
 import pandas as pd
 import numpy as np
 import os
-from data_loading.data_loader import createDataLoaders, train_transform
+from data_loading.data_loader import createDataLoaders
 from data_preprocess.dicom_conversion import load_and_preprocess_dicom
 from data_preprocess.normalize_intensity import normalize_intensity
 from data_preprocess.resample import resample_to_resolution
 from train.train_loader import train
+from train.crossVal import crossValidation
 # from models.create_model import createModel
 from models.modelFactory import ModelFactory, printTrainableParams, freezeLayers
 from performance.show_graph import plotGraph
 from sklearn.metrics import classification_report, precision_recall_fscore_support, confusion_matrix
+from sklearn.utils.validation import check_X_y
+from sklearn.utils.multiclass import unique_labels
+from visualization.explainPred import generateHeatMap
 import pickle
 from logs.logging import Logger
 import time
@@ -31,6 +33,9 @@ parser.add_argument('--model', type=str, required=True, help='Model Name')
 parser.add_argument('--pretrained', type=bool, default=True, required=False, help='Pretrained Boolean (Default: True)')
 parser.add_argument('--dataset', type=str, required=True, help='Datasets: CBIS-DDSM / CMMD / RSNA / USF / VinDr')
 parser.add_argument('--num_epochs', type=int, default=200, required=False, help='Number of Epochs (Default: 200)')
+parser.add_argument('--data_augment', action='store_true', help='Refer to data_loading/data_loader.py for list of augmentation')
+parser.add_argument('--no-data_augment', dest='data_augment', action='store_false')
+parser.set_defaults(data_augment=False)
 
 # Parse the command-line arguments
 args = parser.parse_args()
@@ -40,8 +45,10 @@ MODEL = args.model
 DATASET = args.dataset
 PRETRAINED_BOOL = args.pretrained
 NUM_EPOCHS = args.num_epochs
+DATA_AUGMENT_BOOL = args.data_augment
 print(f"MODEL: {MODEL}\t"
-    f"DATASET: {DATASET}"
+    f"DATASET: {DATASET}\t"
+    f"DATA AUGMENT: {DATA_AUGMENT_BOOL}"
 )
 
 
@@ -75,7 +82,7 @@ data_folder = os.path.join('/home/emok/sq58_scratch/emok/Data/', DATASET)
 
 # Check if GPU is available
 device = "cuda" if torch.cuda.is_available() else "cpu"
-# print(f"Device: {device}")
+print(f"Device: {device}")
 
 
 log_file = Logger(f"./results/{DATASET}_{MODEL}_log.txt")
@@ -130,15 +137,12 @@ df = pd.read_csv(dataframe_directory)
 # print(f"all_images: {len(all_images)}")
 # print(f"all_labels: {len(all_labels)}") 
 # print(f"df: {len(df)}")
-
-train_loader, val_loader = createDataLoaders(batch_size = BATCH_SIZE, train_ratio = TRAIN_RATIO, seed = SEED)
+# if __name__ == "__main__":
+train_loader, val_loader, transforms, sample_images, sample_titles = createDataLoaders(batch_size = BATCH_SIZE, dataset = DATASET, data_augment = DATA_AUGMENT_BOOL)
 
 # # Create a model
 modelFactoryObj = ModelFactory(model_name=MODEL, num_classes=NUM_CLASSES, input_channels=3, pretrained=PRETRAINED_BOOL)
 model = modelFactoryObj.create_model()
-
-# # Freeze layers
-# model = freezeLayers(model)
 
 
 last_layer = None
@@ -173,7 +177,7 @@ class CombinedModel(nn.Module):
         x = self.classifier(x)
         return x
 
-# model = CombinedModel(model, classifier_layer)
+model = CombinedModel(model, classifier_layer)
 # Print model architecture
 print(model)
 # Print trainable parameters
@@ -188,12 +192,10 @@ optimizer = optim.Adam(model.parameters(), lr=LEARNING_RATE)
 
 train_accuracy_history, train_loss_history, val_accuracy_history, val_loss_history, val_precision_history, val_recall_history, val_preds, val_targets = train(model, train_loader, val_loader, device, criterion, optimizer, epochs = NUM_EPOCHS)
 
-
-plotGraph(DATASET, MODEL, train_accuracy_history, train_loss_history, val_accuracy_history, val_loss_history, NUM_EPOCHS, val_preds, val_targets)
-
+# crossValidation(model, DATASET, device)
 
 historyDict = {
-    'train_transform': train_transform,
+    'train_transform': transforms,
     'train_accuracy': train_accuracy_history,
     'train_loss': train_loss_history,
     'val_accuracy': val_accuracy_history,
@@ -203,3 +205,6 @@ historyDict = {
 }
 
 log_file.log(start_time, historyDict)
+
+plotGraph(DATASET, MODEL, train_accuracy_history, train_loss_history, val_accuracy_history, val_loss_history, NUM_EPOCHS, val_preds, val_targets)
+generateHeatMap(sample_images, sample_titles, model, device)

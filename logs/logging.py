@@ -45,6 +45,6 @@ class Logger:
         # print(log_message, end='')
         
     def calcF1Score(self, precision, recall):
-        return (precision * recall * 2) / (precision + recall)
+        return round((precision * recall * 2) / (precision + recall), 4)
     def calcAverage(self, history):
-        return sum(history) / len(history)
+        return round(sum(history) / len(history), 4)

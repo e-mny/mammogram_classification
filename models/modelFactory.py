@@ -53,8 +53,8 @@ class ModelFactory:
         for name, param in model.named_parameters():
             param.requires_grad = False
 
-        num_features = model.fc.in_features
-        model.fc = nn.Linear(num_features, self.num_classes)
+        # num_features = model.fc.in_features
+        # model.fc = nn.Linear(num_features, self.num_classes)
         return model
     
     def create_resnet34(self):
@@ -99,8 +99,8 @@ class ModelFactory:
         for param in model.parameters():
             param.requires_grad = False
 
-        num_features = model.classifier[6].in_features
-        model.classifier[6] = nn.Linear(num_features, self.num_classes)
+        # num_features = model.classifier[6].in_features
+        # model.classifier[6] = nn.Linear(num_features, self.num_classes)
         return model
     
     def create_googlenet(self):
@@ -108,8 +108,8 @@ class ModelFactory:
         for param in model.parameters():
             param.requires_grad = False
 
-        num_features = model.fc.in_features
-        model.fc = nn.Linear(num_features, self.num_classes)
+        # num_features = model.fc.in_features
+        # model.fc = nn.Linear(num_features, self.num_classes)
         return model
     
     def create_inception_v3(self):
@@ -117,8 +117,8 @@ class ModelFactory:
         for param in model.parameters():
             param.requires_grad = False
 
-        num_features = model.fc.in_features
-        model.fc = nn.Linear(num_features, self.num_classes)
+        # num_features = model.fc.in_features
+        # model.fc = nn.Linear(num_features, self.num_classes)
         return model
     
     def create_resnext50_32x4d(self):
@@ -135,8 +135,8 @@ class ModelFactory:
         for param in model.parameters():
             param.requires_grad = False
             
-        num_features = model.fc.in_features
-        model.fc = nn.Linear(num_features, self.num_classes)
+        # num_features = model.fc.in_features
+        # model.fc = nn.Linear(num_features, self.num_classes)
         return model
 
     def create_densenet121(self):
@@ -146,19 +146,19 @@ class ModelFactory:
             param.requires_grad = False
             
         
-        num_ftrs = model.classifier.in_features
-        model.classifier = nn.Linear(num_ftrs, self.num_classes)
+        # num_ftrs = model.classifier.in_features
+        # model.classifier = nn.Linear(num_ftrs, self.num_classes)
         return model
 
     def create_efficientnet_b0(self):
-        model = EfficientNet.from_pretrained('efficientnet-b0', num_classes=self.num_classes)
-        # model = EfficientNet.from_pretrained('efficientnet-b0')
+        # model = EfficientNet.from_pretrained('efficientnet-b0', num_classes=self.num_classes)
+        model = EfficientNet.from_pretrained('efficientnet-b0')
         # Replace the first convolutional layer to accept single-channel input
         model._conv_stem = nn.Conv2d(in_channels=self.input_channels, out_channels=32, kernel_size=3, stride=2, padding=1, bias=False)
         for name, param in model.named_parameters():
             param.requires_grad = False
-        num_ftrs = model._fc.in_features
-        model._fc = nn.Linear(num_ftrs, self.num_classes)
+        # num_ftrs = model._fc.in_features
+        # model._fc = nn.Linear(num_ftrs, self.num_classes)
         return model
     
     def create_efficientnet_b7(self):
@@ -179,12 +179,12 @@ class ModelFactory:
         #     print(param)
         #     param.requires_grad = True
         # Modify the final fully connected layer for custom number of classes
-        num_features = model.classifier[1].in_features
-        model.classifier[1] = nn.Linear(num_features, self.num_classes)
-        model.classifier = nn.Sequential(
-            nn.Dropout(p=0.2, inplace=False),
-            nn.Linear(in_features=1280, out_features=2, bias=True)
-        )
+        # num_features = model.classifier[1].in_features
+        # model.classifier[1] = nn.Linear(num_features, self.num_classes)
+        # model.classifier = nn.Sequential(
+        #     nn.Dropout(p=0.2, inplace=False),
+        #     nn.Linear(in_features=1280, out_features=2, bias=True)
+        # )
         return model
 
     def create_mobilenet_v3_small(self):
@@ -194,8 +194,8 @@ class ModelFactory:
             param.requires_grad = False
         
         # Modify the final fully connected layer for custom number of classes
-        num_features = model.classifier[-1].in_features
-        model.classifier[-1] = nn.Linear(num_features, self.num_classes)
+        # num_features = model.classifier[-1].in_features
+        # model.classifier[-1] = nn.Linear(num_features, self.num_classes)
         return model
 
     def create_mobilenet_v3_large(self):

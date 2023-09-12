@@ -554,3 +554,333 @@
 [Grayscale(num_output_channels=3), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
 07-09-23-104942
 [Grayscale(num_output_channels=3), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+07-09-23-140855
+[Grayscale(num_output_channels=3), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+07-09-23-141741
+[Grayscale(num_output_channels=3), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+07-09-23-142928
+[Grayscale(num_output_channels=3), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+07-09-23-145208
+[Grayscale(num_output_channels=3), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+07-09-23-162701
+[Grayscale(num_output_channels=3), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+07-09-23-170755
+[Grayscale(num_output_channels=3), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+07-09-23-182012
+[Grayscale(num_output_channels=3), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+07-09-23-182012
+[Grayscale(num_output_channels=3), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+07-09-23-182012
+[Grayscale(num_output_channels=3), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+07-09-23-182012
+[Grayscale(num_output_channels=3), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+07-09-23-182012
+[Grayscale(num_output_channels=3), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+07-09-23-183422
+[Grayscale(num_output_channels=3), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+07-09-23-184319
+[Grayscale(num_output_channels=3), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+07-09-23-184422
+[Grayscale(num_output_channels=3), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+07-09-23-184422
+[Grayscale(num_output_channels=3), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+07-09-23-184422
+[Grayscale(num_output_channels=3), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+07-09-23-184422
+[Grayscale(num_output_channels=3), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+07-09-23-184422
+[Grayscale(num_output_channels=3), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+07-09-23-205717
+[Grayscale(num_output_channels=3), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+07-09-23-205717
+[Grayscale(num_output_channels=3), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+07-09-23-205717
+[Grayscale(num_output_channels=3), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+07-09-23-205717
+[Grayscale(num_output_channels=3), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+07-09-23-205717
+[Grayscale(num_output_channels=3), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+07-09-23-205717
+[Grayscale(num_output_channels=3), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+07-09-23-214616
+[Grayscale(num_output_channels=3), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+07-09-23-214616
+[Grayscale(num_output_channels=3), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+07-09-23-214616
+[Grayscale(num_output_channels=3), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+07-09-23-214616
+[Grayscale(num_output_channels=3), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+07-09-23-214616
+[Grayscale(num_output_channels=3), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+07-09-23-214616
+[Grayscale(num_output_channels=3), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+07-09-23-214723
+[Grayscale(num_output_channels=3), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+07-09-23-214724
+[Grayscale(num_output_channels=3), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+07-09-23-214723
+[Grayscale(num_output_channels=3), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+07-09-23-214724
+[Grayscale(num_output_channels=3), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+07-09-23-214723
+[Grayscale(num_output_channels=3), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+07-09-23-214724
+[Grayscale(num_output_channels=3), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+07-09-23-232136
+[Grayscale(num_output_channels=3), RandomVerticalFlip(p=0.5), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+07-09-23-233138
+[Grayscale(num_output_channels=3), RandomVerticalFlip(p=0.5), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+07-09-23-233138
+[Grayscale(num_output_channels=3), RandomVerticalFlip(p=0.5), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+07-09-23-233138
+[Grayscale(num_output_channels=3), RandomVerticalFlip(p=0.5), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+07-09-23-233138
+[Grayscale(num_output_channels=3), RandomVerticalFlip(p=0.5), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+07-09-23-233138
+[Grayscale(num_output_channels=3), RandomVerticalFlip(p=0.5), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+07-09-23-233138
+[Grayscale(num_output_channels=3), RandomVerticalFlip(p=0.5), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+07-09-23-233138
+[Grayscale(num_output_channels=3), RandomVerticalFlip(p=0.5), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+07-09-23-233138
+[Grayscale(num_output_channels=3), RandomVerticalFlip(p=0.5), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+07-09-23-233138
+[Grayscale(num_output_channels=3), RandomVerticalFlip(p=0.5), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+07-09-23-233138
+[Grayscale(num_output_channels=3), RandomVerticalFlip(p=0.5), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+07-09-23-233237
+[Grayscale(num_output_channels=3), RandomVerticalFlip(p=0.5), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+07-09-23-233138
+[Grayscale(num_output_channels=3), RandomVerticalFlip(p=0.5), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+08-09-23-094048
+[Grayscale(num_output_channels=3), RandomVerticalFlip(p=0.5), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+08-09-23-094049
+[Grayscale(num_output_channels=3), RandomVerticalFlip(p=0.5), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+08-09-23-094048
+[Grayscale(num_output_channels=3), RandomVerticalFlip(p=0.5), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+08-09-23-094049
+[Grayscale(num_output_channels=3), RandomVerticalFlip(p=0.5), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+08-09-23-094048
+[Grayscale(num_output_channels=3), RandomVerticalFlip(p=0.5), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+08-09-23-094049
+[Grayscale(num_output_channels=3), RandomVerticalFlip(p=0.5), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+08-09-23-132130
+[Grayscale(num_output_channels=3), RandomVerticalFlip(p=0.5), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+08-09-23-134405
+[Grayscale(num_output_channels=3), RandomVerticalFlip(p=0.5), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+08-09-23-134804
+[Grayscale(num_output_channels=3), RandomVerticalFlip(p=0.5), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+08-09-23-135945
+[Grayscale(num_output_channels=3), RandomVerticalFlip(p=0.5), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+08-09-23-140056
+[Grayscale(num_output_channels=3), RandomVerticalFlip(p=0.5), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+08-09-23-140056
+[Grayscale(num_output_channels=3), RandomVerticalFlip(p=0.5), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+08-09-23-140056
+[Grayscale(num_output_channels=3), RandomVerticalFlip(p=0.5), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+08-09-23-140056
+[Grayscale(num_output_channels=3), RandomVerticalFlip(p=0.5), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+08-09-23-140056
+[Grayscale(num_output_channels=3), RandomVerticalFlip(p=0.5), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+08-09-23-143516
+[Grayscale(num_output_channels=3), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+08-09-23-143516
+[Grayscale(num_output_channels=3), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+08-09-23-145500
+[Grayscale(num_output_channels=3), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+08-09-23-144654
+[Grayscale(num_output_channels=3), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+08-09-23-152512
+[Grayscale(num_output_channels=3), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+08-09-23-152722
+[Grayscale(num_output_channels=3), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+08-09-23-152722
+[Grayscale(num_output_channels=3), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+08-09-23-154924
+[Grayscale(num_output_channels=3), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+08-09-23-155525
+[Grayscale(num_output_channels=3), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+08-09-23-160340
+[Grayscale(num_output_channels=3), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+08-09-23-161238
+[Grayscale(num_output_channels=3), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+08-09-23-163202
+[Grayscale(num_output_channels=3), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+08-09-23-164106
+[Grayscale(num_output_channels=3), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+08-09-23-170539
+[Grayscale(num_output_channels=3), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+08-09-23-171047
+[Grayscale(num_output_channels=3), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+08-09-23-171946
+[Grayscale(num_output_channels=3), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+08-09-23-172738
+[Grayscale(num_output_channels=3), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+08-09-23-173828
+[Grayscale(num_output_channels=3), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+08-09-23-174543
+[Grayscale(num_output_channels=3), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+08-09-23-180319
+[Grayscale(num_output_channels=3), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+08-09-23-181032
+[Grayscale(num_output_channels=3), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+08-09-23-182509
+[Grayscale(num_output_channels=3), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+08-09-23-184434
+[Grayscale(num_output_channels=3), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+08-09-23-185120
+[Grayscale(num_output_channels=3), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+08-09-23-185900
+[Grayscale(num_output_channels=3), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+08-09-23-190811
+[Grayscale(num_output_channels=3), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+08-09-23-191318
+[Grayscale(num_output_channels=3), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+08-09-23-191927
+[Grayscale(num_output_channels=3), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+08-09-23-193029
+[Grayscale(num_output_channels=3), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+08-09-23-193806
+[Grayscale(num_output_channels=3), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+08-09-23-194846
+[Grayscale(num_output_channels=3), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+08-09-23-195636
+[Grayscale(num_output_channels=3), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+08-09-23-200554
+[Grayscale(num_output_channels=3), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+08-09-23-201142
+[Grayscale(num_output_channels=3), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+08-09-23-201837
+[Grayscale(num_output_channels=3), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+08-09-23-202536
+[Grayscale(num_output_channels=3), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+08-09-23-203327
+[Grayscale(num_output_channels=3), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+08-09-23-204022
+[Grayscale(num_output_channels=3), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+08-09-23-210523
+[Grayscale(num_output_channels=3), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+08-09-23-211320
+[Grayscale(num_output_channels=3), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+08-09-23-212240
+[Grayscale(num_output_channels=3), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+08-09-23-212956
+[Grayscale(num_output_channels=3), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+08-09-23-213633
+[Grayscale(num_output_channels=3), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+08-09-23-214249
+[Grayscale(num_output_channels=3), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+08-09-23-215104
+[Grayscale(num_output_channels=3), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+08-09-23-215939
+[Grayscale(num_output_channels=3), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+08-09-23-221451
+[Grayscale(num_output_channels=3), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+08-09-23-221451
+[Grayscale(num_output_channels=3), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+08-09-23-221451
+[Grayscale(num_output_channels=3), RandomAffine(degrees=[0.0, 0.0], scale=(0.8, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+09-09-23-081345
+[Grayscale(num_output_channels=3), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+09-09-23-081345
+[Grayscale(num_output_channels=3), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+09-09-23-081345
+[Grayscale(num_output_channels=3), RandomAffine(degrees=[0.0, 0.0], scale=(0.8, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+09-09-23-110836
+[Grayscale(num_output_channels=3), RandomAffine(degrees=[0.0, 0.0], scale=(0.8, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+09-09-23-113017
+[Grayscale(num_output_channels=3), RandomAffine(degrees=[0.0, 0.0], scale=(0.8, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+09-09-23-114326
+[Grayscale(num_output_channels=3), RandomAffine(degrees=[0.0, 0.0], scale=(0.8, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+09-09-23-120424
+[Grayscale(num_output_channels=3), RandomAffine(degrees=[0.0, 0.0], scale=(0.8, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+09-09-23-123408
+[Grayscale(num_output_channels=3), RandomAffine(degrees=[0.0, 0.0], scale=(0.8, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+09-09-23-124032
+[Grayscale(num_output_channels=3), RandomAffine(degrees=[0.0, 0.0], scale=(0.8, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+09-09-23-124759
+[Grayscale(num_output_channels=3), RandomAffine(degrees=[0.0, 0.0], scale=(0.8, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+09-09-23-140421
+[Grayscale(num_output_channels=3), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+09-09-23-140421
+[Grayscale(num_output_channels=3), RandomAffine(degrees=[0.0, 0.0], scale=(0.8, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+09-09-23-213025
+[Grayscale(num_output_channels=3), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+09-09-23-214641
+[Grayscale(num_output_channels=3)]
+09-09-23-215030
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), Grayscale(num_output_channels=3)]
+09-09-23-215308
+[Grayscale(num_output_channels=3)]
+09-09-23-220032
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), Grayscale(num_output_channels=3), RandomAffine(degrees=[0.0, 0.0], scale=(0.8, 1.2))]
+09-09-23-220403
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), Grayscale(num_output_channels=3), RandomAffine(degrees=[0.0, 0.0], scale=(0.8, 1.2))]
+09-09-23-230554
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), Grayscale(num_output_channels=3), RandomVerticalFlip(p=0.5)]
+09-09-23-230720
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), Grayscale(num_output_channels=3)]
+10-09-23-103643
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), Grayscale(num_output_channels=3), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+10-09-23-110738
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), Grayscale(num_output_channels=3), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+10-09-23-111734
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), Grayscale(num_output_channels=3), RandomAffine(degrees=[0.0, 0.0], scale=(0.8, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+10-09-23-114121
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), Grayscale(num_output_channels=3)]
+10-09-23-130840
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), <data_loading.data_loader.CLAHETransform object at 0x7f11334ca950>, Grayscale(num_output_channels=3)]
+10-09-23-142402
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), <data_loading.data_loader.CLAHETransform object at 0x7f41b02d2d50>, Grayscale(num_output_channels=3)]
+10-09-23-161744
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), Grayscale(num_output_channels=3)]
+10-09-23-165612
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), Grayscale(num_output_channels=3)]
+10-09-23-173520
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), Grayscale(num_output_channels=3)]
+10-09-23-175612
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), Grayscale(num_output_channels=3)]
+10-09-23-180719
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), Grayscale(num_output_channels=3), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+10-09-23-202109
+[CenterCrop(size=(500, 500)), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), Grayscale(num_output_channels=3)]
+10-09-23-205322
+[CenterCrop(size=(700, 700)), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), Grayscale(num_output_channels=3)]
+10-09-23-221652
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), CenterCrop(size=(200, 200)), Grayscale(num_output_channels=3)]
+10-09-23-225003
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), CenterCrop(size=(200, 200)), Grayscale(num_output_channels=3)]
+10-09-23-225124
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), CenterCrop(size=(190, 190)), Grayscale(num_output_channels=3)]
+11-09-23-093610
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), Grayscale(num_output_channels=3)]
+11-09-23-115816
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), Grayscale(num_output_channels=3)]
+11-09-23-122801
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), Grayscale(num_output_channels=3), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-90.0, 90.0], interpolation=nearest, expand=False, fill=0)]
+11-09-23-143811
+[ToPILImage(), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), Grayscale(num_output_channels=3)]
+11-09-23-185947
+[ToPILImage(), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), Grayscale(num_output_channels=3), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-90.0, 90.0], interpolation=nearest, expand=False, fill=0)]
+11-09-23-213143
+[ToPILImage(), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), Grayscale(num_output_channels=3)]
+11-09-23-213901
+[ToPILImage(), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), Grayscale(num_output_channels=3)]
+11-09-23-222645
+[ToPILImage(), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), Grayscale(num_output_channels=3)]
+11-09-23-225701
+[ToPILImage(), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), Grayscale(num_output_channels=3)]
+12-09-23-073341
+[ToPILImage(), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), Grayscale(num_output_channels=3), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+12-09-23-124235
+[ToPILImage(), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), Grayscale(num_output_channels=3)]
+12-09-23-124348
+[ToPILImage(), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), Grayscale(num_output_channels=3)]
+12-09-23-125623
+[ToPILImage(), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), Grayscale(num_output_channels=3)]
+12-09-23-125853
+[ToPILImage(), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), Grayscale(num_output_channels=3)]
+12-09-23-130048
+[ToPILImage(), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), Grayscale(num_output_channels=3)]
+12-09-23-132209
+[ToPILImage(), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), Grayscale(num_output_channels=3), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
