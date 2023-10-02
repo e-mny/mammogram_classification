@@ -38,6 +38,7 @@ class CustomImageDataset(Dataset):
         # # Load the image using PIL
         # imageArr = self.load_dicom(image_path)
         imageArr = self.load_jpeg(image_path)
+        # imageArr = self.stack_jpeg(imageArr)
 
         if self.transform:
             image = self.transform(imageArr)
@@ -56,13 +57,14 @@ class CustomImageDataset(Dataset):
         return imagearray
     
     def load_jpeg(self, jpeg_path):
-        image = Image.open(jpeg_path)
-        image = np.array(image)
+        image = Image.open(jpeg_path).convert("RGB")
+        # image = np.array(image)
+        
         
         # Preprocessing
         # image = self.removeArtifacts(image)
         # image = self.apply_clahe(image)
-        image = self.apply_combined_filter(image)
+        # image = self.apply_combined_filter(image)
         # image = self.toPILImage(image)
         return image
     
@@ -86,14 +88,62 @@ class CustomImageDataset(Dataset):
     def toPILImage(self, image):
         return Image.fromarray(image)
     
+    def stack_jpeg(self, image):
+        stacked_image = np.stack((image,) * 3, axis=-1)
+        return stacked_image
     
+class CBISCombinedDataset(Dataset):
+    def __init__(self, images, label, transform = None):
+        self.images = images
+        self.labels = label
+        self.transform = transform
+        self.directory = "/home/emok/sq58/Code/Data/CBIS-DDSM/combined"
+        self.dataframe = pd.read_csv("/home/emok/sq58/Code/Data/CBIS-DDSM/combined_data.csv")
+        # for i in range(len(self.dataframe)):
+        #     row = self.dataframe.iloc[i]
+        #     folder_name = row['folder_name']
+        #     label = row['class_label']
+        #     image_path = os.path.join(self.directory, str(i + 1), "1-1.dcm_downsized-cropped.jpeg")
+        #     self.data.append(image_path)
+        #     self.labels.append(label)
+
+    def __len__(self):
+        return len(self.images)
+
+    def __getitem__(self, idx):
+        img = self.images[idx]
+        label = self.labels[idx]
+        img = self.load_jpeg(img)
+        
+        if self.transform:
+            img = self.transform(img)
+        return img, label
     
+    def load_jpeg(self, jpeg_path):
+        image = Image.open(jpeg_path).convert("RGB")
+        return image
 
-
-class CBISDataset(CustomImageDataset):
-    def __init__(self, directory = "/home/emok/sq58/Code/Data/CBIS-DDSM", mode = 'train', transform = None):
-        super(CBISDataset, self).__init__(directory, mode, transform)
+class CBISNewDataset(CustomImageDataset):
+    def __init__(self, directory = "/home/emok/sq58/Code/Data/CBIS-DDSM_new", mode = 'train', transform = None):
+        super(CBISNewDataset, self).__init__(directory, mode, transform)
+        self.directory = os.path.join(directory, "calc_" + self.mode)
+        if mode == "train":
+            self.df_dir = os.path.join(directory, "calc_case_description_train_set.csv")
+        else:
+            self.df_dir = os.path.join(directory, "calc_case_description_test_set.csv")
+            
         self.dataframe = pd.read_csv(self.df_dir)
+        self.data = []
+        self.labels = []
+        for i in range(len(self.dataframe)):
+            row = self.dataframe.iloc[i]
+            folder_name = str(row['image file path']).split("/")[-2]
+            # label = row['class_label']
+            label = self.getLabel(row['pathology'])
+            image_path = os.path.join(self.directory, str(i + 1), "1-1.jpeg")
+            self.data.append(image_path)
+            self.labels.append(label)
+            
         
         # # Pickle Method
         # self.images_pickle = os.path.join(self.data_dir, "image_data.pickle")
@@ -106,15 +156,74 @@ class CBISDataset(CustomImageDataset):
 
     def __getitem__(self, idx):
         # Load and preprocess data sample at index idx
-        row = self.dataframe.iloc[idx]
-        folder_name = row['folder_name']
-        label = row['class_label']
+        image_path = self.data[idx]
+        label = self.labels[idx]
+        
+        
         # Dicom
         # image_path = os.path.join(self.directory, self.mode, str(idx + 1), "1-1.dcm")
         # imageArr = self.load_dicom(image_path)
         
         # JPEG
-        image_path = os.path.join(self.directory, self.mode, str(idx + 1), "1-1.dcm.jpeg")
+        imageArr = self.load_jpeg(image_path)
+
+        if self.transform:
+            imageArr = self.transform(imageArr)
+
+        return imageArr, label
+    
+    def getLabel(self, label_text):
+        label_text = label_text.lower()
+        if "malignant" in label_text:
+            return 1
+        else:
+            return 0
+
+
+class CBISDataset(CustomImageDataset):
+    def __init__(self, directory = "/home/emok/sq58/Code/Data/CBIS-DDSM", mode = 'train',transform = None):
+        super(CBISDataset, self).__init__(directory, mode, transform)
+        self.dataframe = pd.read_csv(self.df_dir)
+        self.data = []
+        self.labels = []
+        if mode == "combined":
+            for i in range(len(self.dataframe)):
+                row = self.dataframe.iloc[i]
+                folder_name = row['folder_name']
+                label = row['class_label']
+                image_path = os.path.join(self.directory, self.mode, str(i + 1), "1-1.dcm_downsized-cropped-c40g8.jpeg")
+                self.data.append(image_path)
+                self.labels.append(label)
+        else:
+            for i in range(len(self.dataframe)):
+                row = self.dataframe.iloc[i]
+                folder_name = row['folder_name']
+                label = row['class_label']
+                image_path = os.path.join(self.directory, self.mode, str(i + 1), "1-1.dcm_final.jpeg")
+                self.data.append(image_path)
+                self.labels.append(label)
+            
+        
+        # # Pickle Method
+        # self.images_pickle = os.path.join(self.data_dir, "image_data.pickle")
+        # self.labels_pickle = os.path.join(self.data_dir, "label_data.pickle")
+        # with open(self.images_pickle, 'rb') as pickle_file:
+        #     self.img_array = pickle.load(pickle_file)
+
+        # with open(self.label_pickle, 'rb') as pickle_file:
+        #     self.df_labels = pickle.load(pickle_file)
+
+    def __getitem__(self, idx):
+        # Load and preprocess data sample at index idx
+        image_path = self.data[idx]
+        label = self.labels[idx]
+        
+        
+        # Dicom
+        # image_path = os.path.join(self.directory, self.mode, str(idx + 1), "1-1.dcm")
+        # imageArr = self.load_dicom(image_path)
+        
+        # JPEG
         imageArr = self.load_jpeg(image_path)
 
         if self.transform:
@@ -126,6 +235,17 @@ class RSNADataset(CustomImageDataset):
     def __init__(self, directory = "/home/emok/sq58/Code/Data/RSNA", mode = 'train', transform = None):
         super(RSNADataset, self).__init__(directory, mode, transform)
         self.dataframe = pd.read_csv(self.df_dir)
+        self.data = []
+        self.labels = []
+        
+        for i in range(len(self.dataframe)):
+            row = self.dataframe.iloc[i]
+            folder_name = row['patient_id']
+            dcm_file = row['image_id']
+            label = row['cancer']
+            image_path = os.path.join(self.directory, self.mode, folder_name, dcm_file + ".dcm")
+            self.data.append(image_path)
+            self.labels.append(label)
         
         # # Pickle Method
         # self.images_pickle = os.path.join(self.data_dir, "image_data.pickle")
@@ -138,11 +258,8 @@ class RSNADataset(CustomImageDataset):
 
     def __getitem__(self, idx):
         # Load and preprocess data sample at index idx
-        row = self.dataframe.iloc[idx]
-        folder_name = row['patient_id']
-        dcm_file = row['image_id']
-        label = row['cancer']
-        image_path = os.path.join(self.directory, self.mode, folder_name, dcm_file + ".dcm")
+        image_path = self.data[idx]
+        label = self.labels[idx]
 
         # Load the image using PIL
         imageArr = self.load_dicom(image_path)
@@ -157,7 +274,18 @@ class VinDrDataset(CustomImageDataset):
     def __init__(self, directory = "/home/emok/sq58/Code/Data/VinDr", mode="train", transform = None):
         super(VinDrDataset, self).__init__(directory, mode, transform)
         self.dataframe = pd.read_csv(self.df_dir)
+        self.data = []
+        self.labels = []
         
+        for i in range(len(self.dataframe)):
+            row = self.dataframe.iloc[i]
+            folder_name = row['folder_name']
+            dcm_file = row['image_id']
+            label = row['cancer']
+            image_path = os.path.join(self.directory, self.mode, folder_name, dcm_file + ".dicom")
+            self.data.append(image_path)
+            self.label.append(label)
+            
         # # Pickle Method
         # self.images_pickle = os.path.join(self.data_dir, "image_data.pickle")
         # self.labels_pickle = os.path.join(self.data_dir, "label_data.pickle")
@@ -169,11 +297,8 @@ class VinDrDataset(CustomImageDataset):
 
     def __getitem__(self, idx):
         # Load and preprocess data sample at index idx
-        row = self.dataframe.iloc[idx]
-        folder_name = row['study_id']
-        dcm_file = row['image_id']
-        label = row['cancer']
-        image_path = os.path.join(self.directory, self.mode, folder_name, dcm_file + ".dicom")
+        image_path = self.data[idx]
+        label = self.labels[idx]
 
         # Load the image using PIL
         imageArr = self.load_dicom(image_path)
@@ -188,6 +313,17 @@ class CMMDDataset(CustomImageDataset):
     def __init__(self, directory = "/home/emok/sq58/Code/Data/CMMD", mode = "train", transform=None):
         super(CMMDDataset, self).__init__(directory, mode, transform)
         self.dataframe = pd.read_csv(self.df_dir)
+        self.data = []
+        self.labels = []
+        
+        for i in range(len(self.dataframe)):
+            row = self.dataframe.iloc[i]
+            folder_name = row['folder_name']
+            label = row['class_label']
+            image_path = os.path.join(self.directory, self.mode, str(i + 1), "1-1.dcm_final.jpeg")
+            self.data.append(image_path)
+            self.labels.append(label)
+
 
         # # Pickle Method
         # self.images_pickle = os.path.join(self.data_dir, "image_data.pickle")
@@ -200,9 +336,8 @@ class CMMDDataset(CustomImageDataset):
     
     def __getitem__(self, idx):
         # Load and preprocess data sample at index idx
-        row = self.dataframe.iloc[idx]
-        folder_name = row['ID1']
-        label = row['class_label']
+        image_path = self.data[idx]
+        label = self.labels[idx]
         
         # # Dicom
         # image_path = os.path.join(self.directory, self.mode, str(idx + 1), "1-1.dcm")
@@ -210,7 +345,6 @@ class CMMDDataset(CustomImageDataset):
         # imageArr = self.load_dicom(image_path)
         
         # JPEG
-        image_path = os.path.join(self.directory, self.mode, str(idx + 1), "1-1.dcm.jpeg")
         imageArr = self.load_jpeg(image_path)
 
         if self.transform:

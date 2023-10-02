@@ -884,3 +884,605 @@
 [ToPILImage(), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), Grayscale(num_output_channels=3)]
 12-09-23-132209
 [ToPILImage(), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), Grayscale(num_output_channels=3), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+13-09-23-010336
+[ToPILImage(), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), Grayscale(num_output_channels=3)]
+13-09-23-092612
+[ToPILImage(), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), Grayscale(num_output_channels=3)]
+13-09-23-125600
+[ToPILImage(), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), Grayscale(num_output_channels=3)]
+13-09-23-132311
+[ToPILImage(), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), Grayscale(num_output_channels=3)]
+13-09-23-140931
+[ToPILImage(), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), Grayscale(num_output_channels=3)]
+13-09-23-171741
+[ToPILImage(), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+13-09-23-180117
+[ToPILImage(), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+13-09-23-205122
+[ToPILImage(), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), Grayscale(num_output_channels=3)]
+13-09-23-233937
+[ToPILImage(), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), Grayscale(num_output_channels=3)]
+14-09-23-054456
+[ToPILImage(), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+14-09-23-080907
+[ToPILImage(), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), Grayscale(num_output_channels=3)]
+14-09-23-091002
+[ToPILImage(), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), Grayscale(num_output_channels=3)]
+14-09-23-134243
+[ToPILImage(), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+14-09-23-140411
+[ToPILImage(), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+14-09-23-144108
+[ToPILImage(), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+14-09-23-153550
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+14-09-23-160719
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+14-09-23-163015
+[ToPILImage(), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+14-09-23-163320
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+14-09-23-165623
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+14-09-23-174227
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+14-09-23-180840
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+14-09-23-193736
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+14-09-23-211652
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+14-09-23-221739
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+14-09-23-222305
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+14-09-23-223559
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+14-09-23-224752
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+14-09-23-225933
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+14-09-23-231119
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+14-09-23-232044
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+14-09-23-233142
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+15-09-23-091841
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+15-09-23-093213
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+15-09-23-103541
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+15-09-23-112033
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+15-09-23-122615
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+15-09-23-131642
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+15-09-23-150708
+[ToPILImage(), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+15-09-23-170858
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+15-09-23-171854
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+15-09-23-173917
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+15-09-23-184634
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+15-09-23-195428
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+15-09-23-221818
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+15-09-23-222901
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+16-09-23-023955
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+16-09-23-024844
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+16-09-23-042031
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+16-09-23-111005
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+16-09-23-134327
+[ToPILImage(), Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+16-09-23-144200
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+16-09-23-231724
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+17-09-23-023632
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+17-09-23-171036
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+17-09-23-233040
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+18-09-23-063753
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+18-09-23-125947
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+18-09-23-130527
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+18-09-23-130958
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+18-09-23-131427
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+18-09-23-131900
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+18-09-23-143134
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+18-09-23-144350
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+18-09-23-144922
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+18-09-23-145404
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+18-09-23-145848
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+18-09-23-150325
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+18-09-23-152055
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+18-09-23-152549
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+18-09-23-153041
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+18-09-23-153534
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+18-09-23-154033
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+18-09-23-184033
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+18-09-23-200726
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+18-09-23-201219
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+18-09-23-202318
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+18-09-23-202838
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+18-09-23-203328
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+18-09-23-203838
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+18-09-23-204034
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+18-09-23-204606
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+18-09-23-205215
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+18-09-23-205837
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+18-09-23-212824
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+18-09-23-214052
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+18-09-23-215845
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+18-09-23-220922
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+18-09-23-220923
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+18-09-23-221734
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+18-09-23-225444
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+18-09-23-233202
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+19-09-23-000957
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+19-09-23-043419
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+19-09-23-045108
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+19-09-23-102756
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+19-09-23-110613
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+19-09-23-140028
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+19-09-23-180819
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+20-09-23-004504
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+20-09-23-114913
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+20-09-23-122158
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+20-09-23-151935
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+20-09-23-153855
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+20-09-23-155220
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+20-09-23-155523
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+20-09-23-192951
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+20-09-23-211328
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+20-09-23-215323
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+20-09-23-224114
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+20-09-23-230935
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-90.0, 90.0], interpolation=nearest, expand=False, fill=0)]
+20-09-23-231044
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)]
+21-09-23-093111
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-90.0, 90.0], interpolation=nearest, expand=False, fill=0)]
+21-09-23-094112
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-90.0, 90.0], interpolation=nearest, expand=False, fill=0)]
+21-09-23-102108
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-90.0, 90.0], interpolation=nearest, expand=False, fill=0)]
+21-09-23-105429
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-90.0, 90.0], interpolation=nearest, expand=False, fill=0)]
+21-09-23-111710
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-90.0, 90.0], interpolation=nearest, expand=False, fill=0)]
+21-09-23-135620
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-90.0, 90.0], interpolation=nearest, expand=False, fill=0)]
+21-09-23-142458
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-90.0, 90.0], interpolation=nearest, expand=False, fill=0)]
+21-09-23-145233
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-90.0, 90.0], interpolation=nearest, expand=False, fill=0)]
+21-09-23-145233
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-90.0, 90.0], interpolation=nearest, expand=False, fill=0)]
+21-09-23-145233
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-90.0, 90.0], interpolation=nearest, expand=False, fill=0)]
+21-09-23-161613
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-90.0, 90.0], interpolation=nearest, expand=False, fill=0)]
+21-09-23-181303
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-90.0, 90.0], interpolation=nearest, expand=False, fill=0)]
+21-09-23-185500
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-90.0, 90.0], interpolation=nearest, expand=False, fill=0)]
+21-09-23-185513
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-90.0, 90.0], interpolation=nearest, expand=False, fill=0)]
+21-09-23-195458
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-90.0, 90.0], interpolation=nearest, expand=False, fill=0)]
+21-09-23-195458
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-90.0, 90.0], interpolation=nearest, expand=False, fill=0)]
+21-09-23-201535
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-90.0, 90.0], interpolation=nearest, expand=False, fill=0)]
+21-09-23-213718
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-90.0, 90.0], interpolation=nearest, expand=False, fill=0)]
+21-09-23-214010
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-90.0, 90.0], interpolation=nearest, expand=False, fill=0)]
+21-09-23-214105
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-90.0, 90.0], interpolation=nearest, expand=False, fill=0)]
+21-09-23-225130
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-90.0, 90.0], interpolation=nearest, expand=False, fill=0)]
+21-09-23-225900
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-90.0, 90.0], interpolation=nearest, expand=False, fill=0)]
+21-09-23-230711
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-90.0, 90.0], interpolation=nearest, expand=False, fill=0)]
+21-09-23-230812
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-90.0, 90.0], interpolation=nearest, expand=False, fill=0)]
+22-09-23-002235
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-90.0, 90.0], interpolation=nearest, expand=False, fill=0)]
+22-09-23-003435
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-90.0, 90.0], interpolation=nearest, expand=False, fill=0)]
+22-09-23-004734
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-90.0, 90.0], interpolation=nearest, expand=False, fill=0)]
+22-09-23-014215
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-90.0, 90.0], interpolation=nearest, expand=False, fill=0)]
+22-09-23-014646
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-90.0, 90.0], interpolation=nearest, expand=False, fill=0)]
+22-09-23-015335
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-90.0, 90.0], interpolation=nearest, expand=False, fill=0)]
+22-09-23-025223
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-90.0, 90.0], interpolation=nearest, expand=False, fill=0)]
+22-09-23-031527
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-90.0, 90.0], interpolation=nearest, expand=False, fill=0)]
+22-09-23-031839
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-90.0, 90.0], interpolation=nearest, expand=False, fill=0)]
+22-09-23-044437
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-90.0, 90.0], interpolation=nearest, expand=False, fill=0)]
+22-09-23-061758
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-90.0, 90.0], interpolation=nearest, expand=False, fill=0)]
+22-09-23-065940
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-90.0, 90.0], interpolation=nearest, expand=False, fill=0)]
+22-09-23-075224
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-90.0, 90.0], interpolation=nearest, expand=False, fill=0)]
+22-09-23-093225
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-90.0, 90.0], interpolation=nearest, expand=False, fill=0)]
+22-09-23-094622
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+22-09-23-112230
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-90.0, 90.0], interpolation=nearest, expand=False, fill=0)]
+22-09-23-113421
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+22-09-23-122818
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+22-09-23-125229
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-90.0, 90.0], interpolation=nearest, expand=False, fill=0)]
+22-09-23-131146
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+22-09-23-133320
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+22-09-23-140741
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+22-09-23-144305
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+22-09-23-150826
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+22-09-23-151928
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+22-09-23-153803
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+22-09-23-154514
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+22-09-23-163403
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+22-09-23-174658
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+22-09-23-180312
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+22-09-23-181301
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+22-09-23-190302
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+22-09-23-202343
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+22-09-23-203729
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+22-09-23-204522
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+22-09-23-225953
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+22-09-23-230002
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+22-09-23-230432
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+22-09-23-231146
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+23-09-23-001631
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+23-09-23-013307
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+23-09-23-013447
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+23-09-23-014000
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+23-09-23-024733
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+23-09-23-040149
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+23-09-23-040942
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+23-09-23-064111
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+23-09-23-101553
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+23-09-23-113946
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+23-09-23-115017
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+23-09-23-125529
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+23-09-23-141145
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+23-09-23-152614
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+23-09-23-202519
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+23-09-23-203711
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+23-09-23-213534
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+23-09-23-221609
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+24-09-23-002100
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+24-09-23-011928
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+24-09-23-020023
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+24-09-23-040828
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+24-09-23-050659
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+24-09-23-055432
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+24-09-23-081053
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+24-09-23-085606
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+24-09-23-093527
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+24-09-23-112457
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+24-09-23-125659
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+24-09-23-135807
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+24-09-23-142223
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+24-09-23-151437
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+24-09-23-154035
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+24-09-23-162230
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+24-09-23-162906
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+24-09-23-165644
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+24-09-23-174139
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+24-09-23-181459
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+24-09-23-185751
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+24-09-23-193550
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+24-09-23-203456
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-90.0, 90.0], interpolation=nearest, expand=False, fill=0)]
+24-09-23-205225
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-45.0, 45.0], interpolation=nearest, expand=False, fill=0)]
+24-09-23-211848
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-90.0, 90.0], interpolation=nearest, expand=False, fill=0)]
+24-09-23-224752
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-90.0, 90.0], interpolation=nearest, expand=False, fill=0)]
+24-09-23-225329
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-90.0, 90.0], interpolation=nearest, expand=False, fill=0)]
+24-09-23-231106
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-90.0, 90.0], interpolation=nearest, expand=False, fill=0)]
+25-09-23-011852
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-90.0, 90.0], interpolation=nearest, expand=False, fill=0)]
+25-09-23-034932
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-90.0, 90.0], interpolation=nearest, expand=False, fill=0)]
+25-09-23-055335
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-90.0, 90.0], interpolation=nearest, expand=False, fill=0)]
+25-09-23-095356
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-90.0, 90.0], interpolation=nearest, expand=False, fill=0)]
+25-09-23-124121
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-90.0, 90.0], interpolation=nearest, expand=False, fill=0)]
+25-09-23-125050
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-90.0, 90.0], interpolation=nearest, expand=False, fill=0)]
+25-09-23-130320
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-90.0, 90.0], interpolation=nearest, expand=False, fill=0)]
+25-09-23-131128
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-90.0, 90.0], interpolation=nearest, expand=False, fill=0)]
+25-09-23-132631
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-90.0, 90.0], interpolation=nearest, expand=False, fill=0)]
+25-09-23-134618
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-90.0, 90.0], interpolation=nearest, expand=False, fill=0)]
+25-09-23-135228
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-90.0, 90.0], interpolation=nearest, expand=False, fill=0)]
+25-09-23-150738
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-90.0, 90.0], interpolation=nearest, expand=False, fill=0)]
+25-09-23-152640
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-90.0, 90.0], interpolation=nearest, expand=False, fill=0)]
+25-09-23-153245
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-90.0, 90.0], interpolation=nearest, expand=False, fill=0)]
+25-09-23-162105
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-90.0, 90.0], interpolation=nearest, expand=False, fill=0)]
+25-09-23-165604
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-90.0, 90.0], interpolation=nearest, expand=False, fill=0)]
+25-09-23-173419
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-90.0, 90.0], interpolation=nearest, expand=False, fill=0)]
+25-09-23-181808
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-90.0, 90.0], interpolation=nearest, expand=False, fill=0)]
+25-09-23-184724
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-90.0, 90.0], interpolation=nearest, expand=False, fill=0)]
+26-09-23-135624
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+26-09-23-151704
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+26-09-23-162136
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+26-09-23-163542
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+26-09-23-163738
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+26-09-23-163939
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+26-09-23-164453
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+26-09-23-165107
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+26-09-23-165838
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+26-09-23-170302
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+26-09-23-170926
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+26-09-23-191227
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+26-09-23-191434
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+26-09-23-191600
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+26-09-23-191805
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+26-09-23-192015
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+26-09-23-192158
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+26-09-23-192314
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+26-09-23-192523
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+26-09-23-192708
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+26-09-23-192815
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+26-09-23-192943
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+26-09-23-193148
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+26-09-23-193421
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+26-09-23-193500
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+26-09-23-193656
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+26-09-23-193834
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+26-09-23-193932
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+26-09-23-194328
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+26-09-23-201248
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+26-09-23-201752
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+26-09-23-202454
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+26-09-23-213648
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+27-09-23-115659
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+27-09-23-123823
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+27-09-23-133823
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+27-09-23-134149
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+27-09-23-134228
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+27-09-23-134820
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+27-09-23-135345
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+27-09-23-135915
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+27-09-23-140315
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+27-09-23-141003
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+27-09-23-145804
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+27-09-23-145827
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+27-09-23-152149
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+27-09-23-152511
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+27-09-23-153948
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+27-09-23-153947
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+27-09-23-160608
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+27-09-23-163141
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+27-09-23-203434
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+27-09-23-210856
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+27-09-23-214901
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+27-09-23-215247
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+28-09-23-124315
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+28-09-23-142306
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+28-09-23-171236
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+28-09-23-230425
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+29-09-23-104631
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+29-09-23-105305
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]

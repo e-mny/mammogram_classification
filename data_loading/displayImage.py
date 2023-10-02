@@ -50,6 +50,7 @@ def displaySample(train_loader, val_loader, transforms_func):
     sample_images = []
     sample_titles = []
     formatted_datetime = datetime.now().strftime("%d-%m-%y-%H%M%S")
+    train_transforms, _ = transforms_func
     print("Creating Samples")
     
     trainNegSamples, trainPosSamples = getSamples(train_loader)
@@ -63,6 +64,7 @@ def displaySample(train_loader, val_loader, transforms_func):
             image = sample[0].squeeze().numpy()  # Convert to NumPy array
             # image = (image / np.max(image) * 255).astype(np.uint8)
             image = image.transpose((1, 2, 0))
+            # print(image.shape)
             target = sample[1].item()  # Extract the target label (0 or 1)
             
             # Define titles based on target labels
@@ -76,7 +78,7 @@ def displaySample(train_loader, val_loader, transforms_func):
     # Show the images in a 4x4 grid
     show_images(sample_images, sample_titles, rows=4, cols=4, time=formatted_datetime)
 
-    transformation_list = [transform for transform in transforms_func.transforms if not isinstance(transform, transforms.ToTensor)]
+    transformation_list = [transform for transform in train_transforms.transforms if not isinstance(transform, transforms.ToTensor)]
 
     with open("./data_loading/samples/transforms_log.txt", 'a') as f:
         f.write(formatted_datetime)

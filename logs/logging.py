@@ -16,22 +16,30 @@ class Logger:
         return timestamp
 
     def log(self, start_time, dataDict):
-        train_accuracy_history = dataDict['train_accuracy']
-        train_loss_history = dataDict['train_loss']
-        val_accuracy_history = dataDict['val_accuracy']
-        val_loss_history = dataDict['val_loss']
-        val_precision_history = dataDict['val_precision']
-        val_recall_history = dataDict['val_recall']
+        if dataDict['folds'] == None:
+            fold_num = "Average of all 5 folds"
+        else:
+            fold_num = dataDict['folds']
+        train_accuracy = dataDict['train_accuracy']
+        train_loss = dataDict['train_loss']
+        val_accuracy = dataDict['val_accuracy']
+        val_loss = dataDict['val_loss']
+        val_precision = dataDict['val_precision']
+        val_recall = dataDict['val_recall']
+        roc_auc = dataDict['roc_auc'],
+        pr_auc = dataDict['prroc_auc']
 
-
-        avgMsg = (
-            f"Train Accuracy: {self.calcAverage(train_accuracy_history)}\n"
-            f"Train Loss: {self.calcAverage(train_loss_history)}\n"
-            f"Val Accuracy: {self.calcAverage(val_accuracy_history)}\n"
-            f"Val Loss: {self.calcAverage(val_loss_history)}\n"
-            f"Val Precision: {self.calcAverage(val_precision_history)}\n"
-            f"Val Recall: {self.calcAverage(val_recall_history)}\n"      
-            f"Val F1-Score: {self.calcF1Score(self.calcAverage(val_precision_history), self.calcAverage(val_recall_history))}"  
+        message = (
+            f"Fold Number: {fold_num}\n"
+            f"Train Accuracy: {train_accuracy}\n"
+            f"Train Loss: {train_loss}\n"
+            f"Val Accuracy: {val_accuracy}\n"
+            f"Val Loss: {val_loss}\n"
+            f"Val Precision: {val_precision}\n"
+            f"Val Recall: {val_recall}\n"      
+            f"Val F1-Score: {self.calcF1Score(val_precision, val_recall)}\n"
+            f"ROC: {roc_auc}\n"  
+            f"PRROC: {pr_auc}\n"  
             )
         
         with open(self.log_file, 'a') as file:
@@ -40,11 +48,12 @@ class Logger:
             file.write("\n")
             file.write(f"Time taken: {self.calcTimeElapsed(start_time)}")
             file.write("\n")
-            file.write(avgMsg)
+            file.write(message)
             file.write("\n")
         # print(log_message, end='')
         
     def calcF1Score(self, precision, recall):
         return round((precision * recall * 2) / (precision + recall), 4)
+    
     def calcAverage(self, history):
         return round(sum(history) / len(history), 4)

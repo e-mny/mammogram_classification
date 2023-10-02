@@ -53,8 +53,15 @@ class ModelFactory:
         for name, param in model.named_parameters():
             param.requires_grad = False
 
+        for name, param in model.layer4[-1:].named_parameters():
+            # if "2" in name: # Second last layer of layer4[-1]
+            #     param.requires_grad = True
+            if "2" in name: # Last layer of layer4[-1]
+                param.requires_grad = True
+                
         # num_features = model.fc.in_features
         # model.fc = nn.Linear(num_features, self.num_classes)
+        model = replaceFCLayer(model, self.num_classes)
         return model
     
     def create_resnet34(self):
@@ -62,18 +69,36 @@ class ModelFactory:
         for name, param in model.named_parameters():
             param.requires_grad = False
 
+        for name, param in model.layer4[-1:].named_parameters():
+            # if "2" in name: # Second last layer of layer4[-1]
+            #     param.requires_grad = True
+            if "3" in name: # Last layer of layer4[-1]
+                param.requires_grad = True
         
         # num_features = model.fc.in_features
         # model.fc = nn.Linear(num_features, self.num_classes)
+        model = replaceFCLayer(model, self.num_classes)
+
         return model
     
     def create_resnet50(self):
         model = models.resnet50(pretrained=self.pretrained)
         for name, param in model.named_parameters():
             param.requires_grad = False
+            
+        # for name, param in model.layer4[-1:].named_parameters():
+            # param.requires_grad = True # All layers
+            # if "2" in name: # Second last layer of layer4[-1]
+            #     param.requires_grad = True
+            # if "3" in name: # Last layer of layer4[-1]
+            #     param.requires_grad = True
+            
+        # for param in model.layer3[-1:].parameters():
+        #     param.requires_grad = True
 
         # num_features = model.fc.in_features
-        # model.fc = nn.Linear(num_features, self.num_classes)
+        # model.fc = nn.Linear(num_features, self.num_classe    s)
+        model = replaceFCLayer(model, self.num_classes)
         return model
     
     def create_vgg16(self):
@@ -229,6 +254,52 @@ def freezeLayers(model):
             param.requires_grad = True
         else:
             param.requires_grad = False
+    return model
+
+def reset_weights(model):
+    '''
+        Try resetting model weights to avoid
+        weight leakage.
+    '''
+    for layer in model.children():
+        if hasattr(layer, 'reset_parameters'):
+            # print(f'Reset trainable parameters of layer = {layer}')
+            layer.reset_parameters()
+
+def replaceFCLayer(model, out_classes):
+    num_features = model.fc.in_features
+    # classifier_layer = nn.Sequential(
+    #     nn.Linear(num_features, 512),
+    #     nn.ReLU(),
+    #     nn.Dropout(0.5),
+    #     nn.Linear(512, 256),
+    #     nn.ReLU(),
+    #     # nn.Dropout(0.5),
+    #     # nn.Linear(512, 256),
+    #     # nn.ReLU(),
+    #     # nn.Dropout(0.5),
+    #     # nn.Linear(256, 128),
+    #     # nn.ReLU(),
+    #     # nn.Dropout(0.5),
+    #     # nn.Linear(128, 32),
+    #     # nn.Dropout(0.5),
+    #     nn.Linear(256, 1),
+    #     # nn.ReLU(),
+    #     nn.Sigmoid()
+    # )
+    
+    # From paper
+    classifier_layer = nn.Sequential(
+        nn.Dropout(0.5),
+        nn.Linear(num_features, 512),
+        nn.ReLU(),
+        nn.Linear(512, 32),
+        nn.ReLU(),
+        nn.Linear(32, 1),
+        nn.Sigmoid()
+    )
+    model.fc = classifier_layer
+    
     return model
 
 # # Example usage

@@ -7,16 +7,18 @@ import numpy as np
 def plotGraph(DATASET, MODEL, train_accuracy_history, train_loss_history, val_accuracy_history, val_loss_history, num_epochs, y_preds, y_targets):
     print("Plotting graph now")
     timenow = datetime.datetime.now()
-    formatted_datetime = timenow.strftime("%d-%m-%Y_%H%M%S")
+    formatted_datetime = timenow.strftime("%m-%d-%Y_%H%M%S")
     f1_scores = []
 
     # AUC
     fpr, tpr, _ = roc_curve(y_preds, y_targets)
     roc_auc = auc(fpr, tpr)
+    print(f"ROC_AUC: {roc_auc}")
 
     # PRAUC
     precision, recall, thresholds = precision_recall_curve(y_preds, y_targets)
     pr_auc = auc(recall, precision)
+    print(f"PRROC_AUC: {pr_auc}")
 
     # Accuracy and Losses
 
@@ -36,7 +38,7 @@ def plotGraph(DATASET, MODEL, train_accuracy_history, train_loss_history, val_ac
     plt.savefig(f"./results/f1_score/{formatted_datetime}_{DATASET}_{MODEL}.png")
     plt.clf() # Clear figure
     # plt.show()
-    
+
     # fig, ax = plt.subplots(3, 1, figsize=(15,20))
     # fig.set_figure = (6, 30)
     # ax1, ax2, ax3 = ax
@@ -81,3 +83,5 @@ def plotGraph(DATASET, MODEL, train_accuracy_history, train_loss_history, val_ac
     plt.title('Training and Validation Accuracy')
     plt.legend(loc="upper left")
     plt.savefig(f"./results/accuracy/{formatted_datetime}_{DATASET}_{MODEL}.png")
+
+    return roc_auc, pr_auc
