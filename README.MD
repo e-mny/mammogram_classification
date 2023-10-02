@@ -15,3 +15,17 @@ Adam Optimizer\
 Mini-batch size: 32\
 Resampled resolution: 224 x 224\
 Softmax cross-entropy loss\
+
+### Running the code
+
+To run the code:
+`python main.py --model resnet50 --dataset CBIS-DDSM --num_epochs 50 --data_augment --early_stopping`
+
+This will run the code using ResNet50 model with the CBIS-DDSM dataset with the following parameters:
+- 50 epochs
+- Data Augmentation
+- Early Stopping (Patience: 5)
+
+---
+
+Refer to /models/modelFactory.py for the available models that can be used
