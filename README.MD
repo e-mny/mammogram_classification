@@ -11,10 +11,11 @@ Trying on CBIS-DDSM dataset
 - 3568 images (2111 Benign; 1457 Malignant)
 
 Adam Optimizer\
-1e-4 learning rate\
-Mini-batch size: 32\
-Resampled resolution: 224 x 224\
-Softmax cross-entropy loss
+LR: 1 x 10<sup>-4</sup>\
+Weight Decay: 1 x 10<sup>-3</sup>\
+Mini-batch size: 16\
+Resampled resolution: 224 x 224
+
 
 ### Running the code
 
