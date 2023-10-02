@@ -14,7 +14,7 @@ Adam Optimizer\
 1e-4 learning rate\
 Mini-batch size: 32\
 Resampled resolution: 224 x 224\
-Softmax cross-entropy loss\
+Softmax cross-entropy loss
 
 ### Running the code
 
