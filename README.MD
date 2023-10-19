@@ -14,10 +14,11 @@ This will run the code using ResNet50 model with the CBIS-DDSM dataset with the 
 - 50 epochs
 - Data Augmentation
 - Early Stopping (Patience: 5)
+<br></br>
 
-* If using SLURM, use `sbatch cbis-resnet-slurm-job 100 true` to submit a job using ResNet50 for CBIS-DDSM dataset for 100 epochs and with data augmentation.
-- First argument (100) is the number of epochs
-- Second argument (true) is the boolean value for data augmentation
+\* If using SLURM, use `sbatch cbis-resnet-slurm-job 100 true` to submit a job using ResNet50 for CBIS-DDSM dataset for 100 epochs and with data augmentation.
+- First argument (`100`) is the number of epochs
+- Second argument (`true`) is the boolean value for data augmentation
 
 ---
 
