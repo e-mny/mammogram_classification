@@ -143,15 +143,6 @@ class CBISNewDataset(CustomImageDataset):
             self.data.append(image_path)
             self.labels.append(label)
             
-        
-        # # Pickle Method
-        # self.images_pickle = os.path.join(self.data_dir, "image_data.pickle")
-        # self.labels_pickle = os.path.join(self.data_dir, "label_data.pickle")
-        # with open(self.images_pickle, 'rb') as pickle_file:
-        #     self.img_array = pickle.load(pickle_file)
-
-        # with open(self.label_pickle, 'rb') as pickle_file:
-        #     self.df_labels = pickle.load(pickle_file)
 
     def __getitem__(self, idx):
         # Load and preprocess data sample at index idx
@@ -204,16 +195,6 @@ class CBISDataset(CustomImageDataset):
                 image_path = os.path.join(self.directory, self.mode, str(i + 1), "1-1.dcm_final.jpeg")
                 self.data.append(image_path)
                 self.labels.append(label)
-            
-        
-        # # Pickle Method
-        # self.images_pickle = os.path.join(self.data_dir, "image_data.pickle")
-        # self.labels_pickle = os.path.join(self.data_dir, "label_data.pickle")
-        # with open(self.images_pickle, 'rb') as pickle_file:
-        #     self.img_array = pickle.load(pickle_file)
-
-        # with open(self.label_pickle, 'rb') as pickle_file:
-        #     self.df_labels = pickle.load(pickle_file)
 
     def __getitem__(self, idx):
         # Load and preprocess data sample at index idx
@@ -249,14 +230,6 @@ class RSNADataset(CustomImageDataset):
             self.data.append(image_path)
             self.labels.append(label)
         
-        # # Pickle Method
-        # self.images_pickle = os.path.join(self.data_dir, "image_data.pickle")
-        # self.labels_pickle = os.path.join(self.data_dir, "label_data.pickle")
-        # with open(self.images_pickle, 'rb') as pickle_file:
-        #     self.img_array = pickle.load(pickle_file)
-
-        # with open(self.label_pickle, 'rb') as pickle_file:
-        #     self.df_labels = pickle.load(pickle_file)
 
     def __getitem__(self, idx):
         # Load and preprocess data sample at index idx
@@ -287,15 +260,7 @@ class VinDrDataset(CustomImageDataset):
             image_path = os.path.join(self.directory, self.mode, folder_name, dcm_file + ".dicom")
             self.data.append(image_path)
             self.label.append(label)
-            
-        # # Pickle Method
-        # self.images_pickle = os.path.join(self.data_dir, "image_data.pickle")
-        # self.labels_pickle = os.path.join(self.data_dir, "label_data.pickle")
-        # with open(self.images_pickle, 'rb') as pickle_file:
-        #     self.img_array = pickle.load(pickle_file)
-
-        # with open(self.label_pickle, 'rb') as pickle_file:
-        #     self.df_labels = pickle.load(pickle_file)
+        
 
     def __getitem__(self, idx):
         # Load and preprocess data sample at index idx
@@ -326,15 +291,6 @@ class CMMDDataset(CustomImageDataset):
             self.data.append(image_path)
             self.labels.append(label)
 
-
-        # # Pickle Method
-        # self.images_pickle = os.path.join(self.data_dir, "image_data.pickle")
-        # self.labels_pickle = os.path.join(self.data_dir, "label_data.pickle")
-        # with open(self.images_pickle, 'rb') as pickle_file:
-        #     self.img_array = pickle.load(pickle_file)
-
-        # with open(self.label_pickle, 'rb') as pickle_file:
-        #     self.df_labels = pickle.load(pickle_file)
     
     def __getitem__(self, idx):
         # Load and preprocess data sample at index idx
