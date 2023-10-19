@@ -46,6 +46,11 @@ Refer to /train/train_loader.py for:
 
 ---
 
+<h3>Results</h3>
+Results can be found in the /results folder, formatted in MM-DD-YYYY_HHMMSS_{dataset}_{model}.jpg
+
+---
+
 <h3>Datasets directories:</h3>
 1) CBIS-DDSM Dataset - '/home/emok/sq58/Code/Data/CBIS-DDSM/combined'<br>
 2) CMMD Dataset - '/home/emok/sq58_scratch/emok/Data/CMMD/images'<br>
