@@ -47,7 +47,7 @@ Refer to /train/train_loader.py for:
 ---
 
 <h3>Datasets directories:</h3>
-1) CBIS-DDSM Dataset - '/home/emok/sq58/Code/Data/CBIS-DDSM/combined'
-2) CMMD Dataset - '/home/emok/sq58_scratch/emok/Data/CMMD/images'
-3) RSNA Dataset - '/home/emok/sq58_scratch/emok/Data/RSNA/train_images'
+1) CBIS-DDSM Dataset - '/home/emok/sq58/Code/Data/CBIS-DDSM/combined'<br>
+2) CMMD Dataset - '/home/emok/sq58_scratch/emok/Data/CMMD/images'<br>
+3) RSNA Dataset - '/home/emok/sq58_scratch/emok/Data/RSNA/train_images'<br>
 4) VinDr Dataset - '/home/emok/sq58_scratch/emok/Data/VinDr/images'
