@@ -5,18 +5,6 @@
 3) Test various experiments to see whether FL helps or not
 
 
-### Properties
-
-Trying on CBIS-DDSM dataset
-- 3568 images (2111 Benign; 1457 Malignant)
-
-Adam Optimizer\
-LR: 1 x 10<sup>-4</sup>\
-Weight Decay: 1 x 10<sup>-3</sup>\
-Mini-batch size: 16\
-Resampled resolution: 224 x 224
-
-
 ### Running the code
 
 To run the code:
@@ -29,4 +17,32 @@ This will run the code using ResNet50 model with the CBIS-DDSM dataset with the 
 
 ---
 
-Refer to /models/modelFactory.py for the available models that can be used
+
+<h3>Key Files</h3>
+
+Refer to /models/modelFactory.py for:
+- available models 
+- edit the classifier layer 
+- control which layers to freeze
+
+<br></br>
+Refer to /data_loading/datasets.py for:
+- usage of image files
+
+<br></br>
+Refer to /data_loading/data_loader.py for:
+- data augmentation
+- data loading
+- calculating class distribution
+
+<br></br>
+Refer to /train/train_loader.py for:
+- training of model
+
+---
+
+Datasets directories:
+1) CBIS-DDSM Dataset - '/home/emok/sq58/Code/Data/CBIS-DDSM/combined'
+2) CMMD Dataset - '/home/emok/sq58_scratch/emok/Data/CMMD/images'
+3) RSNA Dataset - '/home/emok/sq58_scratch/emok/Data/RSNA/train_images'
+4) VinDr Dataset - '/home/emok/sq58_scratch/emok/Data/VinDr/images'

@@ -97,8 +97,7 @@ class CBISCombinedDataset(Dataset):
         self.images = images
         self.labels = label
         self.transform = transform
-        self.directory = "/home/emok/sq58/Code/Data/CBIS-DDSM/combined"
-        self.dataframe = pd.read_csv("/home/emok/sq58/Code/Data/CBIS-DDSM/combined_data.csv")
+        
         # for i in range(len(self.dataframe)):
         #     row = self.dataframe.iloc[i]
         #     folder_name = row['folder_name']
@@ -181,7 +180,7 @@ class CBISNewDataset(CustomImageDataset):
 
 
 class CBISDataset(CustomImageDataset):
-    def __init__(self, directory = "/home/emok/sq58/Code/Data/CBIS-DDSM", mode = 'train',transform = None):
+    def __init__(self, view: str = None, directory = "/home/emok/sq58/Code/Data/CBIS-DDSM", mode = 'train', transform = None):
         super(CBISDataset, self).__init__(directory, mode, transform)
         self.dataframe = pd.read_csv(self.df_dir)
         self.data = []
@@ -189,11 +188,14 @@ class CBISDataset(CustomImageDataset):
         if mode == "combined":
             for i in range(len(self.dataframe)):
                 row = self.dataframe.iloc[i]
-                folder_name = row['folder_name']
-                label = row['class_label']
-                image_path = os.path.join(self.directory, self.mode, str(i + 1), "1-1.dcm_downsized-cropped-c40g8.jpeg")
-                self.data.append(image_path)
-                self.labels.append(label)
+                if view is None or row['image view'] == view.upper():
+                    folder_name = row['folder_name']
+                    label = row['class_label']
+                    image_path = os.path.join(self.directory, self.mode, str(i + 1), "1-1.dcm_downsized-cropped.jpeg")
+                    self.data.append(image_path)
+                    self.labels.append(label)
+                
+                    
         else:
             for i in range(len(self.dataframe)):
                 row = self.dataframe.iloc[i]

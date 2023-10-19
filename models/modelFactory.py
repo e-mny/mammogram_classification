@@ -70,10 +70,10 @@ class ModelFactory:
             param.requires_grad = False
 
         for name, param in model.layer4[-1:].named_parameters():
-            # if "2" in name: # Second last layer of layer4[-1]
-            #     param.requires_grad = True
-            if "3" in name: # Last layer of layer4[-1]
+            if "2" in name: # last layer of layer4[-1]
                 param.requires_grad = True
+            # if "3" in name: # Last layer of layer4[-1]
+            #     param.requires_grad = True
         
         # num_features = model.fc.in_features
         # model.fc = nn.Linear(num_features, self.num_classes)
@@ -84,20 +84,23 @@ class ModelFactory:
     def create_resnet50(self):
         model = models.resnet50(pretrained=self.pretrained)
         for name, param in model.named_parameters():
+            # if "bn" in name: # Following EMBED Screening Model Paper
+            #     param.requires_grad = True
+            # else:
             param.requires_grad = False
             
-        # for name, param in model.layer4[-1:].named_parameters():
+        for name, param in model.layer4[-1:].named_parameters():
             # param.requires_grad = True # All layers
             # if "2" in name: # Second last layer of layer4[-1]
             #     param.requires_grad = True
-            # if "3" in name: # Last layer of layer4[-1]
-            #     param.requires_grad = True
+            if "3" in name: # Last layer of layer4[-1]
+                param.requires_grad = True
             
         # for param in model.layer3[-1:].parameters():
         #     param.requires_grad = True
 
         # num_features = model.fc.in_features
-        # model.fc = nn.Linear(num_features, self.num_classe    s)
+        # model.fc = nn.Linear(num_features, self.num_classes)
         model = replaceFCLayer(model, self.num_classes)
         return model
     
@@ -298,9 +301,31 @@ def replaceFCLayer(model, out_classes):
         nn.Linear(32, 1),
         nn.Sigmoid()
     )
+    
+    # From EMBED paper
+    classifier_layer = nn.Sequential(
+        nn.Linear(num_features, 1024),
+        nn.ReLU(),
+        nn.Linear(1024, 512),
+        nn.ReLU(),
+        nn.Linear(512, 128),
+        nn.ReLU(),
+        nn.Linear(128, 32),
+        nn.ReLU(),
+        nn.Linear(32, 1),
+        nn.Sigmoid()
+    )
     model.fc = classifier_layer
+
+    model.fc.apply(weights_init)
     
     return model
+
+# Define a Gaussian initialization for the final layer
+def weights_init(m):
+    if isinstance(m, nn.Linear):
+        nn.init.normal_(m.weight, mean=0, std=1e-2)
+        nn.init.constant_(m.bias, 0)
 
 # # Example usage
 # num_classes = 2

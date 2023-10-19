@@ -29,8 +29,9 @@ def generateHeatMap(sample_image, sample_title, model, device):
         # # Grad-CAM
         # class_idx = predicted_class.item()
         # feature_layer = [model.classifier[-1]]  # Example: last layer of ResNet-50
-        feature_layer = [model.layer4[-1].conv3]  # Example: last layer of ResNet-50
-        for param in model.layer4[-1].conv3.parameters():
+        feature_layer = [model.layer4[-1].conv2]  # Example: last layer of ResNet-34
+        # feature_layer = [model.layer4[-1].conv3]  # Example: last layer of ResNet-50
+        for param in feature_layer[0].parameters():
             param.requires_grad = True
         # print(feature_layer)
         cam = GradCAM(model=model, target_layers=feature_layer, use_cuda=True)

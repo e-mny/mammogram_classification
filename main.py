@@ -55,7 +55,7 @@ BATCH_SIZE = 16
 SEED = 42
 NUM_CLASSES = 2
 LEARNING_RATE = 1e-4
-WEIGHT_DECAY = 1e-3
+WEIGHT_DECAY = 1e-2
 RESAMPLE_RESOLUTION = (224, 224)
 TRAIN_RATIO = 0.7  # 70% for training
 VAL_RATIO = 0.3    # 30% for validation
@@ -129,12 +129,13 @@ for i, (train_index, val_index) in enumerate(sss.split(X, y), start=1):
     # criterion = nn.CrossEntropyLoss() # If using linear.out_features = 2
     criterion = nn.BCELoss() # If using sigmoid
     optimizer = optim.Adam(model.parameters(), lr=LEARNING_RATE)
+    optimizer = optim.Adam(model.parameters(), lr=LEARNING_RATE, weight_decay = 5e-4)
     
     
     # for LEARNING_RATE in LR_LIST:
     # for BATCH_SIZE in BATCHSIZE_LIST:
     # model.load_state_dict(torch.load(BASE_MODEL_PATH))
-    optimizer = optim.Adam(model.parameters(), lr=LEARNING_RATE, weight_decay=WEIGHT_DECAY)
+    # optimizer = optim.Adam(model.parameters(), lr=LEARNING_RATE, weight_decay=WEIGHT_DECAY)
     # reset_weights(model)
     print(f"--------FOLD {i}--------")
     start_fold_time = time.time()

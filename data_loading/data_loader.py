@@ -98,7 +98,7 @@ def createTransforms(data_augmentation_bool):
         # transforms.RandomAffine(degrees=0, scale=(1, 1.2)),
         transforms.RandomVerticalFlip(),
         transforms.RandomHorizontalFlip(),
-        # transforms.RandomRotation(degrees=90, expand=False),
+        transforms.RandomRotation(degrees=90, expand=False),
         # transforms.ColorJitter(brightness = 0.2, contrast= 0.2),
         # transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
         transforms.ToTensor(),
@@ -180,7 +180,9 @@ def createDatasets(dataset, data_augment):
         
     if dataset == "CBIS-DDSM":
         # Create PyTorch Datasets
-        combined_dataset = CBISDataset(mode = "combined", transform = None)
+        # combined_dataset = CBISDataset(view = "MLO", mode = "combined", transform = None)
+        # combined_dataset = CBISDataset(view = "CC", mode = "combined", transform = None)
+        combined_dataset = CBISDataset(view = None, mode = "combined", transform = None)
         X, y = np.array(combined_dataset.data), np.array(combined_dataset.labels)
     elif dataset == "CBIS-DDSM_new":
         # Create PyTorch DataLoader
@@ -201,6 +203,8 @@ def stratifiedDataLoader(X, y, train_index, val_index, transforms, batch_size):
     y_train, y_val = y[train_index], y[val_index]
     train_transforms, val_transforms = transforms
 
+    print(train_transforms)
+    print(val_transforms)
     # Create DataLoader objects for training, validation, and test sets
     train_dataset = CBISCombinedDataset(X_train, y_train, transform=train_transforms)
     val_dataset = CBISCombinedDataset(X_val, y_val, transform=val_transforms)  # No augmentation for validation

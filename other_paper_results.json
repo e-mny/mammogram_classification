@@ -1,0 +1,129 @@
+{
+    "1": {
+    "paper": "Transfer Learning and Fine Tuning in Breast Mammogram Abnormalities Classification on CBIS-DDSM Database",
+    "DOI": "https://dx.doi.org/10.25046/aj050220",
+    "Year": 2020,
+    "author": "Lenin G. Falconi",
+    "performance": {
+        "ACC": 0.844,
+        "AUC": 0.844,
+        "F1": 0.85
+    },
+    "Network": "VGG16"
+    },
+
+    "2": {
+    "paper": "Deep learning in mammography images segmentation and classification: Automated CNN approach",
+    "DOI": "https://doi.org/10.1016/j.aej.2021.03.048",
+    "Year": 2021,
+    "author": "Wessam M. Salama",
+    "performance": {
+        "no_data_augment": {
+            "ACC": 0.8165,
+            "AUC": 0.8089,
+            "Precision": 0.8199,
+            "F1": 0.8122
+        },
+        "data_augment": {
+            "ACC": 0.8678,
+            "AUC": 0.8689,
+            "Precision": 0.8653,
+            "F1": 0.8623
+        }
+    },
+    "Network": "Resnet50"
+    },
+
+    "3": {
+    "paper": "Automatic computer-aided diagnosis system for mass detection and classification in mammography",
+    "DOI": "https://doi.org/10.1007/s11042-020-09991-3",
+    "Year": 2020,
+    "author": "Ilhame Ait Lbachir",
+    "performance": {
+        "ACC": 0.9044,
+        "AUC": 0.9
+    },
+    "Network": "Resnet50"
+    },
+
+    "4": {
+    "paper": "Breast Cancer Diagnosis in Two-View Mammography Using End-to-End Trained EfficientNet-Based Convolutional Network",
+    "DOI": "https://doi.org/10.1109/ACCESS.2022.3193250",
+    "Year": 2022,
+    "author": "DANIEL G. P. PETRINI",
+    "performance": {
+        "ACC": 0.8513,
+        "AUC": 0.9344
+    },
+    "Network": "Resnet50"
+    },
+
+    "5": {
+    "paper": "Novel breast cancer classification framework based on deep learning",
+    "DOI": "https://doi.org/10.1049/iet-ipr.2020.0122",
+    "Year": 2020,
+    "author": "Wessam M. Salama",
+    "performance": {
+        "no_SVM_classifier":{
+            "ACC": 0.9478,
+            "AUC": 0.9278,
+            "F1": 0.9387
+        },
+        "SVM_classifier":{
+            "ACC": 0.9698,
+            "AUC": 0.9698,
+            "F1": 0.9654
+
+        }
+    },
+    "Network": "Resnet50"
+    },
+
+    "6": {
+    "paper": "Deep Generative Breast Cancer Screening and Diagnosis",
+    "DOI": "https://doi.org/10.1007/978-3-030-00934-2_95",
+    "Year": 2018,
+    "author": "Shayan Shams",
+    "performance": {
+        "ACC": 0.75
+    },
+    "Network": "GAN"
+    },
+
+    "8": {
+    "paper": "Breast cancer detection and localization using mobilenet based transfer learning for mammograms",
+    "DOI": "https://doi.org/10.1007/978-3-030-43364-2_2",
+    "Year": 2020,
+    "author": "Ansar W.",
+    "performance": {
+        "ACC": 0.745
+    },
+    "Network": "MobileNet"
+    },
+
+    "9": {
+    "paper": "A novel model for breast mass classification using cross-modal pathological semantic mining and organic integration of multi-feature fusions",
+    "DOI": "https://doi.org/10.1016/j.ins.2020.05.080",
+    "Year": 2020,
+    "author": "Zhang H.",
+    "performance": {
+        "ACC": 0.8705
+    },
+    "Network": "Custom Model DE-Ada*"
+    },
+
+    "11": {
+    "paper": "Breast cancer detection: Shallow convolutional neural network against deep convolutional neural networks based approach",
+    "DOI": "https://doi.org/10.3389/fgene.2022.1097207",
+    "Year": 2022,
+    "author": "Himanish Shekhar Das",
+    "performance": {
+        "ACC": 0.892
+    },
+    "Network": "Xception"
+    }
+
+    
+
+    
+}

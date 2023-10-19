@@ -26,7 +26,7 @@ class Logger:
         val_loss = dataDict['val_loss']
         val_precision = dataDict['val_precision']
         val_recall = dataDict['val_recall']
-        roc_auc = dataDict['roc_auc'],
+        roc_auc = dataDict['roc_auc']
         pr_auc = dataDict['prroc_auc']
 
         message = (
