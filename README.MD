@@ -15,6 +15,10 @@ This will run the code using ResNet50 model with the CBIS-DDSM dataset with the 
 - Data Augmentation
 - Early Stopping (Patience: 5)
 
+* If using SLURM, use `sbatch cbis-resnet-slurm-job 100 true` to submit a job using ResNet50 for CBIS-DDSM dataset for 100 epochs and with data augmentation.
+- First argument (100) is the number of epochs
+- Second argument (true) is the boolean value for data augmentation
+
 ---
 
 
@@ -22,8 +26,8 @@ This will run the code using ResNet50 model with the CBIS-DDSM dataset with the 
 
 Refer to /models/modelFactory.py for:
 - available models 
-- edit the classifier layer 
-- control which layers to freeze
+- editing the classifier layer 
+- controling which layers to freeze
 
 <br></br>
 Refer to /data_loading/datasets.py for:
@@ -41,7 +45,7 @@ Refer to /train/train_loader.py for:
 
 ---
 
-Datasets directories:
+<h3>Datasets directories:</h3>
 1) CBIS-DDSM Dataset - '/home/emok/sq58/Code/Data/CBIS-DDSM/combined'
 2) CMMD Dataset - '/home/emok/sq58_scratch/emok/Data/CMMD/images'
 3) RSNA Dataset - '/home/emok/sq58_scratch/emok/Data/RSNA/train_images'

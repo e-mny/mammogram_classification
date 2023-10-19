@@ -1,0 +1,2993 @@
+
+30-08-2023_1313
+Time taken: 0:40:52
+Train Accuracy: 0.9368263473053894
+Train Loss: 0.1439631049518172
+Val Accuracy: 0.589108527131783
+Val Loss: 1.6172269177991185
+Val Precision: 0.5930230110233432
+Val Recall: 0.589108527131783
+Val F1-Score: 0.5910592879104328
+
+31-08-2023_0310
+Time taken: 1:58:01
+Train Accuracy: 0.6464903526280773
+Train Loss: 0.6167488018090421
+Val Accuracy: 0.5388449612403101
+Val Loss: 0.7127991110086442
+Val Precision: 0.5434580892523144
+Val Recall: 0.5388449612403101
+Val F1-Score: 0.5411416939194739
+
+31-08-2023_0614
+Time taken: 1:41:02
+Train Accuracy: 0.6458749168330007
+Train Loss: 0.6168324193326721
+Val Accuracy: 0.5404651162790703
+Val Loss: 0.7134020160564356
+Val Precision: 0.5436080022523982
+Val Recall: 0.5404651162790703
+Val F1-Score: 0.5420320034234795
+
+01-09-2023_0050
+Time taken: 0:27:15
+Train Accuracy: 0.7558416500332669
+Train Loss: 0.49974597545697336
+Val Accuracy: 0.5942868217054262
+Val Loss: 0.6991660284215493
+Val Precision: 0.6039914010843852
+Val Recall: 0.5942868217054262
+Val F1-Score: 0.5990998138181278
+
+01-09-2023_0907
+Time taken: 0:27:06
+Train Accuracy: 0.7589121756487025
+Train Loss: 0.49783362457409824
+Val Accuracy: 0.5929534883720933
+Val Loss: 0.7053589483456953
+Val Precision: 0.6030352297626593
+Val Recall: 0.5929534883720933
+Val F1-Score: 0.5979518663966993
+
+07-09-2023_2117
+Time taken: 2:57:35
+Train Accuracy: 0.6089820359281437
+Train Loss: 0.655041354894638
+Val Accuracy: 0.6035658914728682
+Val Loss: 0.6625520435117541
+Val Precision: 0.6509690823715928
+Val Recall: 0.6035658914728682
+Val F1-Score: 0.6263719110498038
+
+08-09-2023_1305
+Time taken: 3:24:40
+Train Accuracy: 0.6660678642714571
+Train Loss: 0.6039779199564711
+Val Accuracy: 0.626046511627907
+Val Loss: 0.6315028918640955
+Val Precision: 0.6380888769126308
+Val Recall: 0.626046511627907
+Val F1-Score: 0.6320103354766755
+
+08-09-2023_1613
+Time taken: 2:13:00
+Train Accuracy: 0.6664
+Train Loss: 0.599
+Val Accuracy: 0.622
+Val Loss: 0.634
+Val Precision: 0.6225
+Val Recall: 0.622
+Val F1-Score: 0.6222498995580555
+
+08-09-2023_2147
+Time taken: 0:04:51
+Train Accuracy: 0.5469
+Train Loss: 0.7305
+Val Accuracy: 0.5721
+Val Loss: 0.6945
+Val Precision: 0.5809
+Val Recall: 0.5721
+Val F1-Score: 0.5764664180398958
+
+08-09-2023_2204
+Time taken: 0:04:49
+Train Accuracy: 0.5409
+Train Loss: 0.7053
+Val Accuracy: 0.5721
+Val Loss: 0.6977
+Val Precision: 0.5941
+Val Recall: 0.5721
+Val F1-Score: 0.5828924884239411
+
+09-09-2023_1203
+Time taken: 0:19:49
+Train Accuracy: 0.5462
+Train Loss: 0.7239
+Val Accuracy: 0.5535
+Val Loss: 0.6999
+Val Precision: 0.5256
+Val Recall: 0.5535
+Val F1-Score: 0.5391893244370308
+
+09-09-2023_1224
+Time taken: 0:20:25
+Train Accuracy: 0.5549
+Train Loss: 0.7166
+Val Accuracy: 0.5721
+Val Loss: 0.6843
+Val Precision: 0.5609
+Val Recall: 0.5721
+Val F1-Score: 0.5664446425419241
+
+09-09-2023_1240
+Time taken: 0:05:56
+Train Accuracy: 0.5383
+Train Loss: 0.7193
+Val Accuracy: 0.5783
+Val Loss: 0.697
+Val Precision: 0.5792
+Val Recall: 0.5783
+Val F1-Score: 0.5787496501079913
+
+09-09-2023_1246
+Time taken: 0:06:22
+Train Accuracy: 0.5449
+Train Loss: 0.7144
+Val Accuracy: 0.5302
+Val Loss: 0.7076
+Val Precision: 0.5638
+Val Recall: 0.5302
+Val F1-Score: 0.5464840219378427
+
+09-09-2023_1255
+Time taken: 0:07:10
+Train Accuracy: 0.5589
+Train Loss: 0.7058
+Val Accuracy: 0.5597
+Val Loss: 0.6895
+Val Precision: 0.567
+Val Recall: 0.5597
+Val F1-Score: 0.5633263512913819
+
+09-09-2023_2135
+Time taken: 0:04:59
+Train Accuracy: 0.5615
+Train Loss: 0.7033
+Val Accuracy: 0.569
+Val Loss: 0.6867
+Val Precision: 0.5723
+Val Recall: 0.569
+Val F1-Score: 0.5706452291246824
+
+09-09-2023_2148
+Time taken: 0:01:47
+Train Accuracy: 0.5868
+Train Loss: 0.6822
+Val Accuracy: 0.5845
+Val Loss: 0.6835
+Val Precision: 0.5864
+Val Recall: 0.5845
+Val F1-Score: 0.5854484584507644
+
+09-09-2023_2152
+Time taken: 0:01:48
+Train Accuracy: 0.5509
+Train Loss: 0.711
+Val Accuracy: 0.5736
+Val Loss: 0.714
+Val Precision: 0.6782
+Val Recall: 0.5736
+Val F1-Score: 0.6215298290461735
+
+09-09-2023_2154
+Time taken: 0:01:47
+Train Accuracy: 0.5436
+Train Loss: 0.7148
+Val Accuracy: 0.5736
+Val Loss: 0.7443
+Val Precision: 0.6413
+Val Recall: 0.5736
+Val F1-Score: 0.6055637171783685
+
+09-09-2023_2256
+Time taken: 0:55:31
+Train Accuracy: 0.7382
+Train Loss: 0.5203
+Val Accuracy: 0.6541
+Val Loss: 0.6253
+Val Precision: 0.6537
+Val Recall: 0.6541
+Val F1-Score: 0.6538999388285671
+
+09-09-2023_2343
+Time taken: 1:39:50
+Train Accuracy: 0.695
+Train Loss: 0.5758
+Val Accuracy: 0.6464
+Val Loss: 0.622
+Val Precision: 0.6473
+Val Recall: 0.6464
+Val F1-Score: 0.646849686944423
+
+10-09-2023_0529
+Time taken: 6:22:38
+Train Accuracy: 0.9529
+Train Loss: 0.1285
+Val Accuracy: 0.6983
+Val Loss: 0.8077
+Val Precision: 0.6974
+Val Recall: 0.6983
+Val F1-Score: 0.6978
+
+10-09-2023_0606
+Time taken: 7:00:34
+Train Accuracy: 0.9128
+Train Loss: 0.2166
+Val Accuracy: 0.6933
+Val Loss: 0.7459
+Val Precision: 0.6935
+Val Recall: 0.6933
+Val F1-Score: 0.6934
+
+10-09-2023_1254
+Time taken: 1:12:47
+Train Accuracy: 0.7134
+Train Loss: 0.5538
+Val Accuracy: 0.6406
+Val Loss: 0.6291
+Val Precision: 0.6411
+Val Recall: 0.6406
+Val F1-Score: 0.6408
+
+10-09-2023_1421
+Time taken: 1:12:34
+Train Accuracy: 0.7167
+Train Loss: 0.5487
+Val Accuracy: 0.6364
+Val Loss: 0.6208
+Val Precision: 0.6356
+Val Recall: 0.6364
+Val F1-Score: 0.636
+
+10-09-2023_1536
+Time taken: 1:12:16
+Train Accuracy: 0.709
+Train Loss: 0.5565
+Val Accuracy: 0.6378
+Val Loss: 0.6324
+Val Precision: 0.6452
+Val Recall: 0.6378
+Val F1-Score: 0.6415
+
+10-09-2023_1653
+Time taken: 0:35:27
+Train Accuracy: 0.7087
+Train Loss: 0.5592
+Val Accuracy: 0.6459
+Val Loss: 0.6185
+Val Precision: 0.6477
+Val Recall: 0.6459
+Val F1-Score: 0.6468
+
+10-09-2023_1732
+Time taken: 0:35:54
+Train Accuracy: 0.714
+Train Loss: 0.5585
+Val Accuracy: 0.6516
+Val Loss: 0.6094
+Val Precision: 0.656
+Val Recall: 0.6516
+Val F1-Score: 0.6538
+
+10-09-2023_1737
+Time taken: 6:29:43
+Train Accuracy: 0.6819
+Train Loss: 0.5837
+Val Accuracy: 0.5943
+Val Loss: 0.6858
+Val Precision: 0.5943
+Val Recall: 0.5943
+Val F1-Score: 0.5943
+
+10-09-2023_1747
+Time taken: 6:30:13
+Train Accuracy: 0.6468
+Train Loss: 0.6236
+Val Accuracy: 0.5925
+Val Loss: 0.6674
+Val Precision: 0.5961
+Val Recall: 0.5925
+Val F1-Score: 0.5943
+
+10-09-2023_1821
+Time taken: 0:46:38
+Train Accuracy: 0.7158
+Train Loss: 0.557
+Val Accuracy: 0.66
+Val Loss: 0.6026
+Val Precision: 0.6654
+Val Recall: 0.66
+Val F1-Score: 0.6627
+
+10-09-2023_1853
+Time taken: 0:57:02
+Train Accuracy: 0.7101
+Train Loss: 0.5605
+Val Accuracy: 0.6386
+Val Loss: 0.6228
+Val Precision: 0.6441
+Val Recall: 0.6386
+Val F1-Score: 0.6413
+
+10-09-2023_2038
+Time taken: 0:17:22
+Train Accuracy: 0.6482
+Train Loss: 0.625
+Val Accuracy: 0.491
+Val Loss: 0.7746
+Val Precision: 0.4774
+Val Recall: 0.491
+Val F1-Score: 0.4841
+
+10-09-2023_2111
+Time taken: 0:17:40
+Train Accuracy: 0.6629
+Train Loss: 0.6108
+Val Accuracy: 0.5068
+Val Loss: 0.7378
+Val Precision: 0.5387
+Val Recall: 0.5068
+Val F1-Score: 0.5223
+
+10-09-2023_2243
+Time taken: 0:26:09
+Train Accuracy: 0.6923
+Train Loss: 0.5785
+Val Accuracy: 0.5698
+Val Loss: 0.7251
+Val Precision: 0.5937
+Val Recall: 0.5698
+Val F1-Score: 0.5815
+
+11-09-2023_0057
+Time taken: 2:06:10
+Train Accuracy: 0.9492
+Train Loss: 0.1404
+Val Accuracy: 0.5859
+Val Loss: 1.019
+Val Precision: 0.6146
+Val Recall: 0.5859
+Val F1-Score: 0.5999
+
+11-09-2023_0148
+Time taken: 7:41:36
+Train Accuracy: 0.8577
+Train Loss: 0.324
+Val Accuracy: 0.6833
+Val Loss: 0.7023
+Val Precision: 0.6831
+Val Recall: 0.6833
+Val F1-Score: 0.6832
+
+11-09-2023_1224
+Time taken: 0:26:32
+Train Accuracy: 0.7129
+Train Loss: 0.5577
+Val Accuracy: 0.6478
+Val Loss: 0.6198
+Val Precision: 0.6464
+Val Recall: 0.6478
+Val F1-Score: 0.6471
+
+11-09-2023_1715
+Time taken: 7:38:51
+Train Accuracy: 0.9545
+Train Loss: 0.1264
+Val Accuracy: 0.6925
+Val Loss: 0.8241
+Val Precision: 0.6926
+Val Recall: 0.6925
+Val F1-Score: 0.6925
+
+11-09-2023_1742
+Time taken: 3:03:50
+Train Accuracy: 0.7041
+Train Loss: 0.5679
+Val Accuracy: 0.6299
+Val Loss: 0.6353
+Val Precision: 0.6416
+Val Recall: 0.6299
+Val F1-Score: 0.6357
+
+11-09-2023_2009
+Time taken: 7:41:04
+Train Accuracy: 0.669
+Train Loss: 0.5988
+Val Accuracy: 0.601
+Val Loss: 0.6851
+Val Precision: 0.6044
+Val Recall: 0.601
+Val F1-Score: 0.6027
+
+11-09-2023_2222
+Time taken: 3:23:08
+Train Accuracy: 0.5953
+Train Loss: 0.6719
+Val Accuracy: 0.5826
+Val Loss: 0.6921
+Val Precision: 0.5872
+Val Recall: 0.5826
+Val F1-Score: 0.5849
+
+14-09-2023_2235
+Time taken: 0:12:53
+Fold Number: 0
+Train Accuracy: 0.5941450432468397
+Train Loss: 0.6714353637492403
+Val Accuracy: 0.586046511627907
+Val Loss: 0.6702671987669808
+Val Precision: 0.5370370370370371
+Val Recall: 0.1070110701107011
+Val F1-Score: 0.1785
+
+14-09-2023_2247
+Time taken: 0:11:52
+Fold Number: 1
+Train Accuracy: 0.6260811709913506
+Train Loss: 0.6548345177731616
+Val Accuracy: 0.5813953488372093
+Val Loss: 0.6831331309818086
+Val Precision: 1.0
+Val Recall: 0.0036900369003690036
+Val F1-Score: 0.0074
+
+14-09-2023_2259
+Time taken: 0:11:40
+Fold Number: 2
+Train Accuracy: 0.6027944111776448
+Train Loss: 0.6614659098868675
+Val Accuracy: 0.5937984496124031
+Val Loss: 0.6674772330692836
+Val Precision: 0.5463917525773195
+Val Recall: 0.19557195571955718
+Val F1-Score: 0.288
+
+14-09-2023_2306
+Time taken: 0:48:34
+Fold Number: 0
+Train Accuracy: 0.6021290751829674
+Train Loss: 0.6677448977815345
+Val Accuracy: 0.57984496124031
+Val Loss: 0.6777603484335399
+Val Precision: 0.5
+Val Recall: 0.007380073800738007
+Val F1-Score: 0.0145
+
+14-09-2023_2311
+Time taken: 0:11:45
+Fold Number: 3
+Train Accuracy: 0.6240851630073186
+Train Loss: 0.6523601171818185
+Val Accuracy: 0.6124031007751938
+Val Loss: 0.6663453124818348
+Val Precision: 0.5929203539823009
+Val Recall: 0.24723247232472326
+Val F1-Score: 0.349
+
+15-09-2023_0038
+Time taken: 1:07:08
+Fold Number: 0
+Train Accuracy: 0.5921490352628077
+Train Loss: 0.6672832217622311
+Val Accuracy: 0.5906976744186047
+Val Loss: 0.6716643004190355
+Val Precision: 0.5255474452554745
+Val Recall: 0.2656826568265683
+Val F1-Score: 0.3529
+
+15-09-2023_0928
+Time taken: 0:09:54
+Fold Number: 0
+Train Accuracy: 0.5808383233532934
+Train Loss: 0.6817989958093521
+Val Accuracy: 0.5922480620155038
+Val Loss: 0.6741169123422532
+Val Precision: 0.7222222222222222
+Val Recall: 0.04797047970479705
+Val F1-Score: 0.09
+
+15-09-2023_1035
+Time taken: 1:03:27
+Fold Number: 0
+Train Accuracy: 0.5941450432468397
+Train Loss: 0.6719865646768124
+Val Accuracy: 0.5844961240310077
+Val Loss: 0.6783272169885182
+Val Precision: 0.6363636363636364
+Val Recall: 0.025830258302583026
+Val F1-Score: 0.0496
+
+15-09-2023_1120
+Time taken: 0:44:51
+Fold Number: 1
+Train Accuracy: 0.614105123087159
+Train Loss: 0.6504187685378054
+Val Accuracy: 0.5829457364341085
+Val Loss: 0.674895874091557
+Val Precision: 0.5192307692307693
+Val Recall: 0.0996309963099631
+Val F1-Score: 0.1672
+
+18-09-2023_1305
+Time taken: 0:05:38
+Fold Number: 0
+Train Accuracy: 0.5395874916833001
+Train Loss: 0.7267975540871315
+Val Accuracy: 0.5333333333333333
+Val Loss: 0.6995053461619786
+Val Precision: 0.42990654205607476
+Val Recall: 0.33948339483394835
+Val F1-Score: 0.3794
+
+18-09-2023_1309
+Time taken: 0:04:30
+Fold Number: 1
+Train Accuracy: 0.5375914836992681
+Train Loss: 0.7081183702387708
+Val Accuracy: 0.5984496124031008
+Val Loss: 0.6847569289661589
+Val Precision: 0.5340909090909091
+Val Recall: 0.34686346863468637
+Val F1-Score: 0.4206
+
+18-09-2023_1314
+Time taken: 0:04:28
+Fold Number: 2
+Train Accuracy: 0.5688622754491018
+Train Loss: 0.7064897062930655
+Val Accuracy: 0.57984496124031
+Val Loss: 0.7019071068082537
+Val Precision: 0.5
+Val Recall: 0.1070110701107011
+Val F1-Score: 0.1763
+
+18-09-2023_1318
+Time taken: 0:04:32
+Fold Number: 3
+Train Accuracy: 0.5508982035928144
+Train Loss: 0.7111133856976286
+Val Accuracy: 0.5565891472868217
+Val Loss: 0.6902353309449696
+Val Precision: 0.46153846153846156
+Val Recall: 0.33210332103321033
+Val F1-Score: 0.3863
+
+18-09-2023_1323
+Time taken: 0:04:29
+Fold Number: 4
+Train Accuracy: 0.5562208915502329
+Train Loss: 0.7130419827522115
+Val Accuracy: 0.5612403100775194
+Val Loss: 0.688705237138839
+Val Precision: 0.43617021276595747
+Val Recall: 0.15129151291512916
+Val F1-Score: 0.2247
+
+18-09-2023_1323
+Time taken: 0:23:50
+Fold Number: Average of all 5 folds
+Train Accuracy: 0.5506320691949435
+Train Loss: 0.7131121998137615
+Val Accuracy: 0.5658914728682171
+Val Loss: 0.69302199000404
+Val Precision: 0.4723412250902806
+Val Recall: 0.25535055350553504
+Val F1-Score: 0.3315
+
+18-09-2023_1449
+Time taken: 0:05:30
+Fold Number: 0
+Train Accuracy: 0.5568862275449101
+Train Loss: 0.7155906913128305
+Val Accuracy: 0.5193798449612403
+Val Loss: 0.7086173664955866
+Val Precision: 0.4506329113924051
+Val Recall: 0.6568265682656826
+Val F1-Score: 0.5345
+
+18-09-2023_1454
+Time taken: 0:04:41
+Fold Number: 1
+Train Accuracy: 0.543579507651364
+Train Loss: 0.7130757430766491
+Val Accuracy: 0.5844961240310077
+Val Loss: 0.6789975194703965
+Val Precision: 0.5080213903743316
+Val Recall: 0.3505535055350554
+Val F1-Score: 0.4148
+
+18-09-2023_1458
+Time taken: 0:04:42
+Fold Number: 2
+Train Accuracy: 0.5508982035928144
+Train Loss: 0.7132608497396429
+Val Accuracy: 0.5581395348837209
+Val Loss: 0.6933964008376712
+Val Precision: 0.47058823529411764
+Val Recall: 0.4132841328413284
+Val F1-Score: 0.4401
+
+18-09-2023_1503
+Time taken: 0:04:36
+Fold Number: 3
+Train Accuracy: 0.5409181636726547
+Train Loss: 0.7173536140868004
+Val Accuracy: 0.47751937984496123
+Val Loss: 0.7398319641749064
+Val Precision: 0.435546875
+Val Recall: 0.8228782287822878
+Val F1-Score: 0.5696
+
+18-09-2023_1508
+Time taken: 0:04:44
+Fold Number: 4
+Train Accuracy: 0.5355954757152362
+Train Loss: 0.7138689033528591
+Val Accuracy: 0.4434108527131783
+Val Loss: 0.7576571674573989
+Val Precision: 0.4157088122605364
+Val Recall: 0.8007380073800738
+Val F1-Score: 0.5473
+
+18-09-2023_1508
+Time taken: 0:24:24
+Fold Number: Average of all 5 folds
+Train Accuracy: 0.5455755156353959
+Train Loss: 0.7146299603137564
+Val Accuracy: 0.5165891472868218
+Val Loss: 0.715700083687192
+Val Precision: 0.4560996448642782
+Val Recall: 0.6088560885608856
+Val F1-Score: 0.5215
+
+18-09-2023_1525
+Time taken: 0:04:53
+Fold Number: 0
+Train Accuracy: 0.564870259481038
+Train Loss: 0.707034280959596
+Val Accuracy: 0.5674418604651162
+Val Loss: 0.696242888768514
+Val Precision: 0.46875
+Val Recall: 0.22140221402214022
+Val F1-Score: 0.3008
+
+18-09-2023_1530
+Time taken: 0:04:50
+Fold Number: 1
+Train Accuracy: 0.5389221556886228
+Train Loss: 0.7098781669393499
+Val Accuracy: 0.5782945736434109
+Val Loss: 0.7278713555563063
+Val Precision: 0.4666666666666667
+Val Recall: 0.025830258302583026
+Val F1-Score: 0.049
+
+18-09-2023_1535
+Time taken: 0:04:52
+Fold Number: 2
+Train Accuracy: 0.5422488356620093
+Train Loss: 0.7031847580950311
+Val Accuracy: 0.5705426356589147
+Val Loss: 0.6961870675995236
+Val Precision: 0.39285714285714285
+Val Recall: 0.04059040590405904
+Val F1-Score: 0.0736
+
+18-09-2023_1540
+Time taken: 0:04:57
+Fold Number: 3
+Train Accuracy: 0.5575515635395875
+Train Loss: 0.7055270139207231
+Val Accuracy: 0.5612403100775194
+Val Loss: 0.6880272570110503
+Val Precision: 0.4745762711864407
+Val Recall: 0.4132841328413284
+Val F1-Score: 0.4418
+
+18-09-2023_1545
+Time taken: 0:04:43
+Fold Number: 4
+Train Accuracy: 0.541583499667332
+Train Loss: 0.725962517109323
+Val Accuracy: 0.5922480620155038
+Val Loss: 0.6720228592554728
+Val Precision: 0.5444444444444444
+Val Recall: 0.18081180811808117
+Val F1-Score: 0.2715
+
+18-09-2023_1545
+Time taken: 0:24:24
+Fold Number: Average of all 5 folds
+Train Accuracy: 0.549035262807718
+Train Loss: 0.7103173474048046
+Val Accuracy: 0.5739534883720931
+Val Loss: 0.6960702856381733
+Val Precision: 0.4694589050309389
+Val Recall: 0.17638376383763837
+Val F1-Score: 0.2564
+
+18-09-2023_2038
+Time taken: 0:05:08
+Fold Number: 0
+Train Accuracy: 0.5515635395874917
+Train Loss: 0.7031704022529277
+Val Accuracy: 0.4666666666666667
+Val Loss: 0.7835544489678883
+Val Precision: 0.4335154826958106
+Val Recall: 0.8782287822878229
+Val F1-Score: 0.5805
+
+18-09-2023_2046
+Time taken: 0:05:31
+Fold Number: 0
+Train Accuracy: 0.5495675316034597
+Train Loss: 0.706325833996137
+Val Accuracy: 0.4682170542635659
+Val Loss: 0.7387489378452301
+Val Precision: 0.43357933579335795
+Val Recall: 0.8671586715867159
+Val F1-Score: 0.5781
+
+18-09-2023_2052
+Time taken: 0:06:08
+Fold Number: 1
+Train Accuracy: 0.5582168995342648
+Train Loss: 0.6962005148331324
+Val Accuracy: 0.5302325581395348
+Val Loss: 0.686329185962677
+Val Precision: 0.4473684210526316
+Val Recall: 0.5018450184501845
+Val F1-Score: 0.473
+
+18-09-2023_2128
+Time taken: 0:29:46
+Fold Number: 0
+Train Accuracy: 0.6859614105123087
+Train Loss: 0.5779359936714172
+Val Accuracy: 0.5023255813953489
+Val Loss: 0.8146786689758301
+Val Precision: 0.4519230769230769
+Val Recall: 0.8671586715867159
+Val F1-Score: 0.5942
+
+18-09-2023_2217
+Time taken: 0:36:40
+Fold Number: 0
+Train Accuracy: 0.6719893546240852
+Train Loss: 0.5999398827552795
+Val Accuracy: 0.5550387596899224
+Val Loss: 0.709931492805481
+Val Precision: 0.48058252427184467
+Val Recall: 0.7306273062730627
+Val F1-Score: 0.5798
+
+18-09-2023_2254
+Time taken: 0:37:09
+Fold Number: 1
+Train Accuracy: 0.7139055222887558
+Train Loss: 0.5691068172454834
+Val Accuracy: 0.5193798449612403
+Val Loss: 0.7923527956008911
+Val Precision: 0.4594594594594595
+Val Recall: 0.8154981549815498
+Val F1-Score: 0.5878
+
+18-09-2023_2332
+Time taken: 0:37:16
+Fold Number: 2
+Train Accuracy: 0.7252162341982701
+Train Loss: 0.5478792786598206
+Val Accuracy: 0.49612403100775193
+Val Loss: 0.8140824437141418
+Val Precision: 0.45
+Val Recall: 0.8966789667896679
+Val F1-Score: 0.5993
+
+19-09-2023_0009
+Time taken: 0:37:52
+Fold Number: 3
+Train Accuracy: 0.720558882235529
+Train Loss: 0.5563738644123077
+Val Accuracy: 0.5116279069767442
+Val Loss: 0.7988920211791992
+Val Precision: 0.4583333333333333
+Val Recall: 0.8929889298892989
+Val F1-Score: 0.6058
+
+19-09-2023_0047
+Time taken: 0:37:15
+Fold Number: 4
+Train Accuracy: 0.7052561543579507
+Train Loss: 0.5599254369735718
+Val Accuracy: 0.48372093023255813
+Val Loss: 0.8084578514099121
+Val Precision: 0.4430147058823529
+Val Recall: 0.8892988929889298
+Val F1-Score: 0.5914
+
+19-09-2023_0047
+Time taken: 3:06:23
+Fold Number: Average of all 5 folds
+Train Accuracy: 0.7073852295409182
+Train Loss: 0.5666450560092926
+Val Accuracy: 0.5131782945736434
+Val Loss: 0.784743320941925
+Val Precision: 0.45827800458939805
+Val Recall: 0.8450184501845017
+Val F1-Score: 0.5943
+
+19-09-2023_0434
+Time taken: 6:24:54
+Fold Number: 0
+Train Accuracy: 0.6520292747837658
+Train Loss: 0.621775209903717
+Val Accuracy: 0.627906976744186
+Val Loss: 0.640969455242157
+Val Precision: 0.5741626794258373
+Val Recall: 0.44280442804428044
+Val F1-Score: 0.5
+
+19-09-2023_0451
+Time taken: 6:41:43
+Fold Number: 0
+Train Accuracy: 0.9481037924151696
+Train Loss: 0.23794320225715637
+Val Accuracy: 0.6558139534883721
+Val Loss: 0.6149022579193115
+Val Precision: 0.6060606060606061
+Val Recall: 0.5166051660516605
+Val F1-Score: 0.5578
+
+19-09-2023_1106
+Time taken: 6:31:50
+Fold Number: 1
+Train Accuracy: 0.6733200266134398
+Train Loss: 0.5808707475662231
+Val Accuracy: 0.6186046511627907
+Val Loss: 0.6518774628639221
+Val Precision: 0.5407166123778502
+Val Recall: 0.6125461254612546
+Val F1-Score: 0.5744
+
+19-09-2023_1808
+Time taken: 7:01:56
+Fold Number: 2
+Train Accuracy: 0.6766467065868264
+Train Loss: 0.5850465893745422
+Val Accuracy: 0.6496124031007752
+Val Loss: 0.6338585615158081
+Val Precision: 0.6153846153846154
+Val Recall: 0.44280442804428044
+Val F1-Score: 0.515
+
+20-09-2023_0045
+Time taken: 6:36:42
+Fold Number: 3
+Train Accuracy: 0.6959414504324684
+Train Loss: 0.5772301554679871
+Val Accuracy: 0.648062015503876
+Val Loss: 0.6325232982635498
+Val Precision: 0.5964912280701754
+Val Recall: 0.5018450184501845
+Val F1-Score: 0.5451
+
+20-09-2023_0742
+Time taken: 6:57:10
+Fold Number: 4
+Train Accuracy: 0.6786427145708582
+Train Loss: 0.5898457765579224
+Val Accuracy: 0.6573643410852713
+Val Loss: 0.6119446754455566
+Val Precision: 0.6179245283018868
+Val Recall: 0.4833948339483395
+Val F1-Score: 0.5424
+
+20-09-2023_0742
+Time taken: 1 day, 9:33:11
+Fold Number: Average of all 5 folds
+Train Accuracy: 0.6753160345974717
+Train Loss: 0.5909536957740784
+Val Accuracy: 0.6403100775193798
+Val Loss: 0.6342346906661988
+Val Precision: 0.5889359327120731
+Val Recall: 0.4966789667896679
+Val F1-Score: 0.5389
+
+20-09-2023_2316
+Time taken: 0:35:07
+Fold Number: 0
+Train Accuracy: 0.5788423153692615
+Train Loss: 0.6818120777606964
+Val Accuracy: 0.57984496124031
+Val Loss: 0.6825735569000244
+Val Precision: 0.0
+Val Recall: 0.0
+Val F1-Score: nan
+
+20-09-2023_2316
+Time taken: 0:35:10
+Fold Number: Average of all 5 folds
+Train Accuracy: 0.5788423153692615
+Train Loss: 0.6818120777606964
+Val Accuracy: 0.57984496124031
+Val Loss: 0.6825735569000244
+Val Precision: 0.0
+Val Recall: 0.0
+Val F1-Score: nan
+
+21-09-2023_0304
+Time taken: 3:54:11
+Fold Number: 0
+Train Accuracy: 0.5788423153692615
+Train Loss: 0.04996010474860668
+Val Accuracy: 0.57984496124031
+Val Loss: 1.9862251281738281
+Val Precision: 0.0
+Val Recall: 0.0
+Val F1-Score: nan
+
+21-09-2023_0305
+Time taken: 3:55:02
+Fold Number: Average of all 5 folds
+Train Accuracy: 0.5788423153692615
+Train Loss: 0.04996010474860668
+Val Accuracy: 0.57984496124031
+Val Loss: 1.9862251281738281
+Val Precision: 0.0
+Val Recall: 0.0
+Val F1-Score: nan
+
+21-09-2023_0310
+Time taken: 4:01:16
+Fold Number: 0
+Train Accuracy: 0.5788423153692615
+Train Loss: 0.6395160853862762
+Val Accuracy: 0.57984496124031
+Val Loss: 0.683847963809967
+Val Precision: 0.0
+Val Recall: 0.0
+Val F1-Score: nan
+
+21-09-2023_0310
+Time taken: 4:02:01
+Fold Number: Average of all 5 folds
+Train Accuracy: 0.5788423153692615
+Train Loss: 0.6395160853862762
+Val Accuracy: 0.57984496124031
+Val Loss: 0.683847963809967
+Val Precision: 0.0
+Val Recall: 0.0
+Val F1-Score: nan
+
+21-09-2023_1431
+Time taken: 4:10:14
+Fold Number: 1
+Train Accuracy: 0.8662674650698603
+Train Loss: 0.32139965891838074
+Val Accuracy: 0.6031007751937985
+Val Loss: 0.8339521288871765
+Val Precision: 0.5355450236966824
+Val Recall: 0.41697416974169743
+Val F1-Score: 0.4689
+
+21-09-2023_1615
+Time taken: 1:23:06
+Fold Number: 1
+Train Accuracy: 0.6487025948103793
+Train Loss: 0.6204616129398346
+Val Accuracy: 0.6108527131782946
+Val Loss: 0.6661676168441772
+Val Precision: 0.5390625
+Val Recall: 0.5092250922509225
+Val F1-Score: 0.5237
+
+21-09-2023_1854
+Time taken: 4:02:20
+Fold Number: 1
+Train Accuracy: 0.7658017298735862
+Train Loss: 0.4735516905784607
+Val Accuracy: 0.6031007751937985
+Val Loss: 0.7245268225669861
+Val Precision: 0.5274725274725275
+Val Recall: 0.5313653136531366
+Val F1-Score: 0.5294
+
+21-09-2023_1855
+Time taken: 4:02:33
+Fold Number: 1
+Train Accuracy: 0.7744510978043913
+Train Loss: 0.4763372242450714
+Val Accuracy: 0.6155038759689923
+Val Loss: 0.716137707233429
+Val Precision: 0.5377049180327869
+Val Recall: 0.6051660516605166
+Val F1-Score: 0.5694
+
+21-09-2023_2137
+Time taken: 1:21:30
+Fold Number: 1
+Train Accuracy: 0.6493679308050565
+Train Loss: 0.6206524968147278
+Val Accuracy: 0.5674418604651162
+Val Loss: 0.6737409234046936
+Val Precision: 0.48717948717948717
+Val Recall: 0.5608856088560885
+Val F1-Score: 0.5214
+
+21-09-2023_2251
+Time taken: 3:56:01
+Fold Number: 2
+Train Accuracy: 0.7431803060545575
+Train Loss: 0.519394651055336
+Val Accuracy: 0.6062015503875969
+Val Loss: 0.6760578751564026
+Val Precision: 0.5344129554655871
+Val Recall: 0.4870848708487085
+Val F1-Score: 0.5097
+
+21-09-2023_2258
+Time taken: 1:21:15
+Fold Number: 2
+Train Accuracy: 0.6387225548902196
+Train Loss: 0.6336642205715179
+Val Accuracy: 0.5751937984496124
+Val Loss: 0.6643954515457153
+Val Precision: 0.49387755102040815
+Val Recall: 0.44649446494464945
+Val F1-Score: 0.469
+
+21-09-2023_2306
+Time taken: 1:26:08
+Fold Number: 1
+Train Accuracy: 0.5795076513639388
+Train Loss: 0.6784691214561462
+Val Accuracy: 0.57984496124031
+Val Loss: 0.6801919341087341
+Val Precision: 0.0
+Val Recall: 0.0
+Val F1-Score: nan
+
+21-09-2023_2307
+Time taken: 1:26:02
+Fold Number: 1
+Train Accuracy: 0.7052561543579507
+Train Loss: 0.5687736570835114
+Val Accuracy: 0.5922480620155038
+Val Loss: 0.6669529676437378
+Val Precision: 0.5111731843575419
+Val Recall: 0.6752767527675276
+Val F1-Score: 0.5819
+
+22-09-2023_0022
+Time taken: 1:23:16
+Fold Number: 3
+Train Accuracy: 0.6726546906187625
+Train Loss: 0.6108470857143402
+Val Accuracy: 0.6139534883720931
+Val Loss: 0.6562442183494568
+Val Precision: 0.5404411764705882
+Val Recall: 0.5424354243542435
+Val F1-Score: 0.5414
+
+22-09-2023_0034
+Time taken: 1:26:14
+Fold Number: 2
+Train Accuracy: 0.6653359946773121
+Train Loss: 0.6142286956310272
+Val Accuracy: 0.6155038759689923
+Val Loss: 0.6591609716415405
+Val Precision: 0.558974358974359
+Val Recall: 0.4022140221402214
+Val F1-Score: 0.4678
+
+22-09-2023_0142
+Time taken: 1:19:35
+Fold Number: 4
+Train Accuracy: 0.6393878908848969
+Train Loss: 0.6232764422893524
+Val Accuracy: 0.5922480620155038
+Val Loss: 0.658218502998352
+Val Precision: 0.518348623853211
+Val Recall: 0.41697416974169743
+Val F1-Score: 0.4622
+
+22-09-2023_0153
+Time taken: 1:19:04
+Fold Number: 3
+Train Accuracy: 0.6892880904856953
+Train Loss: 0.5818286538124084
+Val Accuracy: 0.5953488372093023
+Val Loss: 0.6531370878219604
+Val Precision: 0.5190839694656488
+Val Recall: 0.5018450184501845
+Val F1-Score: 0.5103
+
+22-09-2023_0251
+Time taken: 4:00:33
+Fold Number: 3
+Train Accuracy: 0.7285429141716567
+Train Loss: 0.5387806594371796
+Val Accuracy: 0.6186046511627907
+Val Loss: 0.6826909780502319
+Val Precision: 0.5628140703517588
+Val Recall: 0.4132841328413284
+Val F1-Score: 0.4766
+
+22-09-2023_0314
+Time taken: 1:21:12
+Fold Number: 4
+Train Accuracy: 0.7145708582834331
+Train Loss: 0.5610428750514984
+Val Accuracy: 0.5922480620155038
+Val Loss: 0.6580083966255188
+Val Precision: 0.518348623853211
+Val Recall: 0.41697416974169743
+Val F1-Score: 0.4622
+
+22-09-2023_0317
+Time taken: 1:31:10
+Fold Number: 1
+Train Accuracy: 0.7159015302727878
+Train Loss: 0.5579692423343658
+Val Accuracy: 0.586046511627907
+Val Loss: 0.6666883826255798
+Val Precision: 0.5065359477124183
+Val Recall: 0.5719557195571956
+Val F1-Score: 0.5373
+
+22-09-2023_0435
+Time taken: 1:20:37
+Fold Number: 5
+Train Accuracy: 0.6620093147039254
+Train Loss: 0.613924503326416
+Val Accuracy: 0.5829457364341085
+Val Loss: 0.6648041605949402
+Val Precision: 0.5034013605442177
+Val Recall: 0.5461254612546126
+Val F1-Score: 0.5239
+
+22-09-2023_0435
+Time taken: 6:55:02
+Fold Number: Average of all 5 folds
+Train Accuracy: 0.6872920825016633
+Train Loss: 0.5879596769809723
+Val Accuracy: 0.5956589147286822
+Val Loss: 0.6604127168655396
+Val Precision: 0.5221962994389957
+Val Recall: 0.5084870848708487
+Val F1-Score: 0.5153
+
+22-09-2023_0444
+Time taken: 1:26:03
+Fold Number: 2
+Train Accuracy: 0.6660013306719893
+Train Loss: 0.6138320565223694
+Val Accuracy: 0.5937984496124031
+Val Loss: 0.658025860786438
+Val Precision: 0.5160142348754448
+Val Recall: 0.5350553505535055
+Val F1-Score: 0.5254
+
+22-09-2023_0617
+Time taken: 1:32:50
+Fold Number: 3
+Train Accuracy: 0.6806387225548902
+Train Loss: 0.6003616750240326
+Val Accuracy: 0.6015503875968993
+Val Loss: 0.6567449569702148
+Val Precision: 0.523972602739726
+Val Recall: 0.5645756457564576
+Val F1-Score: 0.5435
+
+22-09-2023_0659
+Time taken: 4:06:56
+Fold Number: 4
+Train Accuracy: 0.737857618097139
+Train Loss: 0.5231075584888458
+Val Accuracy: 0.5922480620155038
+Val Loss: 0.6936306953430176
+Val Precision: 0.5125
+Val Recall: 0.6051660516605166
+Val F1-Score: 0.555
+
+22-09-2023_0752
+Time taken: 1:34:11
+Fold Number: 4
+Train Accuracy: 0.6912840984697272
+Train Loss: 0.592325747013092
+Val Accuracy: 0.6
+Val Loss: 0.6563777923583984
+Val Precision: 0.5238095238095238
+Val Recall: 0.5276752767527675
+Val F1-Score: 0.5257
+
+22-09-2023_0919
+Time taken: 1:26:58
+Fold Number: 5
+Train Accuracy: 0.669328010645376
+Train Loss: 0.6022493839263916
+Val Accuracy: 0.5829457364341085
+Val Loss: 0.6655660271644592
+Val Precision: 0.5031847133757962
+Val Recall: 0.5830258302583026
+Val F1-Score: 0.5402
+
+22-09-2023_0919
+Time taken: 7:32:33
+Fold Number: Average of all 5 folds
+Train Accuracy: 0.684630738522954
+Train Loss: 0.5933476209640502
+Val Accuracy: 0.5928682170542635
+Val Loss: 0.660680603981018
+Val Precision: 0.5147034045025818
+Val Recall: 0.5564575645756459
+Val F1-Score: 0.5348
+
+22-09-2023_1104
+Time taken: 4:05:06
+Fold Number: 5
+Train Accuracy: 0.7085828343313373
+Train Loss: 0.5542503595352173
+Val Accuracy: 0.5705426356589147
+Val Loss: 0.6838345527648926
+Val Precision: 0.49096385542168675
+Val Recall: 0.6014760147601476
+Val F1-Score: 0.5406
+
+22-09-2023_1104
+Time taken: 20:12:32
+Fold Number: Average of all 5 folds
+Train Accuracy: 0.7367930805056553
+Train Loss: 0.5218169838190079
+Val Accuracy: 0.5981395348837208
+Val Loss: 0.6921481847763061
+Val Precision: 0.525632681742312
+Val Recall: 0.5276752767527675
+Val F1-Score: 0.5267
+
+22-09-2023_1121
+Time taken: 1:48:46
+Fold Number: 1
+Train Accuracy: 0.718562874251497
+Train Loss: 0.5453492999076843
+Val Accuracy: 0.6124031007751938
+Val Loss: 0.6539095640182495
+Val Precision: 0.5319148936170213
+Val Recall: 0.6457564575645757
+Val F1-Score: 0.5833
+
+22-09-2023_1252
+Time taken: 1:30:11
+Fold Number: 2
+Train Accuracy: 0.6786427145708582
+Train Loss: 0.5998767912387848
+Val Accuracy: 0.6093023255813953
+Val Loss: 0.6544495820999146
+Val Precision: 0.5322033898305085
+Val Recall: 0.5793357933579336
+Val F1-Score: 0.5548
+
+22-09-2023_1419
+Time taken: 1:27:21
+Fold Number: 3
+Train Accuracy: 0.6959414504324684
+Train Loss: 0.569720983505249
+Val Accuracy: 0.6
+Val Loss: 0.6527850031852722
+Val Precision: 0.5241635687732342
+Val Recall: 0.5202952029520295
+Val F1-Score: 0.5222
+
+22-09-2023_1434
+Time taken: 1:22:34
+Fold Number: 1
+Train Accuracy: 0.7218895542248835
+Train Loss: 0.5455539524555206
+Val Accuracy: 0.6155038759689923
+Val Loss: 0.6789307594299316
+Val Precision: 0.5382059800664452
+Val Recall: 0.5977859778597786
+Val F1-Score: 0.5664
+
+22-09-2023_1447
+Time taken: 1:14:20
+Fold Number: 1
+Train Accuracy: 0.5741849634065203
+Train Loss: 0.6791580319404602
+Val Accuracy: 0.57984496124031
+Val Loss: 0.681129515171051
+Val Precision: 0.0
+Val Recall: 0.0
+Val F1-Score: nan
+
+22-09-2023_1633
+Time taken: 1:14:30
+Fold Number: 1
+Train Accuracy: 0.5788423153692615
+Train Loss: 0.6707435846328735
+Val Accuracy: 0.57984496124031
+Val Loss: 0.6771380305290222
+Val Precision: 0.0
+Val Recall: 0.0
+Val F1-Score: nan
+
+22-09-2023_1746
+Time taken: 1:12:53
+Fold Number: 2
+Train Accuracy: 0.5788423153692615
+Train Loss: 0.6469619572162628
+Val Accuracy: 0.57984496124031
+Val Loss: 0.6641897559165955
+Val Precision: 0.0
+Val Recall: 0.0
+Val F1-Score: nan
+
+22-09-2023_1803
+Time taken: 2:25:06
+Fold Number: 1
+Train Accuracy: 0.5788423153692615
+Train Loss: 41.40828895568848
+Val Accuracy: 0.57984496124031
+Val Loss: 42.0155029296875
+Val Precision: 0.0
+Val Recall: 0.0
+Val F1-Score: nan
+
+22-09-2023_1812
+Time taken: 2:27:31
+Fold Number: 1
+Train Accuracy: 0.5788423153692615
+Train Loss: 0.20032054712956257
+Val Accuracy: 0.57984496124031
+Val Loss: 1.2521702741704337
+Val Precision: 0.0
+Val Recall: 0.0
+Val F1-Score: nan
+
+22-09-2023_1902
+Time taken: 1:15:50
+Fold Number: 3
+Train Accuracy: 0.5788423153692615
+Train Loss: 0.6328812837600708
+Val Accuracy: 0.57984496124031
+Val Loss: 0.6619957089424133
+Val Precision: 0.0
+Val Recall: 0.0
+Val F1-Score: nan
+
+22-09-2023_2023
+Time taken: 1:20:35
+Fold Number: 4
+Train Accuracy: 0.5788423153692615
+Train Loss: 0.6202373504638672
+Val Accuracy: 0.57984496124031
+Val Loss: 0.6497890949249268
+Val Precision: 0.0
+Val Recall: 0.0
+Val F1-Score: nan
+
+22-09-2023_2037
+Time taken: 2:33:55
+Fold Number: 1
+Train Accuracy: 0.5788423153692615
+Train Loss: 42.019405364990234
+Val Accuracy: 0.57984496124031
+Val Loss: 42.0155029296875
+Val Precision: 0.0
+Val Recall: 0.0
+Val F1-Score: nan
+
+22-09-2023_2045
+Time taken: 2:32:13
+Fold Number: 1
+Train Accuracy: 0.5788423153692615
+Train Loss: 0.23812274190973728
+Val Accuracy: 0.57984496124031
+Val Loss: 1.1141019520305453
+Val Precision: 0.0
+Val Recall: 0.0
+Val F1-Score: nan
+
+22-09-2023_2136
+Time taken: 1:13:05
+Fold Number: 5
+Train Accuracy: 0.5788423153692615
+Train Loss: 0.6167526245117188
+Val Accuracy: 0.57984496124031
+Val Loss: 0.6637881994247437
+Val Precision: 0.0
+Val Recall: 0.0
+Val F1-Score: nan
+
+22-09-2023_2136
+Time taken: 6:18:16
+Fold Number: Average of all 5 folds
+Train Accuracy: 0.5788423153692615
+Train Loss: 0.6375153601169586
+Val Accuracy: 0.57984496124031
+Val Loss: 0.6633801579475402
+Val Precision: 0.0
+Val Recall: 0.0
+Val F1-Score: nan
+
+22-09-2023_2304
+Time taken: 2:27:00
+Fold Number: 1
+Train Accuracy: 0.5788423153692615
+Train Loss: 42.35274124145508
+Val Accuracy: 0.57984496124031
+Val Loss: 42.0155029296875
+Val Precision: 0.0
+Val Recall: 0.0
+Val F1-Score: nan
+
+22-09-2023_2311
+Time taken: 2:26:16
+Fold Number: 1
+Train Accuracy: 0.5788423153692615
+Train Loss: 0.32007242552936077
+Val Accuracy: 0.57984496124031
+Val Loss: 0.8443636948412115
+Val Precision: 0.0
+Val Recall: 0.0
+Val F1-Score: nan
+
+23-09-2023_0016
+Time taken: 1:16:33
+Fold Number: 1
+Train Accuracy: 0.5788423153692615
+Train Loss: 42.40829658508301
+Val Accuracy: 0.57984496124031
+Val Loss: 42.0155029296875
+Val Precision: 0.0
+Val Recall: 0.0
+Val F1-Score: nan
+
+23-09-2023_0132
+Time taken: 2:28:29
+Fold Number: 1
+Train Accuracy: 0.5788423153692615
+Train Loss: 42.186073303222656
+Val Accuracy: 0.57984496124031
+Val Loss: 42.0155029296875
+Val Precision: 0.0
+Val Recall: 0.0
+Val F1-Score: nan
+
+23-09-2023_0134
+Time taken: 1:18:07
+Fold Number: 1
+Train Accuracy: 0.5788423153692615
+Train Loss: 42.35274124145508
+Val Accuracy: 0.57984496124031
+Val Loss: 42.0155029296875
+Val Precision: 0.0
+Val Recall: 0.0
+Val F1-Score: nan
+
+23-09-2023_0139
+Time taken: 2:28:07
+Fold Number: 1
+Train Accuracy: 0.5788423153692615
+Train Loss: 0.24814573427041373
+Val Accuracy: 0.57984496124031
+Val Loss: 0.7612873738010725
+Val Precision: 0.0
+Val Recall: 0.0
+Val F1-Score: nan
+
+23-09-2023_0247
+Time taken: 1:12:48
+Fold Number: 1
+Train Accuracy: 0.5788423153692615
+Train Loss: 42.46385383605957
+Val Accuracy: 0.57984496124031
+Val Loss: 42.0155029296875
+Val Precision: 0.0
+Val Recall: 0.0
+Val F1-Score: nan
+
+23-09-2023_0359
+Time taken: 2:26:22
+Fold Number: 1
+Train Accuracy: 0.5788423153692615
+Train Loss: 41.5749568939209
+Val Accuracy: 0.57984496124031
+Val Loss: 42.0155029296875
+Val Precision: 0.0
+Val Recall: 0.0
+Val F1-Score: nan
+
+23-09-2023_0359
+Time taken: 12:22:19
+Fold Number: Average of all 5 folds
+Train Accuracy: 0.5788423153692615
+Train Loss: 41.90829315185547
+Val Accuracy: 0.57984496124031
+Val Loss: 42.0155029296875
+Val Precision: 0.0
+Val Recall: 0.0
+Val F1-Score: nan
+
+23-09-2023_0401
+Time taken: 1:14:14
+Fold Number: 1
+Train Accuracy: 0.5788423153692615
+Train Loss: 41.463844299316406
+Val Accuracy: 0.57984496124031
+Val Loss: 42.0155029296875
+Val Precision: 0.0
+Val Recall: 0.0
+Val F1-Score: nan
+
+23-09-2023_0409
+Time taken: 2:29:47
+Fold Number: 1
+Train Accuracy: 0.5788423153692615
+Train Loss: 0.23351497203111649
+Val Accuracy: 0.57984496124031
+Val Loss: 0.877615729967753
+Val Precision: 0.0
+Val Recall: 0.0
+Val F1-Score: nan
+
+23-09-2023_0514
+Time taken: 1:13:02
+Fold Number: 1
+Train Accuracy: 0.5788423153692615
+Train Loss: 42.46385383605957
+Val Accuracy: 0.57984496124031
+Val Loss: 42.0155029296875
+Val Precision: 0.0
+Val Recall: 0.0
+Val F1-Score: nan
+
+23-09-2023_0514
+Time taken: 6:18:01
+Fold Number: Average of all 5 folds
+Train Accuracy: 0.5788423153692615
+Train Loss: 42.23051795959473
+Val Accuracy: 0.57984496124031
+Val Loss: 42.0155029296875
+Val Precision: 0.0
+Val Recall: 0.0
+Val F1-Score: nan
+
+23-09-2023_0640
+Time taken: 2:31:10
+Fold Number: 1
+Train Accuracy: 0.5788423153692615
+Train Loss: 0.31459980209668476
+Val Accuracy: 0.57984496124031
+Val Loss: 0.7252855002880096
+Val Precision: 0.0
+Val Recall: 0.0
+Val F1-Score: nan
+
+23-09-2023_0911
+Time taken: 2:30:07
+Fold Number: 1
+Train Accuracy: 0.5788423153692615
+Train Loss: 0.32317474484443665
+Val Accuracy: 0.57984496124031
+Val Loss: 0.7858107089996338
+Val Precision: 0.0
+Val Recall: 0.0
+Val F1-Score: nan
+
+23-09-2023_0911
+Time taken: 17:26:51
+Fold Number: Average of all 5 folds
+Train Accuracy: 0.5788423153692613
+Train Loss: 0.2682787096873303
+Val Accuracy: 0.57984496124031
+Val Loss: 0.9086621762998085
+Val Precision: 0.0
+Val Recall: 0.0
+Val F1-Score: nan
+
+23-09-2023_1139
+Time taken: 1:23:28
+Fold Number: 1
+Train Accuracy: 0.5788423153692615
+Train Loss: 41.79718208312988
+Val Accuracy: 0.57984496124031
+Val Loss: 42.0155029296875
+Val Precision: 0.0
+Val Recall: 0.0
+Val F1-Score: nan
+
+23-09-2023_1255
+Time taken: 1:15:45
+Fold Number: 1
+Train Accuracy: 0.5788423153692615
+Train Loss: 41.79718208312988
+Val Accuracy: 0.57984496124031
+Val Loss: 42.0155029296875
+Val Precision: 0.0
+Val Recall: 0.0
+Val F1-Score: nan
+
+23-09-2023_1411
+Time taken: 1:15:51
+Fold Number: 1
+Train Accuracy: 0.5788423153692615
+Train Loss: 43.07497024536133
+Val Accuracy: 0.57984496124031
+Val Loss: 42.0155029296875
+Val Precision: 0.0
+Val Recall: 0.0
+Val F1-Score: nan
+
+23-09-2023_1526
+Time taken: 1:14:36
+Fold Number: 1
+Train Accuracy: 0.5788423153692615
+Train Loss: 42.13051795959473
+Val Accuracy: 0.57984496124031
+Val Loss: 42.0155029296875
+Val Precision: 0.0
+Val Recall: 0.0
+Val F1-Score: nan
+
+23-09-2023_1529
+Time taken: 3:39:29
+Fold Number: 1
+Train Accuracy: 0.5788423153692615
+Train Loss: 0.5230549764125905
+Val Accuracy: 0.57984496124031
+Val Loss: 0.8055978715419769
+Val Precision: 0.0
+Val Recall: 0.0
+Val F1-Score: nan
+
+23-09-2023_1529
+Time taken: 3:41:48
+Fold Number: Average of all 5 folds
+Train Accuracy: 0.5788423153692615
+Train Loss: 0.5230549764125905
+Val Accuracy: 0.57984496124031
+Val Loss: 0.8055978715419769
+Val Precision: 0.0
+Val Recall: 0.0
+Val F1-Score: nan
+
+23-09-2023_1657
+Time taken: 1:31:25
+Fold Number: 1
+Train Accuracy: 0.5788423153692615
+Train Loss: 42.13051795959473
+Val Accuracy: 0.57984496124031
+Val Loss: 42.0155029296875
+Val Precision: 0.0
+Val Recall: 0.0
+Val F1-Score: nan
+
+23-09-2023_1657
+Time taken: 6:42:35
+Fold Number: Average of all 5 folds
+Train Accuracy: 0.5788423153692615
+Train Loss: 42.18607406616211
+Val Accuracy: 0.57984496124031
+Val Loss: 42.0155029296875
+Val Precision: 0.0
+Val Recall: 0.0
+Val F1-Score: nan
+
+24-09-2023_0020
+Time taken: 3:43:32
+Fold Number: 1
+Train Accuracy: 0.5788423153692615
+Train Loss: 3.2520310866071824
+Val Accuracy: 0.57984496124031
+Val Loss: 1.575151494571141
+Val Precision: 0.0
+Val Recall: 0.0
+Val F1-Score: nan
+
+24-09-2023_0119
+Time taken: 3:43:35
+Fold Number: 1
+Train Accuracy: 0.5788423153692615
+Train Loss: 0.5649837325228021
+Val Accuracy: 0.57984496124031
+Val Loss: 0.6845518794001603
+Val Precision: 0.0
+Val Recall: 0.0
+Val F1-Score: nan
+
+24-09-2023_0200
+Time taken: 3:44:06
+Fold Number: 1
+Train Accuracy: 0.5788423153692615
+Train Loss: 0.5163612140620009
+Val Accuracy: 0.57984496124031
+Val Loss: 0.680963348324706
+Val Precision: 0.0
+Val Recall: 0.0
+Val F1-Score: nan
+
+24-09-2023_0407
+Time taken: 3:46:51
+Fold Number: 1
+Train Accuracy: 0.5788423153692615
+Train Loss: 4.875168511208067
+Val Accuracy: 0.57984496124031
+Val Loss: 0.6871027946472168
+Val Precision: 0.0
+Val Recall: 0.0
+Val F1-Score: nan
+
+24-09-2023_0506
+Time taken: 3:46:47
+Fold Number: 1
+Train Accuracy: 0.5788423153692615
+Train Loss: 0.3673931658267975
+Val Accuracy: 0.57984496124031
+Val Loss: 0.6480688481103807
+Val Precision: 0.0
+Val Recall: 0.0
+Val F1-Score: nan
+
+24-09-2023_0553
+Time taken: 3:53:35
+Fold Number: 1
+Train Accuracy: 0.5788423153692615
+Train Loss: 0.4720089143895088
+Val Accuracy: 0.57984496124031
+Val Loss: 0.7434727152188619
+Val Precision: 0.0
+Val Recall: 0.0
+Val F1-Score: nan
+
+24-09-2023_0810
+Time taken: 4:02:02
+Fold Number: 1
+Train Accuracy: 0.5788423153692615
+Train Loss: 0.3827127690644974
+Val Accuracy: 0.57984496124031
+Val Loss: 0.7592808036577134
+Val Precision: 0.0
+Val Recall: 0.0
+Val F1-Score: nan
+
+24-09-2023_0855
+Time taken: 3:48:55
+Fold Number: 1
+Train Accuracy: 0.5788423153692615
+Train Loss: 0.24953695324560007
+Val Accuracy: 0.57984496124031
+Val Loss: 0.8807599544525146
+Val Precision: 0.0
+Val Recall: 0.0
+Val F1-Score: nan
+
+24-09-2023_0935
+Time taken: 3:40:56
+Fold Number: 1
+Train Accuracy: 0.5788423153692615
+Train Loss: 0.2657335015634696
+Val Accuracy: 0.57984496124031
+Val Loss: 0.794906264001673
+Val Precision: 0.0
+Val Recall: 0.0
+Val F1-Score: nan
+
+24-09-2023_1154
+Time taken: 3:43:45
+Fold Number: 1
+Train Accuracy: 0.5788423153692615
+Train Loss: 0.12202825983788104
+Val Accuracy: 0.57984496124031
+Val Loss: 1.2329093253328687
+Val Precision: 0.0
+Val Recall: 0.0
+Val F1-Score: nan
+
+24-09-2023_1236
+Time taken: 3:40:31
+Fold Number: 1
+Train Accuracy: 0.5788423153692615
+Train Loss: 0.36194076140721637
+Val Accuracy: 0.57984496124031
+Val Loss: 0.6668189962704977
+Val Precision: 0.0
+Val Recall: 0.0
+Val F1-Score: nan
+
+24-09-2023_1324
+Time taken: 3:48:50
+Fold Number: 1
+Train Accuracy: 0.5788423153692615
+Train Loss: 0.36919836948315304
+Val Accuracy: 0.57984496124031
+Val Loss: 0.6459355801343918
+Val Precision: 0.0
+Val Recall: 0.0
+Val F1-Score: nan
+
+24-09-2023_1422
+Time taken: 1:25:17
+Fold Number: 1
+Train Accuracy: 0.9261477045908184
+Train Loss: 0.20664522337152602
+Val Accuracy: 0.6961240310077519
+Val Loss: 0.7946089317158955
+Val Precision: 0.6530612244897959
+Val Recall: 0.5904059040590406
+Val F1-Score: 0.6202
+
+24-09-2023_1514
+Time taken: 1:16:25
+Fold Number: 1
+Train Accuracy: 0.5788423153692615
+Train Loss: 0.693147599697113
+Val Accuracy: 0.57984496124031
+Val Loss: 0.6931473016738892
+Val Precision: 0.0
+Val Recall: 0.0
+Val F1-Score: nan
+
+24-09-2023_1540
+Time taken: 1:17:59
+Fold Number: 1
+Train Accuracy: 0.9540918163672655
+Train Loss: 0.12712804184473575
+Val Accuracy: 0.6713178294573643
+Val Loss: 1.1315142597470964
+Val Precision: 0.6057347670250897
+Val Recall: 0.6236162361623616
+Val F1-Score: 0.6145
+
+24-09-2023_1628
+Time taken: 1:14:07
+Fold Number: 1
+Train Accuracy: 0.5788423153692615
+Train Loss: 0.693147599697113
+Val Accuracy: 0.57984496124031
+Val Loss: 0.6931473016738892
+Val Precision: 0.0
+Val Recall: 0.0
+Val F1-Score: nan
+
+24-09-2023_1656
+Time taken: 1:16:08
+Fold Number: 1
+Train Accuracy: 0.9547571523619428
+Train Loss: 0.11143243972522517
+Val Accuracy: 0.6728682170542636
+Val Loss: 1.421664221720262
+Val Precision: 0.6685393258426966
+Val Recall: 0.43911439114391143
+Val F1-Score: 0.5301
+
+24-09-2023_1739
+Time taken: 1:16:40
+Fold Number: 1
+Train Accuracy: 0.5788423153692615
+Train Loss: 0.15367460995912552
+Val Accuracy: 0.57984496124031
+Val Loss: 1.1761541366577148
+Val Precision: 0.0
+Val Recall: 0.0
+Val F1-Score: nan
+
+24-09-2023_1739
+Time taken: 1:19:50
+Fold Number: Average of all 5 folds
+Train Accuracy: 0.5788423153692615
+Train Loss: 0.15367460995912552
+Val Accuracy: 0.57984496124031
+Val Loss: 1.1761541366577148
+Val Precision: 0.0
+Val Recall: 0.0
+Val F1-Score: nan
+
+24-09-2023_1741
+Time taken: 1:12:38
+Fold Number: 1
+Train Accuracy: 0.5788423153692615
+Train Loss: 0.40850818157196045
+Val Accuracy: 0.57984496124031
+Val Loss: 0.80915367603302
+Val Precision: 0.0
+Val Recall: 0.0
+Val F1-Score: nan
+
+24-09-2023_1814
+Time taken: 1:18:05
+Fold Number: 1
+Train Accuracy: 0.9587491683300067
+Train Loss: 0.10958476054171722
+Val Accuracy: 0.6682170542635659
+Val Loss: 1.1093835532665253
+Val Precision: 0.6135458167330677
+Val Recall: 0.5682656826568265
+Val F1-Score: 0.59
+
+24-09-2023_1857
+Time taken: 1:15:45
+Fold Number: 1
+Train Accuracy: 0.7232202262142382
+Train Loss: 0.5412361919879913
+Val Accuracy: 0.6217054263565891
+Val Loss: 0.667133629322052
+Val Precision: 0.5487364620938628
+Val Recall: 0.5608856088560885
+Val F1-Score: 0.5547
+
+24-09-2023_1935
+Time taken: 1:20:40
+Fold Number: 1
+Train Accuracy: 0.5788423153692615
+Train Loss: 0.3872117002805074
+Val Accuracy: 0.57984496124031
+Val Loss: 1.191477378209432
+Val Precision: 0.0
+Val Recall: 0.0
+Val F1-Score: nan
+
+24-09-2023_2011
+Time taken: 1:13:50
+Fold Number: 1
+Train Accuracy: 0.5781769793745841
+Train Loss: 0.6762906908988953
+Val Accuracy: 0.57984496124031
+Val Loss: 0.680766761302948
+Val Precision: 0.0
+Val Recall: 0.0
+Val F1-Score: nan
+
+24-09-2023_2011
+Time taken: 6:16:36
+Fold Number: Average of all 5 folds
+Train Accuracy: 0.6075848303393213
+Train Loss: 0.6024660527706146
+Val Accuracy: 0.5882170542635659
+Val Loss: 0.7086697340011596
+Val Precision: 0.10974729241877257
+Val Recall: 0.1121771217712177
+Val F1-Score: 0.1109
+
+24-09-2023_2052
+Time taken: 1:16:35
+Fold Number: 1
+Train Accuracy: 0.9614105123087159
+Train Loss: 0.09844138224919637
+Val Accuracy: 0.6558139534883721
+Val Loss: 1.2368771433830261
+Val Precision: 0.6042553191489362
+Val Recall: 0.5239852398523985
+Val F1-Score: 0.5613
+
+24-09-2023_2210
+Time taken: 1:17:43
+Fold Number: 1
+Train Accuracy: 0.9347970725216235
+Train Loss: 0.1619546338915825
+Val Accuracy: 0.6558139534883721
+Val Loss: 1.1901264190673828
+Val Precision: 0.6079295154185022
+Val Recall: 0.5092250922509225
+Val F1-Score: 0.5542
+
+24-09-2023_2210
+Time taken: 9:17:01
+Fold Number: Average of all 5 folds
+Train Accuracy: 0.8955422488356621
+Train Loss: 0.1717711688434986
+Val Accuracy: 0.6571428571428571
+Val Loss: 1.1536645581585172
+Val Precision: 0.5361522812368698
+Val Recall: 0.46494464944649444
+Val F1-Score: 0.498
+
+24-09-2023_2342
+Time taken: 2:23:26
+Fold Number: 1
+Train Accuracy: 0.5788423153692615
+Train Loss: 0.45515276491642
+Val Accuracy: 0.57984496124031
+Val Loss: 0.7182773947715759
+Val Precision: 0.0
+Val Recall: 0.0
+Val F1-Score: nan
+
+24-09-2023_2342
+Time taken: 2:25:23
+Fold Number: Average of all 5 folds
+Train Accuracy: 0.5788423153692615
+Train Loss: 0.45515276491642
+Val Accuracy: 0.57984496124031
+Val Loss: 0.7182773947715759
+Val Precision: 0.0
+Val Recall: 0.0
+Val F1-Score: nan
+
+25-09-2023_0118
+Time taken: 2:30:57
+Fold Number: 1
+Train Accuracy: 0.5788423153692615
+Train Loss: 0.6810465740396622
+Val Accuracy: 0.57984496124031
+Val Loss: 0.6802808598774236
+Val Precision: 0.0
+Val Recall: 0.0
+Val F1-Score: nan
+
+25-09-2023_0349
+Time taken: 2:30:38
+Fold Number: 1
+Train Accuracy: 0.5788423153692615
+Train Loss: 0.6807182710221473
+Val Accuracy: 0.57984496124031
+Val Loss: 0.6802356330359854
+Val Precision: 0.0
+Val Recall: 0.0
+Val F1-Score: nan
+
+25-09-2023_1507
+Time taken: 1:15:07
+Fold Number: 1
+Train Accuracy: 0.5786290322580645
+Train Loss: 0.6810457655178603
+Val Accuracy: 0.5796875
+Val Loss: 0.6803950741887093
+Val Precision: 0.0
+Val Recall: 0.0
+Val F1-Score: nan
+
+25-09-2023_1526
+Time taken: 1:40:19
+Fold Number: 1
+Train Accuracy: 0.5785619174434088
+Train Loss: 0.5082637516709761
+Val Accuracy: 0.5791925465838509
+Val Loss: 0.6638841800368536
+Val Precision: 0.0
+Val Recall: 0.0
+Val F1-Score: nan
+
+25-09-2023_1621
+Time taken: 1:13:26
+Fold Number: 1
+Train Accuracy: 0.5799731182795699
+Train Loss: 0.6803425383824174
+Val Accuracy: 0.5796875
+Val Loss: 0.680392998456955
+Val Precision: 0.0
+Val Recall: 0.0
+Val F1-Score: nan
+
+25-09-2023_1656
+Time taken: 1:29:22
+Fold Number: 1
+Train Accuracy: 0.5786666666666667
+Train Loss: 0.3098000152160724
+Val Accuracy: 0.5791925465838509
+Val Loss: 0.8805765758690812
+Val Precision: 0.0
+Val Recall: 0.0
+Val F1-Score: nan
+
+25-09-2023_1734
+Time taken: 1:13:11
+Fold Number: 1
+Train Accuracy: 0.5786290322580645
+Train Loss: 0.6807407339413961
+Val Accuracy: 0.5796875
+Val Loss: 0.6803941339254379
+Val Precision: 0.0
+Val Recall: 0.0
+Val F1-Score: nan
+
+25-09-2023_1759
+Time taken: 2:27:04
+Fold Number: 1
+Train Accuracy: 0.5813172043010753
+Train Loss: 0.07712019252295416
+Val Accuracy: 0.5796875
+Val Loss: 1.266456143371761
+Val Precision: 0.0
+Val Recall: 0.0
+Val F1-Score: nan
+
+25-09-2023_1759
+Time taken: 2:28:33
+Fold Number: Average of all 5 folds
+Train Accuracy: 0.5813172043010753
+Train Loss: 0.07712019252295416
+Val Accuracy: 0.5796875
+Val Loss: 1.266456143371761
+Val Precision: 0.0
+Val Recall: 0.0
+Val F1-Score: nan
+
+25-09-2023_1818
+Time taken: 1:22:02
+Fold Number: 1
+Train Accuracy: 0.5795454545454546
+Train Loss: 0.1810381673849163
+Val Accuracy: 0.5796875
+Val Loss: 1.0221430154051632
+Val Precision: 0.0
+Val Recall: 0.0
+Val F1-Score: nan
+
+25-09-2023_1847
+Time taken: 1:13:04
+Fold Number: 1
+Train Accuracy: 0.5772849462365591
+Train Loss: 0.6811586169786351
+Val Accuracy: 0.5796875
+Val Loss: 0.6803942173719406
+Val Precision: 0.0
+Val Recall: 0.0
+Val F1-Score: nan
+
+25-09-2023_1936
+Time taken: 1:18:08
+Fold Number: 1
+Train Accuracy: 0.5793010752688172
+Train Loss: 0.08940635958025532
+Val Accuracy: 0.5796875
+Val Loss: 1.214721490070224
+Val Precision: 0.0
+Val Recall: 0.0
+Val F1-Score: nan
+
+25-09-2023_1936
+Time taken: 5:51:34
+Fold Number: Average of all 5 folds
+Train Accuracy: 0.5790187784810867
+Train Loss: 0.27212707346305504
+Val Accuracy: 0.5794400232919255
+Val Loss: 0.9453313153453304
+Val Precision: 0.0
+Val Recall: 0.0
+Val F1-Score: nan
+
+25-09-2023_2000
+Time taken: 1:13:08
+Fold Number: 1
+Train Accuracy: 0.5786290322580645
+Train Loss: 0.6807307793248084
+Val Accuracy: 0.5796875
+Val Loss: 0.680394122004509
+Val Precision: 0.0
+Val Recall: 0.0
+Val F1-Score: nan
+
+25-09-2023_2000
+Time taken: 6:09:32
+Fold Number: Average of all 5 folds
+Train Accuracy: 0.5786290322580645
+Train Loss: 0.6808036868290235
+Val Accuracy: 0.5796875
+Val Loss: 0.6803941091895103
+Val Precision: 0.0
+Val Recall: 0.0
+Val F1-Score: nan
+
+26-09-2023_1621
+Time taken: 2:24:53
+Fold Number: 1
+Train Accuracy: 0.5799731182795699
+Train Loss: 0.0142506172636155
+Val Accuracy: 0.5796875
+Val Loss: 6.516515707969665
+Val Precision: 0.0
+Val Recall: 0.0
+Val F1-Score: nan
+
+26-09-2023_1621
+Time taken: 2:25:31
+Fold Number: Average of all 5 folds
+Train Accuracy: 0.5799731182795699
+Train Loss: 0.0142506172636155
+Val Accuracy: 0.5796875
+Val Loss: 6.516515707969665
+Val Precision: 0.0
+Val Recall: 0.0
+Val F1-Score: nan
+
+26-09-2023_1656
+Time taken: 0:05:13
+Fold Number: 1
+Train Accuracy: 0.5759408602150538
+Train Loss: 0.13157681779315075
+Val Accuracy: 0.5796875
+Val Loss: 1.0736330188810825
+Val Precision: 0.0
+Val Recall: 0.0
+Val F1-Score: nan
+
+26-09-2023_1656
+Time taken: 0:05:17
+Fold Number: Average of all 5 folds
+Train Accuracy: 0.5759408602150538
+Train Loss: 0.13157681779315075
+Val Accuracy: 0.5796875
+Val Loss: 1.0736330188810825
+Val Precision: 0.0
+Val Recall: 0.0
+Val F1-Score: nan
+
+26-09-2023_1757
+Time taken: 2:39:59
+Fold Number: 1
+Train Accuracy: 0.5806451612903226
+Train Loss: 0.012004895652343518
+Val Accuracy: 0.5796875
+Val Loss: 1.5188404411077499
+Val Precision: 0.0
+Val Recall: 0.0
+Val F1-Score: nan
+
+26-09-2023_1757
+Time taken: 2:40:37
+Fold Number: Average of all 5 folds
+Train Accuracy: 0.5806451612903226
+Train Loss: 0.012004895652343518
+Val Accuracy: 0.5796875
+Val Loss: 1.5188404411077499
+Val Precision: 0.0
+Val Recall: 0.0
+Val F1-Score: nan
+
+26-09-2023_1850
+Time taken: 2:28:30
+Fold Number: 1
+Train Accuracy: 0.5779569892473119
+Train Loss: 0.039829399386345325
+Val Accuracy: 0.5796875
+Val Loss: 1.565518678817898
+Val Precision: 0.0
+Val Recall: 0.0
+Val F1-Score: nan
+
+26-09-2023_1850
+Time taken: 2:29:11
+Fold Number: Average of all 5 folds
+Train Accuracy: 0.5779569892473119
+Train Loss: 0.039829399386345325
+Val Accuracy: 0.5796875
+Val Loss: 1.565518678817898
+Val Precision: 0.0
+Val Recall: 0.0
+Val F1-Score: nan
+
+26-09-2023_2022
+Time taken: 0:04:41
+Fold Number: 1
+Train Accuracy: 0.34610215053763443
+Train Loss: 0.1589034951682533
+Val Accuracy: 0.6578125
+Val Loss: 1.0443996913731097
+Val Precision: 0.6287281687203425
+Val Recall: 0.5315985130111525
+Val F1-Score: 0.5761
+
+26-09-2023_2029
+Time taken: 0:04:37
+Fold Number: 1
+Train Accuracy: 0.375
+Train Loss: 0.14859934715974715
+Val Accuracy: 0.659375
+Val Loss: 1.1572347663342952
+Val Precision: 0.5938689840319544
+Val Recall: 0.6840148698884758
+Val F1-Score: 0.6358
+
+26-09-2023_2141
+Time taken: 0:05:07
+Fold Number: 1
+Train Accuracy: 0.3407258064516129
+Train Loss: 0.15700877833390428
+Val Accuracy: 0.65625
+Val Loss: 1.019861027598381
+Val Precision: 0.6372750018634903
+Val Recall: 0.5130111524163569
+Val F1-Score: 0.5684
+
+26-09-2023_2141
+Time taken: 0:05:37
+Fold Number: Average of all 5 folds
+Train Accuracy: 0.3407258064516129
+Train Loss: 0.15700877833390428
+Val Accuracy: 0.65625
+Val Loss: 1.019861027598381
+Val Precision: 0.6372750018634903
+Val Recall: 0.5130111524163569
+Val F1-Score: 0.5684
+
+27-09-2023_1345
+Time taken: 0:03:07
+Fold Number: 1
+Train Accuracy: 0.8481182795698925
+Train Loss: 0.3561788508968969
+Val Accuracy: 0.6421875
+Val Loss: 0.7973270401358604
+Val Precision: 0.5875839382687358
+Val Recall: 0.483271375464684
+Val F1-Score: 0.5303
+
+27-09-2023_1345
+Time taken: 0:03:11
+Fold Number: Average of all 5 folds
+Train Accuracy: 0.8481182795698925
+Train Loss: 0.3561788508968969
+Val Accuracy: 0.6421875
+Val Loss: 0.7973270401358604
+Val Precision: 0.5875839382687358
+Val Recall: 0.483271375464684
+Val F1-Score: 0.5303
+
+27-09-2023_1350
+Time taken: 0:02:08
+Fold Number: 1
+Train Accuracy: 0.771505376344086
+Train Loss: 0.4752470738785241
+Val Accuracy: 0.5515625
+Val Loss: 0.8617534086108207
+Val Precision: 0.4872192656658849
+Val Recall: 0.7806691449814126
+Val F1-Score: 0.6
+
+27-09-2023_1350
+Time taken: 0:02:12
+Fold Number: Average of all 5 folds
+Train Accuracy: 0.771505376344086
+Train Loss: 0.4752470738785241
+Val Accuracy: 0.5515625
+Val Loss: 0.8617534086108207
+Val Precision: 0.4872192656658849
+Val Recall: 0.7806691449814126
+Val F1-Score: 0.6
+
+27-09-2023_1357
+Time taken: 0:03:19
+Fold Number: 1
+Train Accuracy: 0.6364247311827957
+Train Loss: 0.6247957227050617
+Val Accuracy: 0.6015625
+Val Loss: 0.6781920962035656
+Val Precision: 0.534556483459225
+Val Recall: 0.483271375464684
+Val F1-Score: 0.5076
+
+27-09-2023_1357
+Time taken: 0:03:22
+Fold Number: Average of all 5 folds
+Train Accuracy: 0.6364247311827957
+Train Loss: 0.6247957227050617
+Val Accuracy: 0.6015625
+Val Loss: 0.6781920962035656
+Val Precision: 0.534556483459225
+Val Recall: 0.483271375464684
+Val F1-Score: 0.5076
+
+27-09-2023_1400
+Time taken: 1:21:48
+Fold Number: 1
+Train Accuracy: 0.3333333333333333
+Train Loss: 0.05073873891860687
+Val Accuracy: 0.6265625
+Val Loss: 1.7195614628493785
+Val Precision: 0.6020689141506985
+Val Recall: 0.40148698884758366
+Val F1-Score: 0.4817
+
+27-09-2023_1400
+Time taken: 1:24:52
+Fold Number: Average of all 5 folds
+Train Accuracy: 0.3333333333333333
+Train Loss: 0.05073873891860687
+Val Accuracy: 0.6265625
+Val Loss: 1.7195614628493785
+Val Precision: 0.6020689141506985
+Val Recall: 0.40148698884758366
+Val F1-Score: 0.4817
+
+27-09-2023_1406
+Time taken: 0:02:51
+Fold Number: 1
+Train Accuracy: 0.6169354838709677
+Train Loss: 0.6381427299591803
+Val Accuracy: 0.5671875
+Val Loss: 0.6822278290987015
+Val Precision: 0.4977881092184729
+Val Recall: 0.5353159851301115
+Val F1-Score: 0.5159
+
+27-09-2023_1406
+Time taken: 0:02:54
+Fold Number: Average of all 5 folds
+Train Accuracy: 0.6169354838709677
+Train Loss: 0.6381427299591803
+Val Accuracy: 0.5671875
+Val Loss: 0.6822278290987015
+Val Precision: 0.4977881092184729
+Val Recall: 0.5353159851301115
+Val F1-Score: 0.5159
+
+27-09-2023_1436
+Time taken: 0:26:52
+Fold Number: 1
+Train Accuracy: 0.8629032258064516
+Train Loss: 0.3109910905521403
+Val Accuracy: 0.5984375
+Val Loss: 0.8788852095603943
+Val Precision: 0.5247986170773814
+Val Recall: 0.5055762081784386
+Val F1-Score: 0.515
+
+27-09-2023_1436
+Time taken: 0:26:57
+Fold Number: Average of all 5 folds
+Train Accuracy: 0.8629032258064516
+Train Loss: 0.3109910905521403
+Val Accuracy: 0.5984375
+Val Loss: 0.8788852095603943
+Val Precision: 0.5247986170773814
+Val Recall: 0.5055762081784386
+Val F1-Score: 0.515
+
+27-09-2023_1535
+Time taken: 0:10:43
+Fold Number: 1
+Train Accuracy: 0.6297043010752689
+Train Loss: 0.6449556260980586
+Val Accuracy: 0.596875
+Val Loss: 0.6712401002645493
+Val Precision: 0.5496493128928073
+Val Recall: 0.3382899628252788
+Val F1-Score: 0.4188
+
+27-09-2023_1536
+Time taken: 0:11:04
+Fold Number: Average of all 5 folds
+Train Accuracy: 0.6297043010752689
+Train Loss: 0.6449556260980586
+Val Accuracy: 0.596875
+Val Loss: 0.6712401002645493
+Val Precision: 0.5496493128928073
+Val Recall: 0.3382899628252788
+Val F1-Score: 0.4188
+
+27-09-2023_1550
+Time taken: 0:10:56
+Fold Number: 1
+Train Accuracy: 0.946236559139785
+Train Loss: 0.1489456456394926
+Val Accuracy: 0.6234375
+Val Loss: 1.1947302132844926
+Val Precision: 0.570909380705524
+Val Recall: 0.5724907063197026
+Val F1-Score: 0.5717
+
+27-09-2023_1550
+Time taken: 0:11:04
+Fold Number: Average of all 5 folds
+Train Accuracy: 0.946236559139785
+Train Loss: 0.1489456456394926
+Val Accuracy: 0.6234375
+Val Loss: 1.1947302132844926
+Val Precision: 0.570909380705524
+Val Recall: 0.5724907063197026
+Val F1-Score: 0.5717
+
+27-09-2023_1553
+Time taken: 0:14:02
+Fold Number: 1
+Train Accuracy: 0.6713709677419355
+Train Loss: 0.5924174484386239
+Val Accuracy: 0.5984375
+Val Loss: 0.6650301411747932
+Val Precision: 0.5243400820934359
+Val Recall: 0.6914498141263941
+Val F1-Score: 0.5964
+
+27-09-2023_1553
+Time taken: 0:14:07
+Fold Number: Average of all 5 folds
+Train Accuracy: 0.6713709677419355
+Train Loss: 0.5924174484386239
+Val Accuracy: 0.5984375
+Val Loss: 0.6650301411747932
+Val Precision: 0.5243400820934359
+Val Recall: 0.6914498141263941
+Val F1-Score: 0.5964
+
+27-09-2023_1620
+Time taken: 0:14:24
+Fold Number: 1
+Train Accuracy: 0.7076612903225806
+Train Loss: 0.5753168050319918
+Val Accuracy: 0.6484375
+Val Loss: 0.6508866146206855
+Val Precision: 0.6516411613995257
+Val Recall: 0.3903345724907063
+Val F1-Score: 0.4882
+
+27-09-2023_1621
+Time taken: 0:18:01
+Fold Number: Average of all 5 folds
+Train Accuracy: 0.7076612903225806
+Train Loss: 0.5753168050319918
+Val Accuracy: 0.6484375
+Val Loss: 0.6508866146206855
+Val Precision: 0.6516411613995257
+Val Recall: 0.3903345724907063
+Val F1-Score: 0.4882
+
+27-09-2023_1641
+Time taken: 0:09:57
+Fold Number: 1
+Train Accuracy: 0.7977150537634409
+Train Loss: 0.4409803629562419
+Val Accuracy: 0.61875
+Val Loss: 0.8460604853928089
+Val Precision: 0.5739909527384925
+Val Recall: 0.41263940520446096
+Val F1-Score: 0.4801
+
+27-09-2023_1641
+Time taken: 0:13:37
+Fold Number: Average of all 5 folds
+Train Accuracy: 0.7977150537634409
+Train Loss: 0.4409803629562419
+Val Accuracy: 0.61875
+Val Loss: 0.8460604853928089
+Val Precision: 0.5739909527384925
+Val Recall: 0.41263940520446096
+Val F1-Score: 0.4801
+
+27-09-2023_2042
+Time taken: 0:07:29
+Fold Number: 1
+Train Accuracy: 0.8810483870967742
+Train Loss: 0.29395222367458446
+Val Accuracy: 0.6125
+Val Loss: 0.8241344064474105
+Val Precision: 0.5428496666876376
+Val Recall: 0.7100371747211895
+Val F1-Score: 0.6153
+
+27-09-2023_2042
+Time taken: 0:10:29
+Fold Number: Average of all 5 folds
+Train Accuracy: 0.8810483870967742
+Train Loss: 0.29395222367458446
+Val Accuracy: 0.6125
+Val Loss: 0.8241344064474105
+Val Precision: 0.5428496666876376
+Val Recall: 0.7100371747211895
+Val F1-Score: 0.6153
+
+27-09-2023_2117
+Time taken: 0:08:35
+Fold Number: 1
+Train Accuracy: 0.8461021505376344
+Train Loss: 0.3637704995050225
+Val Accuracy: 0.6234375
+Val Loss: 0.7775934018194676
+Val Precision: 0.5626447688916633
+Val Recall: 0.6022304832713755
+Val F1-Score: 0.5818
+
+27-09-2023_2117
+Time taken: 0:13:22
+Fold Number: Average of all 5 folds
+Train Accuracy: 0.8461021505376344
+Train Loss: 0.3637704995050225
+Val Accuracy: 0.6234375
+Val Loss: 0.7775934018194676
+Val Precision: 0.5626447688916633
+Val Recall: 0.6022304832713755
+Val F1-Score: 0.5818
+
+27-09-2023_2315
+Time taken: 1:26:44
+Fold Number: 1
+Train Accuracy: 0.9899193548387096
+Train Loss: 0.030554709615566396
+Val Accuracy: 0.6640625
+Val Loss: 1.3987473256886005
+Val Precision: 0.6305813713341594
+Val Recall: 0.5353159851301115
+Val F1-Score: 0.5791
+
+27-09-2023_2316
+Time taken: 1:30:00
+Fold Number: Average of all 5 folds
+Train Accuracy: 0.9899193548387096
+Train Loss: 0.030554709615566396
+Val Accuracy: 0.6640625
+Val Loss: 1.3987473256886005
+Val Precision: 0.6305813713341594
+Val Recall: 0.5353159851301115
+Val F1-Score: 0.5791
+
+27-09-2023_2321
+Time taken: 1:28:54
+Fold Number: 1
+Train Accuracy: 0.9838709677419355
+Train Loss: 0.06178904423910764
+Val Accuracy: 0.653125
+Val Loss: 0.950316185504198
+Val Precision: 0.6023255443376331
+Val Recall: 0.5947955390334573
+Val F1-Score: 0.5985
+
+27-09-2023_2322
+Time taken: 1:32:58
+Fold Number: Average of all 5 folds
+Train Accuracy: 0.9838709677419355
+Train Loss: 0.06178904423910764
+Val Accuracy: 0.653125
+Val Loss: 0.950316185504198
+Val Precision: 0.6023255443376331
+Val Recall: 0.5947955390334573
+Val F1-Score: 0.5985
+
+28-09-2023_1405
+Time taken: 1:21:48
+Fold Number: 1
+Train Accuracy: 0.9758064516129032
+Train Loss: 0.061226207422473096
+Val Accuracy: 0.6296875
+Val Loss: 1.2552075028419494
+Val Precision: 0.587763472184473
+Val Recall: 0.5315985130111525
+Val F1-Score: 0.5583
+
+28-09-2023_1405
+Time taken: 1:23:33
+Fold Number: Average of all 5 folds
+Train Accuracy: 0.9758064516129032
+Train Loss: 0.061226207422473096
+Val Accuracy: 0.6296875
+Val Loss: 1.2552075028419494
+Val Precision: 0.587763472184473
+Val Recall: 0.5315985130111525
+Val F1-Score: 0.5583
+
+28-09-2023_1833
+Time taken: 1:21:04
+Fold Number: 1
+Train Accuracy: 0.9818548387096774
+Train Loss: 0.050628515866695235
+Val Accuracy: 0.609375
+Val Loss: 1.496743807196617
+Val Precision: 0.5359639122570736
+Val Recall: 0.6765799256505576
+Val F1-Score: 0.5981ROC: (0.6163104888233849,)
+PRROC: 0.7294018287673077
+
+
+28-09-2023_1833
+Time taken: 1:23:38
+Fold Number: Average of all 5 folds
+Train Accuracy: 0.9818548387096774
+Train Loss: 0.050628515866695235
+Val Accuracy: 0.609375
+Val Loss: 1.496743807196617
+Val Precision: 0.5359639122570736
+Val Recall: 0.6765799256505576
+Val F1-Score: 0.5981ROC: (0.6163104888233849,)
+PRROC: 0.7294018287673077
+
+
+29-09-2023_0026
+Time taken: 1:22:13
+Fold Number: 1
+Train Accuracy: 0.9724462365591398
+Train Loss: 0.07159102475020274
+Val Accuracy: 0.6171875
+Val Loss: 1.290849783271551
+Val Precision: 0.5675855438719849
+Val Recall: 0.45353159851301117
+Val F1-Score: 0.5042ROC: (0.6022727272727273,)
+PRROC: 0.5806010265292328
+
+
+29-09-2023_0027
+Time taken: 1:24:28
+Fold Number: Average of all 5 folds
+Train Accuracy: 0.9724462365591398
+Train Loss: 0.07159102475020274
+Val Accuracy: 0.6171875
+Val Loss: 1.290849783271551
+Val Precision: 0.5675855438719849
+Val Recall: 0.45353159851301117
+Val F1-Score: 0.5042ROC: (0.6022727272727273,)
+PRROC: 0.5806010265292328
+
+
+29-09-2023_1209
+Time taken: 1:22:46
+Fold Number: 1
+Train Accuracy: 0.7358870967741935
+Train Loss: 0.518520866030006
+Val Accuracy: 0.6265625
+Val Loss: 0.7184589840471745
+Val Precision: 0.5922015407145518
+Val Recall: 0.35315985130111527
+Val F1-Score: 0.4425ROC: (0.615625,)
+PRROC: 0.5242361756505576
+
+
+29-09-2023_1209
+Time taken: 1:24:07
+Fold Number: Average of all 5 folds
+Train Accuracy: 0.7358870967741935
+Train Loss: 0.518520866030006
+Val Accuracy: 0.6265625
+Val Loss: 0.7184589840471745
+Val Precision: 0.5922015407145518
+Val Recall: 0.35315985130111527
+Val F1-Score: 0.4425
+ROC: (0.615625,)
+PRROC: 0.5242361756505576
+
+
+29-09-2023_1213
+Time taken: 1:20:16
+Fold Number: 1
+Train Accuracy: 0.6176075268817204
+Train Loss: 0.6475013994401501
+Val Accuracy: 0.6140625
+Val Loss: 0.668299013376236
+Val Precision: 0.5679866692503796
+Val Recall: 0.40148698884758366
+Val F1-Score: 0.4704
+ROC: (0.5978572419213166,)
+PRROC: 0.5462815098877093
+
+
+29-09-2023_1213
+Time taken: 1:22:04
+Fold Number: Average of all 5 folds
+Train Accuracy: 0.6176075268817204
+Train Loss: 0.6475013994401501
+Val Accuracy: 0.6140625
+Val Loss: 0.668299013376236
+Val Precision: 0.5679866692503796
+Val Recall: 0.40148698884758366
+Val F1-Score: 0.4704ROC: (0.5978572419213166,)
+PRROC: 0.5462815098877093
+
+
+04-10-2023_1032
+Time taken: 1:20:21
+Fold Number: 1
+Train Accuracy: 0.625
+Train Loss: 0.6519623533371957
+Val Accuracy: 0.609375
+Val Loss: 0.6698674201965332
+Val Precision: 0.5833152287613254
+Val Recall: 0.30855018587360594
+Val F1-Score: 0.4036
+ROC: (0.5936719515392364,)
+PRROC: 0.48658801810687097
+
+
+04-10-2023_1032
+Time taken: 1:21:09
+Fold Number: Average of all 5 folds
+Train Accuracy: 0.625
+Train Loss: 0.6519623533371957
+Val Accuracy: 0.609375
+Val Loss: 0.6698674201965332
+Val Precision: 0.5833152287613254
+Val Recall: 0.30855018587360594
+Val F1-Score: 0.4036
+ROC: (0.5936719515392364,)
+PRROC: 0.48658801810687097
+
+
+04-10-2023_1038
+Time taken: 1:19:44
+Fold Number: 1
+Train Accuracy: 0.5813172043010753
+Train Loss: 0.6726793922403808
+Val Accuracy: 0.5796875
+Val Loss: 0.6789788022637367
+Val Precision: 0.0
+Val Recall: 0.0
+Val F1-Score: nan
+ROC: (nan,)
+PRROC: nan
+
+
+04-10-2023_1039
+Time taken: 1:20:49
+Fold Number: Average of all 5 folds
+Train Accuracy: 0.5813172043010753
+Train Loss: 0.6726793922403808
+Val Accuracy: 0.5796875
+Val Loss: 0.6789788022637367
+Val Precision: 0.0
+Val Recall: 0.0
+Val F1-Score: nan
+ROC: (nan,)
+PRROC: nan
+
+16-10-2023_1334
+Time taken: 1:21:16
+Fold Number: 1
+Train Accuracy: 0.7896505376344086
+Train Loss: 0.43981888153219734
+Val Accuracy: 0.6203125
+Val Loss: 0.7533923357725143
+Val Precision: 0.5616771097309037
+Val Recall: 0.4944237918215613
+Val F1-Score: 0.5259
+ROC: 0.6070833333333333
+PRROC: 0.607888979244114
+
+
+16-10-2023_1335
+Time taken: 1:21:48
+Fold Number: Average of all 5 folds
+Train Accuracy: 0.7896505376344086
+Train Loss: 0.43981888153219734
+Val Accuracy: 0.6203125
+Val Loss: 0.7533923357725143
+Val Precision: 0.5616771097309037
+Val Recall: 0.4944237918215613
+Val F1-Score: 0.5259
+ROC: 0.6070833333333333
+PRROC: 0.607888979244114
+
+
+16-10-2023_1400
+Time taken: 0:47:52
+Fold Number: 1
+Train Accuracy: 0.8225
+Train Loss: 0.37922633975744247
+Val Accuracy: 0.6101190476190477
+Val Loss: 0.8717797696590424
+Val Precision: 0.5576862853458598
+Val Recall: 0.4397163120567376
+Val F1-Score: 0.4917
+ROC: 0.5940018966334757
+PRROC: 0.5691689329707247
+
+
+16-10-2023_1400
+Time taken: 0:48:19
+Fold Number: Average of all 5 folds
+Train Accuracy: 0.8225
+Train Loss: 0.37922633975744247
+Val Accuracy: 0.6101190476190477
+Val Loss: 0.8717797696590424
+Val Precision: 0.5576862853458598
+Val Recall: 0.4397163120567376
+Val F1-Score: 0.4917
+ROC: 0.5940018966334757
+PRROC: 0.5691689329707247
+
+
+16-10-2023_1416
+Time taken: 0:36:42
+Fold Number: 1
+Train Accuracy: 0.8183139534883721
+Train Loss: 0.3963934231636136
+Val Accuracy: 0.6180555555555556
+Val Loss: 0.8044365462329652
+Val Precision: 0.5956639566395664
+Val Recall: 0.3333333333333333
+Val F1-Score: 0.4275
+ROC: 0.6098868374032163
+PRROC: 0.5123792270531401
+
+
+16-10-2023_1416
+Time taken: 0:37:10
+Fold Number: Average of all 5 folds
+Train Accuracy: 0.8183139534883721
+Train Loss: 0.3963934231636136
+Val Accuracy: 0.6180555555555556
+Val Loss: 0.8044365462329652
+Val Precision: 0.5956639566395664
+Val Recall: 0.3333333333333333
+Val F1-Score: 0.4275
+ROC: 0.6098868374032163
+PRROC: 0.5123792270531401
+
+
+16-10-2023_1613
+Time taken: 1:30:08
+Fold Number: 1
+Train Accuracy: 0.9711021505376344
+Train Loss: 0.07760853885412616
+Val Accuracy: 0.659375
+Val Loss: 1.31154872328043
+Val Precision: 0.6125828486696626
+Val Recall: 0.5613382899628253
+Val F1-Score: 0.5858
+ROC: 0.6491258615921915
+PRROC: 0.6595909577304166
+
+
+16-10-2023_1613
+Time taken: 1:30:35
+Fold Number: Average of all 5 folds
+Train Accuracy: 0.9711021505376344
+Train Loss: 0.07760853885412616
+Val Accuracy: 0.659375
+Val Loss: 1.31154872328043
+Val Precision: 0.6125828486696626
+Val Recall: 0.5613382899628253
+Val F1-Score: 0.5858
+ROC: 0.6491258615921915
+PRROC: 0.6595909577304166
+
+
+18-10-2023_1043
+Time taken: 1:28:35
+Fold Number: 1
+Train Accuracy: 0.668010752688172
+Train Loss: 0.6083380140924967
+Val Accuracy: 0.6
+Val Loss: 0.6787272155284881
+Val Precision: 0.5353258059577761
+Val Recall: 0.3754646840148699
+Val F1-Score: 0.4414
+ROC: 0.5809429955771419
+PRROC: 0.5236781092032021
+
+
+18-10-2023_1043
+Time taken: 1:29:09
+Fold Number: Average of all 5 folds
+Train Accuracy: 0.668010752688172
+Train Loss: 0.6083380140924967
+Val Accuracy: 0.6
+Val Loss: 0.6787272155284881
+Val Precision: 0.5353258059577761
+Val Recall: 0.3754646840148699
+Val F1-Score: 0.4414
+ROC: 0.5809429955771419
+PRROC: 0.5236781092032021
+
+
+18-10-2023_1054
+Time taken: 1:26:53
+Fold Number: 1
+Train Accuracy: 0.7251344086021505
+Train Loss: 0.5219300075243878
+Val Accuracy: 0.6375
+Val Loss: 0.6792149595916271
+Val Precision: 0.5785917354168358
+Val Recall: 0.5464684014869888
+Val F1-Score: 0.5621
+ROC: 0.6267232883949162
+PRROC: 0.6451639186423271
+
+
+18-10-2023_1054
+Time taken: 1:27:42
+Fold Number: Average of all 5 folds
+Train Accuracy: 0.7251344086021505
+Train Loss: 0.5219300075243878
+Val Accuracy: 0.6375
+Val Loss: 0.6792149595916271
+Val Precision: 0.5785917354168358
+Val Recall: 0.5464684014869888
+Val F1-Score: 0.5621
+ROC: 0.6267232883949162
+PRROC: 0.6451639186423271
+
