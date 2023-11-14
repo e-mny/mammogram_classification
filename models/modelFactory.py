@@ -22,12 +22,6 @@ class ModelFactory:
             return self.create_vgg16()
         elif self.model_name == "vgg19":
             return self.create_vgg19()
-        elif self.model_name == "alexnet":
-            return self.create_alexnet()
-        elif self.model_name == "googlenet":
-            return self.create_googlenet()
-        elif self.model_name == "inception_v3":
-            return self.create_inception_v3()
         elif self.model_name == "resnext50_32x4d":
             return self.create_resnext50_32x4d()
         elif self.model_name == "densenet121":
@@ -38,13 +32,8 @@ class ModelFactory:
             return self.create_efficientnet_b7()
         elif self.model_name == "mobilenet_v2":
             return self.create_mobilenet_v2()
-        elif self.model_name == "mobilenet_v3_small":
-            return self.create_mobilenet_v3_small()
-        elif self.model_name == "mobilenet_v3_large":
-            return self.create_mobilenet_v3_large()
         elif self.model_name == "xception":
             return self.create_xception()
-        # Add more model creation methods here...
         else:
             raise ValueError("Unsupported model name.")
 
@@ -83,6 +72,20 @@ class ModelFactory:
     
     def create_resnet50(self):
         model = models.resnet50(pretrained=self.pretrained)
+        
+        # Loading pretrained weights from MedMNIST
+        # WEIGHTS_PATH = "/home/emok/sq58/Code/base_mammo/models/pneumoniamnist/resnet50_224_1.pth"
+        # checkpoint = torch.load(WEIGHTS_PATH)
+        
+        # # To load checkpoints with correct num of output classes properly
+        # if "chestmnist" in WEIGHTS_PATH:
+        #     num_classes = 14
+        # elif "pneumoniamnist" in WEIGHTS_PATH:
+        #     num_classes = 2
+        # model.fc = torch.nn.Linear(in_features=model.fc.in_features, out_features=num_classes)
+
+        # model.load_state_dict(checkpoint['net'])
+
         for name, param in model.named_parameters():
             # if "bn" in name: # Following EMBED Screening Model Paper
             #     param.requires_grad = True
@@ -122,71 +125,73 @@ class ModelFactory:
         model.classifier[6] = nn.Linear(num_features, self.num_classes)
         return model
     
-    def create_alexnet(self):
-        model = models.alexnet(pretrained=self.pretrained)
-        for param in model.parameters():
+    def create_densenet121(self):
+        model = models.densenet121(pretrained=self.pretrained)
+        model.features.conv0 = nn.Conv2d(in_channels=self.input_channels, out_channels=64, kernel_size=7, stride=2, padding=3, bias=False)
+        for name, param in model.named_parameters():
             param.requires_grad = False
 
-        # num_features = model.classifier[6].in_features
-        # model.classifier[6] = nn.Linear(num_features, self.num_classes)
+        model = replaceFCLayer(model, self.num_classes)
+
+        # Unfreeze the very last convolutional layer
+        for param in model.features.denseblock4.denselayer16.parameters():
+            param.requires_grad = True
+
         return model
-    
-    def create_googlenet(self):
-        model = models.googlenet(pretrained=self.pretrained)
-        for param in model.parameters():
+
+    def create_efficientnet_b0(self):
+        model = EfficientNet.from_pretrained('efficientnet-b0')
+        model._conv_stem = nn.Conv2d(in_channels=self.input_channels, out_channels=32, kernel_size=3, stride=2, padding=1, bias=False)
+        for name, param in model.named_parameters():
             param.requires_grad = False
 
-        # num_features = model.fc.in_features
-        # model.fc = nn.Linear(num_features, self.num_classes)
-        return model
-    
-    def create_inception_v3(self):
-        model = models.inception_v3(pretrained=self.pretrained)
-        for param in model.parameters():
-            param.requires_grad = False
+        model = replaceFCLayer(model, self.num_classes)
 
-        # num_features = model.fc.in_features
-        # model.fc = nn.Linear(num_features, self.num_classes)
+        # Unfreeze the very last convolutional layer
+        for param in model._conv_head.parameters():
+            param.requires_grad = True
+
         return model
     
     def create_resnext50_32x4d(self):
         model = models.resnext50_32x4d(pretrained=self.pretrained)
         for param in model.parameters():
             param.requires_grad = False
-            
-        # num_features = model.fc.in_features
-        # model.fc = nn.Linear(num_features, self.num_classes)
-        return model
-    
-    def create_wide_resnet50_2(self):
-        model = models.wide_resnet50_2(pretrained=self.pretrained)
-        for param in model.parameters():
-            param.requires_grad = False
-            
-        # num_features = model.fc.in_features
-        # model.fc = nn.Linear(num_features, self.num_classes)
+
+        model = replaceFCLayer(model, self.num_classes)
+
+        # Unfreeze the very last convolutional layer
+        for param in model.layer4[-1:].parameters():
+            param.requires_grad = True
+
         return model
 
-    def create_densenet121(self):
-        model = models.densenet121(pretrained=self.pretrained)
-        model.features.conv0 = nn.Conv2d(in_channels=self.input_channels, out_channels=64, kernel_size=7, stride=2, padding=3, bias=False) # To adjust input size
+    def create_mobilenet_v2(self):
+        model = models.mobilenet_v2(pretrained=self.pretrained)
+        model.features[0][0] = nn.Conv2d(self.input_channels, 32, kernel_size=3, stride=2, padding=1, bias=False)
         for name, param in model.named_parameters():
             param.requires_grad = False
-            
-        
-        # num_ftrs = model.classifier.in_features
-        # model.classifier = nn.Linear(num_ftrs, self.num_classes)
+
+        # Modify the final fully connected layer for custom number of classes
+        model = replaceFCLayer(model, self.num_classes)
+
+        # Unfreeze the very last convolutional layer
+        for param in model.features[-1:].parameters():
+            param.requires_grad = True
+
         return model
 
-    def create_efficientnet_b0(self):
-        # model = EfficientNet.from_pretrained('efficientnet-b0', num_classes=self.num_classes)
-        model = EfficientNet.from_pretrained('efficientnet-b0')
-        # Replace the first convolutional layer to accept single-channel input
-        model._conv_stem = nn.Conv2d(in_channels=self.input_channels, out_channels=32, kernel_size=3, stride=2, padding=1, bias=False)
+    def create_xception(self):
+        model = timm.create_model("xception", pretrained=self.pretrained, in_chans=self.input_channels)
         for name, param in model.named_parameters():
             param.requires_grad = False
-        # num_ftrs = model._fc.in_features
-        # model._fc = nn.Linear(num_ftrs, self.num_classes)
+
+        model = replaceFCLayer(model, self.num_classes)
+
+        # Unfreeze the very last convolutional layer
+        for param in model.conv4.parameters():
+            param.requires_grad = True
+
         return model
     
     def create_efficientnet_b7(self):
@@ -197,53 +202,7 @@ class ModelFactory:
             param.requires_grad = False
         return model
 
-    def create_mobilenet_v2(self):
-        model = models.mobilenet_v2(pretrained=self.pretrained)
-        model.features[0][0] = nn.Conv2d(self.input_channels, 32, kernel_size=3, stride=2, padding=1, bias=False)
-        for name, param in model.named_parameters():
-            param.requires_grad = False
-        
-        # for param in model.features[-3:].parameters(): # Last 3 layers
-        #     print(param)
-        #     param.requires_grad = True
-        # Modify the final fully connected layer for custom number of classes
-        # num_features = model.classifier[1].in_features
-        # model.classifier[1] = nn.Linear(num_features, self.num_classes)
-        # model.classifier = nn.Sequential(
-        #     nn.Dropout(p=0.2, inplace=False),
-        #     nn.Linear(in_features=1280, out_features=2, bias=True)
-        # )
-        return model
-
-    def create_mobilenet_v3_small(self):
-        model = models.mobilenet_v3_small(pretrained=self.pretrained)
-        # model.features[0][0] = nn.Conv2d(self.input_channels, 16, kernel_size=3, stride=2, padding=1, bias=False)
-        for param in model.parameters():
-            param.requires_grad = False
-        
-        # Modify the final fully connected layer for custom number of classes
-        # num_features = model.classifier[-1].in_features
-        # model.classifier[-1] = nn.Linear(num_features, self.num_classes)
-        return model
-
-    def create_mobilenet_v3_large(self):
-        model = models.mobilenet_v3_large(pretrained=self.pretrained)
-        model.features[0][0] = nn.Conv2d(self.input_channels, 32, kernel_size=3, stride=2, padding=1, bias=False)
-        for param in model.parameters():
-            param.requires_grad = False
-        
-        # Modify the final fully connected layer for custom number of classes
-        # num_features = model.classifier[1].in_features
-        # model.classifier[1] = nn.Linear(num_features, self.num_classes)
-        return model
     
-    def create_xception(self):
-        model = timm.create_model("xception", pretrained=self.pretrained, in_chans=self.input_channels)
-        for name, param in model.named_parameters():
-            param.requires_grad = False
-        # num_features = model.fc.in_features
-        # model.fc = nn.Linear(num_features, self.num_classes)
-        return model
 
 def printTrainableParams(model):
     num_trainable_params = sum(p.numel() for p in model.parameters() if p.requires_grad)
@@ -270,30 +229,21 @@ def reset_weights(model):
             layer.reset_parameters()
 
 def replaceFCLayer(model, out_classes):
+    # Find the last fully connected layer
+    # final_layer_name = None
+    # for name, module in model.named_modules():
+    #     if isinstance(module, nn.Linear):
+    #         final_layer_name = name
+
+    # if final_layer_name is not None:
+    #     # Replace the final layer
+    #     num_features = getattr(model, final_layer_name).in_features
+    
     num_features = model.fc.in_features
-    # classifier_layer = nn.Sequential(
-    #     nn.Linear(num_features, 512),
-    #     nn.ReLU(),
-    #     nn.Dropout(0.5),
-    #     nn.Linear(512, 256),
-    #     nn.ReLU(),
-    #     # nn.Dropout(0.5),
-    #     # nn.Linear(512, 256),
-    #     # nn.ReLU(),
-    #     # nn.Dropout(0.5),
-    #     # nn.Linear(256, 128),
-    #     # nn.ReLU(),
-    #     # nn.Dropout(0.5),
-    #     # nn.Linear(128, 32),
-    #     # nn.Dropout(0.5),
-    #     nn.Linear(256, 1),
-    #     # nn.ReLU(),
-    #     nn.Sigmoid()
-    # )
     
     # From paper
     classifier_layer = nn.Sequential(
-        nn.Dropout(0.5),
+        nn.Dropout(0.3),
         nn.Linear(num_features, 512),
         nn.ReLU(),
         nn.Linear(512, 32),
@@ -302,30 +252,17 @@ def replaceFCLayer(model, out_classes):
         nn.Sigmoid()
     )
     
-    # From EMBED paper
-    classifier_layer = nn.Sequential(
-        nn.Linear(num_features, 1024),
-        nn.ReLU(),
-        nn.Linear(1024, 512),
-        nn.ReLU(),
-        nn.Linear(512, 128),
-        nn.ReLU(),
-        nn.Linear(128, 32),
-        nn.ReLU(),
-        nn.Linear(32, 1),
-        nn.Sigmoid()
-    )
+    # setattr(model, final_layer_name, classifier_layer)
     model.fc = classifier_layer
 
-    model.fc.apply(weights_init)
     
     return model
 
 # Define a Gaussian initialization for the final layer
-def weights_init(m):
-    if isinstance(m, nn.Linear):
-        nn.init.normal_(m.weight, mean=0, std=1e-2)
-        nn.init.constant_(m.bias, 0)
+# def weights_init(m):
+#     if isinstance(m, nn.Linear):
+#         nn.init.normal_(m.weight, mean=0, std=1e-2)
+#         nn.init.constant_(m.bias, 0)
 
 # # Example usage
 # num_classes = 2

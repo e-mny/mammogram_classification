@@ -252,7 +252,7 @@ def stratified_train(model, train_loader, val_loader, device, criterion, optimiz
         correct_train = 0
         total_train = 0
         for inputs, labels in train_loader:
-            labels = labels.type(torch.LongTensor)
+            labels = labels.type(torch.FloatTensor)
             inputs, labels = inputs.to(device, non_blocking=True), labels.to(device, non_blocking=True)
             optimizer.zero_grad()
             outputs = model(inputs)
@@ -279,26 +279,29 @@ def stratified_train(model, train_loader, val_loader, device, criterion, optimiz
         val_targets = []
         with torch.no_grad():
             for inputs, labels in val_loader:
-                labels = labels.type(torch.LongTensor)
+                labels = labels.type(torch.FloatTensor)
                 inputs, labels = inputs.to(device, non_blocking=True), labels.to(device, non_blocking=True)
                 val_outputs = model(inputs)
                 val_loss += criterion(val_outputs.squeeze(), labels).item()
                 predicted = torch.round(val_outputs).squeeze()
                 total_val += labels.size(0)
                 correct_val += (predicted == labels).sum().item()
-                val_preds.append(predicted.detach().cpu().numpy())
+                val_preds.append(predicted.detach().cpu().numpy().astype(int))
                 val_targets.append(labels.detach().cpu().numpy().astype(int))
                 
         print(f"Val time: {(time.time() - start_val_time):.2f}s")
         val_loss /= len(val_loader)
-        print(val_targets)
-        print(val_preds)
+        
+        val_preds_flattened = list(chain.from_iterable(val_preds))
+        val_targets_flattened = list(chain.from_iterable(val_targets))
+        # print(val_targets_flattened)
+        # print(val_preds_flattened)
         val_accuracy = correct_val / total_val
-        val_precision = precision_score(val_targets, val_preds)
+        val_precision = precision_score(val_targets_flattened, val_preds_flattened, zero_division = 1.0)
         val_precision_history.append(val_precision)
-        val_recall = recall_score(val_targets, val_preds)
+        val_recall = recall_score(val_targets_flattened, val_preds_flattened, zero_division = 1.0)
         val_recall_history.append(val_recall)
-        val_f1 = f1_score(val_targets, val_preds)
+        val_f1 = f1_score(val_targets_flattened, val_preds_flattened, zero_division = 1.0)
 
         # Print metrics
         print(f'Epoch [{epoch + 1}/{epochs}]')

@@ -13,19 +13,23 @@ def getSamples(data_loader):
     samplesPos = []
     batch_size = data_loader.batch_size
     
-    for batch in data_loader:
-        img_arrs, labels = batch
-        for i in range(batch_size):
-            img, label = img_arrs[i], labels[i]
-            if label.item() == negative_class_label and len(samplesNeg) < 4:
-                samplesNeg.append((img, label))
-                
-            elif label.item() == positive_class_label and len(samplesPos) < 4:
-                samplesPos.append((img, label))
-                
-            # print(len(samplesPos), len(samplesNeg))
-            if len(samplesNeg) == 4 and len(samplesPos) == 4:
-                return samplesNeg, samplesPos
+    try:
+        for batch in data_loader:
+            img_arrs, labels = batch
+            for i in range(batch_size):
+                img, label = img_arrs[i], labels[i]
+                if label.item() == negative_class_label and len(samplesNeg) < 4:
+                    samplesNeg.append((img, label))
+                    
+                elif label.item() == positive_class_label and len(samplesPos) < 4:
+                    samplesPos.append((img, label))
+                    
+                # print(len(samplesPos), len(samplesNeg))
+                if len(samplesNeg) == 4 and len(samplesPos) == 4:
+                    return samplesNeg, samplesPos
+    except IndexError as e:
+        print(f"IndexError occurred: {e}")
+        print(f"Index that caused the issue: {batch}")  # Print the index or variable i
             
     
     return None
@@ -50,7 +54,8 @@ def displaySample(train_loader, val_loader, transforms_func):
     sample_images = []
     sample_titles = []
     formatted_datetime = datetime.now().strftime("%d-%m-%y-%H%M%S")
-    train_transforms, _ = transforms_func
+    # train_transforms, _ = transforms_func
+    train_transforms = transforms_func
     print("Creating Samples")
     
     trainNegSamples, trainPosSamples = getSamples(train_loader)

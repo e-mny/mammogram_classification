@@ -1,7 +1,7 @@
 from torchvision import transforms
-from data_loading.datasets import CBISDataset, RSNADataset, VinDrDataset, CMMDDataset, CBISNewDataset, CBISCombinedDataset
+from data_loading.datasets import CBISDataset, RSNADataset, VinDrDataset, CMMDDataset, CBISNewDataset, CBISCombinedDataset, CBISROIDataset, CBISNewNewDataset
 from collections import Counter
-from torch.utils.data import DataLoader, SubsetRandomSampler, Dataset, Subset
+from torch.utils.data import DataLoader, SubsetRandomSampler, Dataset, Subset, random_split
 from data_loading.displayImage import displaySample
 import os
 import pydicom
@@ -25,65 +25,6 @@ import numpy as np
 import cv2
 from PIL import Image
 
-# class CombinedDataset(Dataset):
-#     def __init__(self, dataset_a, dataset_b, transform):
-#         self.dataset_a = dataset_a
-#         self.dataset_b = dataset_b
-
-#         # Calculate the total length of the combined dataset
-#         self.total_length = len(self.dataset_a) + len(self.dataset_b)
-#         self.data = self.dataset_a.data + self.dataset_b.data
-#         self.labels = self.dataset_a.labels + self.dataset_b.labels
-#         self.transform = transform
-
-#     def __len__(self):
-#         return self.total_length
-
-#     def __getitem__(self, idx):
-#         # if idx >= len(self.dataset_a):
-#         #     # Subtract the length of the first dataset to get the index in the second dataset
-#         #     idx -= len(self.dataset_a)
-#         #     image_path = self.dataset_b.data[idx]
-#         #     label = self.dataset_b.labels[idx]
-#         # else:
-#         #     image_path = self.dataset_a.data[idx]
-#         #     label = self.dataset_a.labels[idx]
-#         image_path = self.data[idx]
-#         label = self.labels[idx]
-        
-            
-        
-#         # JPEG
-#         imageArr = self.load_jpeg(image_path)
-#         # imageArr = self.stack_jpeg(imageArr)
-
-#         if self.transform:
-#             imageArr = self.transform(imageArr)
-
-#         return imageArr, label
-    
-#     def load_dicom(self, dicom_path):
-#         ds = pydicom.dcmread(dicom_path)
-#         image = ds.pixel_array
-
-#         # Convert to 8-bit grayscale
-#         image = image - np.min(image)
-#         image = (image / np.max(image) * 255).astype(np.uint8)
-
-#         imagearray = Image.fromarray(image.astype(float))
-#         return imagearray
-    
-#     def load_jpeg(self, jpeg_path):
-#         image = Image.open(jpeg_path).convert("RGB")
-        
-#         # image = np.array(image)
-        
-#         return image
-    
-#     def stack_jpeg(self, image):
-#         stacked_image = np.stack((image,) * 3, axis=-1)
-#         return stacked_image
-
 
 def createTransforms(data_augmentation_bool):
     # Define transformations
@@ -98,7 +39,7 @@ def createTransforms(data_augmentation_bool):
         # transforms.RandomAffine(degrees=0, scale=(1, 1.2)),
         transforms.RandomVerticalFlip(),
         transforms.RandomHorizontalFlip(),
-        transforms.RandomRotation(degrees=90, expand=False),
+        # transforms.RandomRotation(degrees=90, expand=False),
         # transforms.ColorJitter(brightness = 0.2, contrast= 0.2),
         # transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
         transforms.ToTensor(),
@@ -134,7 +75,7 @@ def calcClassDistribution(train_loader, val_loader):
     for class_label, count in val_class_distribution.items():
         print(f"Class {class_label}: {count} samples")
 
-def createDataLoaders(batch_size, dataset, data_augment):
+def createDataLoaders(batch_size, dataset, data_augment, val_ratio):
     
     train_transform, val_transform = createTransforms(data_augment)
     print(f"Transforms on Train dataset: {train_transform}")
@@ -143,6 +84,27 @@ def createDataLoaders(batch_size, dataset, data_augment):
         # Create PyTorch DataLoader
         train_dataset = CBISDataset(mode = "train", transform = train_transform)
         val_dataset = CBISDataset(mode = "val", transform = val_transform)
+    elif dataset == "CBIS-DDSM_new":
+        # Create PyTorch DataLoader
+        # whole_dataset = CBISNewDataset(form = 'mass', mode = "train", transform = None)
+        # # Calculate the sizes of the train and validation sets
+        # total_size = len(whole_dataset)
+        # val_size = int(val_ratio * total_size)  # You can adjust the split ratio
+
+        # # Split the dataset into train and validation
+        # train_dataset, val_dataset = random_split(whole_dataset, [total_size - val_size, val_size])
+
+        # # train_dataset = CBISCombinedDataset(train_dataset.data, train_dataset.labels, transform = train_transform)
+        # # val_dataset = CBISCombinedDataset(val_dataset.data, val_dataset.labels, transform = val_transform)
+        # train_dataset.dataset.transform = train_transform
+        # val_dataset.dataset.transform = val_transform
+        
+        # train_dataset = CBISROIDataset(form = "mass", mode = "train", transform = train_transform)
+        # val_dataset = CBISROIDataset(form = "mass", mode = "train", transform = val_transform)
+        train_dataset = CBISNewNewDataset(form = "mass", mode = "train", transform = train_transform, train = True, val_ratio = val_ratio)
+        val_dataset = CBISNewNewDataset(form = "mass", mode = "train", transform = val_transform, train = False, val_ratio = val_ratio)
+        
+        test_dataset = CBISNewDataset(form = 'mass', mode = "test", transform = val_transform)
     elif dataset == "CMMD":
         # Create PyTorch DataLoader
         train_dataset = CMMDDataset(mode = "train", transform = train_transform)
@@ -158,45 +120,46 @@ def createDataLoaders(batch_size, dataset, data_augment):
         
     return train_loader, val_loader, train_transform, sample_images, sample_titles
 
-def testNumWorkers(train_dataset):
-    from time import time
-    import multiprocessing as mp
 
-    for num_workers in range(2, mp.cpu_count(), 2):  
-        train_loader = DataLoader(train_dataset ,shuffle=True,num_workers=num_workers, batch_size=1024, pin_memory=True)
-        start = time()
-        for epoch in range(1, 3):
-            for i, data in enumerate(train_loader, 0):
-                pass
-        end = time()
-        print("Finish with:{} second, num_workers={}".format(end - start, num_workers))
-
-def createDatasets(dataset, data_augment):
+def createDatasets(dataset, data_augment, val_ratio):
     
     train_transform, val_transform = createTransforms(data_augment)
     print(f"Transforms on Train dataset: {train_transform}")
     transforms = (train_transform, val_transform)
         
         
+    print("Creating Datasets")
     if dataset == "CBIS-DDSM":
         # Create PyTorch Datasets
         # combined_dataset = CBISDataset(view = "MLO", mode = "combined", transform = None)
         # combined_dataset = CBISDataset(view = "CC", mode = "combined", transform = None)
         combined_dataset = CBISDataset(view = None, mode = "combined", transform = None)
         X, y = np.array(combined_dataset.data), np.array(combined_dataset.labels)
+        return X, y, transforms
     elif dataset == "CBIS-DDSM_new":
         # Create PyTorch DataLoader
-        train_dataset = CBISNewDataset(mode = "train", transform = train_transform)
-        val_dataset = CBISNewDataset(mode = "val", transform = val_transform)
+        whole_dataset = CBISNewDataset(form = 'mass', mode = "train", transform = None)
+        # Calculate the sizes of the train and validation sets
+        total_size = len(whole_dataset)
+        val_size = int(val_ratio * total_size)  # You can adjust the split ratio
+
+        # Split the dataset into train and validation
+        train_dataset, val_dataset = random_split(whole_dataset, [total_size - val_size, val_size])
+        
+        
+        train_dataset = CBISCombinedDataset(train_dataset.data, train_dataset.labels, transform = train_transform)
+        val_dataset = CBISCombinedDataset(val_dataset.data, val_dataset.labels, transform = val_transform)
+        
+        test_dataset = CBISNewDataset(form = 'mass', mode = "test", transform = val_transform)
+        return train_dataset, val_dataset
     elif dataset == "CMMD":
         # Create PyTorch DataLoader
         train_dataset = CMMDDataset(mode = "train", transform = train_transform)
         val_dataset = CMMDDataset(mode = "val", transform = val_transform)
+        return train_dataset, val_dataset
 
-    print("Created Datasets")
    
         
-    return X, y, transforms
 
 def stratifiedDataLoader(X, y, train_index, val_index, transforms, batch_size):
     X_train, X_val = X[train_index], X[val_index]
@@ -219,3 +182,16 @@ def stratifiedDataLoader(X, y, train_index, val_index, transforms, batch_size):
     
     
     return train_loader, val_loader, sample_images, sample_titles
+
+def testNumWorkers(train_dataset):
+    from time import time
+    import multiprocessing as mp
+
+    for num_workers in range(2, mp.cpu_count(), 2):  
+        train_loader = DataLoader(train_dataset ,shuffle=True,num_workers=num_workers, batch_size=1024, pin_memory=True)
+        start = time()
+        for epoch in range(1, 3):
+            for i, data in enumerate(train_loader, 0):
+                pass
+        end = time()
+        print("Finish with:{} second, num_workers={}".format(end - start, num_workers))
