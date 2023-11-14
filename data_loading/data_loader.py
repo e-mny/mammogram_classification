@@ -82,29 +82,10 @@ def createDataLoaders(batch_size, dataset, data_augment, val_ratio):
         
     if dataset == "CBIS-DDSM":
         # Create PyTorch DataLoader
-        train_dataset = CBISDataset(mode = "train", transform = train_transform)
-        val_dataset = CBISDataset(mode = "val", transform = val_transform)
-    elif dataset == "CBIS-DDSM_new":
-        # Create PyTorch DataLoader
-        # whole_dataset = CBISNewDataset(form = 'mass', mode = "train", transform = None)
-        # # Calculate the sizes of the train and validation sets
-        # total_size = len(whole_dataset)
-        # val_size = int(val_ratio * total_size)  # You can adjust the split ratio
-
-        # # Split the dataset into train and validation
-        # train_dataset, val_dataset = random_split(whole_dataset, [total_size - val_size, val_size])
-
-        # # train_dataset = CBISCombinedDataset(train_dataset.data, train_dataset.labels, transform = train_transform)
-        # # val_dataset = CBISCombinedDataset(val_dataset.data, val_dataset.labels, transform = val_transform)
-        # train_dataset.dataset.transform = train_transform
-        # val_dataset.dataset.transform = val_transform
+        train_dataset = CBISDataset(form = "mass", mode = "train", transform = train_transform, train = True, val_ratio = val_ratio)
+        val_dataset = CBISDataset(form = "mass", mode = "train", transform = val_transform, train = False, val_ratio = val_ratio)
         
-        # train_dataset = CBISROIDataset(form = "mass", mode = "train", transform = train_transform)
-        # val_dataset = CBISROIDataset(form = "mass", mode = "train", transform = val_transform)
-        train_dataset = CBISNewNewDataset(form = "mass", mode = "train", transform = train_transform, train = True, val_ratio = val_ratio)
-        val_dataset = CBISNewNewDataset(form = "mass", mode = "train", transform = val_transform, train = False, val_ratio = val_ratio)
-        
-        test_dataset = CBISNewDataset(form = 'mass', mode = "test", transform = val_transform)
+        test_dataset = CBISDataset(form = 'mass', mode = "test", transform = val_transform)
     elif dataset == "CMMD":
         # Create PyTorch DataLoader
         train_dataset = CMMDDataset(mode = "train", transform = train_transform)

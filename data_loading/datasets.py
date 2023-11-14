@@ -97,147 +97,8 @@ class CustomImageDataset(Dataset):
         stacked_image = np.stack((image,) * 3, axis=-1)
         return stacked_image
     
-class CBISCombinedDataset(Dataset):
-    def __init__(self, images, label, transform = None):
-        self.images = images
-        self.labels = label
-        self.transform = transform
         
-        # for i in range(len(self.dataframe)):
-        #     row = self.dataframe.iloc[i]
-        #     folder_name = row['folder_name']
-        #     label = row['class_label']
-        #     image_path = os.path.join(self.directory, str(i + 1), "1-1.dcm_downsized-cropped.jpeg")
-        #     self.data.append(image_path)
-        #     self.labels.append(label)
-
-    def __len__(self):
-        return len(self.images)
-
-    def __getitem__(self, idx):
-        img = self.images[idx]
-        label = self.labels[idx]
-        img = self.load_jpeg(img)
-        
-        if self.transform:
-            img = self.transform(img)
-        return img, label
-    
-    def load_jpeg(self, jpeg_path):
-        image = Image.open(jpeg_path).convert("RGB")
-        return image
-
-            
-        
-class CBISNewDataset(CustomImageDataset):
-    def __init__(self, directory = "/home/emok/sq58_scratch/emok/Data/CBIS-DDSM_new", form = 'calc', mode = 'train', transform = None):
-        super(CBISNewDataset, self).__init__(form, mode, transform)
-        self.directory = os.path.join(directory, form + "_" + mode + "_new")
-        self.df_dir = os.path.join(directory, f"{form}_case_description_{mode}_set.csv")
-            
-        self.dataframe = pd.read_csv(self.df_dir)
-        self.data = []
-        self.labels = []
-        for i in range(len(self.dataframe)):
-            row = self.dataframe.iloc[i]
-            
-            # Full images are named 1-1_downsized-cropped.jpg because there was preprocessing done (downsized/cropped)
-            full_img_folder = str(row['image file path']).split("/")[-2]
-            # label = row['class_label']
-            label = self.getLabel(str(row['pathology']))
-            image_path = os.path.join(self.directory, full_img_folder, "1-1.png")
-            self.data.append(image_path)
-            self.labels.append(label)
-            
-            
-            # Cropped images are named 1-1.jpg, and was not downsized + cropped
-            # cropped_img_folder = str(row['cropped image file path']).split("/")[-2]
-            # label = self.getLabel(str(row['pathology']))
-            # image_path = os.path.join(self.directory, cropped_img_folder, "1-1.png")
-            # self.data.append(image_path)
-            # self.labels.append(label)
-            
-
-    def __getitem__(self, idx):
-        # Load and preprocess data sample at index idx
-        image_path = self.data[idx]
-        label = self.labels[idx]
-        
-        
-        # Dicom
-        # image_path = os.path.join(self.directory, self.mode, str(idx + 1), "1-1.dcm")
-        # imageArr = self.load_dicom(image_path)
-        
-        # JPEG
-        imageArr = self.load_jpeg(image_path)
-
-        if self.transform:
-            imageArr = self.transform(imageArr)
-
-        return imageArr, label
-    
-    def getLabel(self, label_text):
-        label_text = label_text.lower()
-        if "malignant" in label_text:
-            return 1
-        else:
-            return 0
-
-class CBISROIDataset(CustomImageDataset):
-    def __init__(self, directory = "/home/emok/sq58_scratch/emok/Data/CBIS-DDSM_new", form = 'calc', mode = 'train', transform = None):
-        super(CBISROIDataset, self).__init__(form, mode, transform)
-        self.directory = os.path.join(directory, form + "_" + mode + "_new")
-        self.df_dir = os.path.join(directory, f"{form}_case_description_{mode}_set.csv")
-        self.transform = transform
-        self.dataframe = pd.read_csv(self.df_dir)
-        self.data = []
-        self.labels = []
-        for i in range(len(self.dataframe)):
-            row = self.dataframe.iloc[i]
-            
-            # Full images are named 1-1_downsized-cropped.jpg because there was preprocessing done (downsized/cropped)
-            # full_img_folder = str(row['image file path']).split("/")[-2]
-            # # label = row['class_label']
-            # label = self.getLabel(str(row['pathology']))
-            # image_path = os.path.join(self.directory, full_img_folder, "1-1_preprocessed.png")
-            # self.data.append(image_path)
-            # self.labels.append(label)
-            
-            
-            # Cropped images are named 1-1.jpg, and was not downsized + cropped
-            cropped_img_folder = str(row['cropped image file path']).split("/")[-2]
-            label = self.getLabel(str(row['pathology']))
-            image_path = os.path.join(self.directory, cropped_img_folder, "1-1.png")
-            self.data.append(image_path)
-            self.labels.append(label)
-            
-
-    def __getitem__(self, idx):
-        # Load and preprocess data sample at index idx
-        image_path = self.data[idx]
-        label = self.labels[idx]
-        
-        
-        # Dicom
-        # image_path = os.path.join(self.directory, self.mode, str(idx + 1), "1-1.dcm")
-        # imageArr = self.load_dicom(image_path)
-        
-        # JPEG
-        imageArr = self.load_jpeg(image_path)
-
-        if self.transform:
-            imageArr = self.transform(imageArr)
-
-        return imageArr, label
-    
-    def getLabel(self, label_text):
-        label_text = label_text.lower()
-        if "malignant" in label_text:
-            return 1
-        else:
-            return 0
-        
-class CBISNewNewDataset(CustomImageDataset):
+class CBISDataset(CustomImageDataset):
     """
     {
         Directory: Where data is stored,
@@ -253,7 +114,7 @@ class CBISNewNewDataset(CustomImageDataset):
     """
     
     def __init__(self, directory = "/home/emok/sq58_scratch/emok/Data/CBIS-DDSM_new", form = 'calc', mode = 'train', transform = None, train = True, val_ratio = 0.2, preprocess = True, ROI = False):
-        super(CBISNewNewDataset, self).__init__(form, mode, transform, train, val_ratio)
+        super(CBISDataset, self).__init__(form, mode, transform, train, val_ratio)
         self.train = train
         self.directory = os.path.join(directory, form + "_" + mode + "_new")
         self.df_dir = os.path.join(directory, f"{form}_case_description_{mode}_set.csv")
@@ -346,50 +207,6 @@ class CBISNewNewDataset(CustomImageDataset):
             return "1-1_preprocessed.png"
         else:
             return "1-1.png"
-
-class CBISDataset(CustomImageDataset):
-    def __init__(self, view: str = None, directory = "/home/emok/sq58/Code/Data/CBIS-DDSM", mode = 'train', transform = None):
-        super(CBISDataset, self).__init__(directory, mode, transform)
-        self.dataframe = pd.read_csv(self.df_dir)
-        self.data = []
-        self.labels = []
-        if mode == "combined":
-            for i in range(len(self.dataframe)):
-                row = self.dataframe.iloc[i]
-                if view is None or row['image view'] == view.upper():
-                    folder_name = row['folder_name']
-                    label = row['class_label']
-                    image_path = os.path.join(self.directory, self.mode, str(i + 1), "1-1.dcm_downsized-cropped.jpeg")
-                    self.data.append(image_path)
-                    self.labels.append(label)
-                
-                    
-        else:
-            for i in range(len(self.dataframe)):
-                row = self.dataframe.iloc[i]
-                folder_name = row['folder_name']
-                label = row['class_label']
-                image_path = os.path.join(self.directory, self.mode, str(i + 1), "1-1.dcm_final.jpeg")
-                self.data.append(image_path)
-                self.labels.append(label)
-
-    def __getitem__(self, idx):
-        # Load and preprocess data sample at index idx
-        image_path = self.data[idx]
-        label = self.labels[idx]
-        
-        
-        # Dicom
-        # image_path = os.path.join(self.directory, self.mode, str(idx + 1), "1-1.dcm")
-        # imageArr = self.load_dicom(image_path)
-        
-        # JPEG
-        imageArr = self.load_jpeg(image_path)
-
-        if self.transform:
-            imageArr = self.transform(imageArr)
-
-        return imageArr, label
 
 class RSNADataset(CustomImageDataset):
     def __init__(self, directory = "/home/emok/sq58/Code/Data/RSNA", mode = 'train', transform = None):
