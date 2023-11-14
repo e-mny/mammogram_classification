@@ -1,4 +1,4 @@
-## Breast Cancer Classification Baseline Model
+## Federated Learning for Breast Cancer Classification
 
 1) Implement classification model 
 2) Implement classification model into FL framework
@@ -52,7 +52,7 @@ Results can be found in the /results folder, formatted in MM-DD-YYYY_HHMMSS_{dat
 ---
 
 <h3>Datasets directories:</h3>
-1) CBIS-DDSM Dataset - '/home/emok/sq58/Code/Data/CBIS-DDSM/combined'<br>
+1) CBIS-DDSM Dataset - '/home/emok/sq58_scratch/emok/Data/CBIS-DDSM_new'<br>
 2) CMMD Dataset - '/home/emok/sq58_scratch/emok/Data/CMMD/images'<br>
 3) RSNA Dataset - '/home/emok/sq58_scratch/emok/Data/RSNA/train_images'<br>
-4) VinDr Dataset - '/home/emok/sq58_scratch/emok/Data/VinDr/images'
+4) VinDr Dataset - '/home/emok/sq58_scratch/emok/Data/VinDr/images'<br>

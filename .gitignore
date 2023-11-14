@@ -7,3 +7,4 @@ slurm*
 *.err
 *.out
 __pycache__/
+*.pth
