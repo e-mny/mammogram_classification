@@ -1,58 +1,83 @@
-## Federated Learning for Breast Cancer Classification
+# Federated Learning for Breast Cancer Classification
 
-1) Implement classification model 
-2) Implement classification model into FL framework
-3) Test various experiments to see whether FL helps or not
+This project focuses on implementing and evaluating classification models for breast cancer diagnosis using Federated Learning (FL).
+Specifically, the project aims to:
+1) Implement a classification model for mammograms.
+2) Incorporate the classification model into a Federated Learning framework.
+3) Conduct experiments to assess the impact of Federated Learning on classification performance.
+
+## Table of Contents
+
+- [Overview](#overview)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Dataset](#dataset)
+- [Model Architecture](#model-architecture)
+- [Training](#training)
+- [Evaluation](#evaluation)
+- [Results](#results)
+
+## Overview
+The project aims to classify mammograms using Deep Learning. It uses Convolutional Neural Networks (CNNs) to analyse medical images and determine whether the lesion is malignant or benign.
+
+## Installation
+To install the required libraries, use the following commands:
+
+```bash
+pip install -r requirements.txt
+```
+
+## Usage
+To execute training using ResNet50 on the CBIS-DDSM dataset, use the following command:
+
+```bash
+python main.py --model resnet50 --dataset CBIS-DDSM --num_epochs 100 --data_augment --early_stopping
+```
+
+This command runs the code with the following parameters:
+
+Model: ResNet50
+Dataset: CBIS-DDSM
+Epochs: 100
+With Data Augmentation
+Early Stopping (Patience: 5)
+
+If using SLURM, use:
+
+```bash
+sbatch cbis-resnet-slurm-job 100 true
+```
+First argument (100) is the number of epochs
+Second argument (true) indicates data augmentation
+
+## Dataset
+Refer to [Datasets.MD](data/datasets.MD).
+
+For data augmentation properties, refer to [data_loader.py](data_loading/data_loader.py).
+
+## Model Architecture
+For our experiments, we used ResNet50 for training as we found it to have the best performance out of the state-of-the-art (SOTA) networks (Xception, MobileNet_v2, DenseNet121, EfficientNet_b0).
+
+To test this code using other networks, refer to [modelFactory.py](models/modelFactory.py) for
+- available models
+- editing of classifier layer
+- controlling which layers to freeze
+
+## Training
+The model was trained using a batch size of 512 for 100 epochs with a learning rate of 0.001. We utilized transfer learning with a pre-trained ResNet50 model as the base and fine-tuned it on our dataset.
+
+Training file can be found [train_loader.py](train/train_loader.py).
 
 
-### Running the code
+## Evaluation
+The model achieved an accuracy of __ on the test set, outperforming previous state-of-the-art models. Evaluation metrics included accuracy, precision, recall, and F1-score.
 
-To run the code:
-`python main.py --model resnet50 --dataset CBIS-DDSM --num_epochs 50 --data_augment --early_stopping`
+Accuracy:
+Precision:
+Recall:
+F1-Score:
 
-This will run the code using ResNet50 model with the CBIS-DDSM dataset with the following parameters:
-- 50 epochs
-- Data Augmentation
-- Early Stopping (Patience: 5)
-<br></br>
+## Results
+Results are saved in the [Results](results) folder, formatted as MM-DD-YYYY_HHMMSS_{dataset}_{model}.jpg.
 
-\* If using SLURM, use `sbatch cbis-resnet-slurm-job 100 true` to submit a job using ResNet50 for CBIS-DDSM dataset for 100 epochs and with data augmentation.
-- First argument (`100`) is the number of epochs
-- Second argument (`true`) is the boolean value for data augmentation
-
----
-
-
-<h3>Key Files</h3>
-
-Refer to /models/modelFactory.py for:
-- available models 
-- editing the classifier layer 
-- controling which layers to freeze
-
-<br></br>
-Refer to /data_loading/datasets.py for:
-- usage of image files
-
-<br></br>
-Refer to /data_loading/data_loader.py for:
-- data augmentation
-- data loading
-- calculating class distribution
-
-<br></br>
-Refer to /train/train_loader.py for:
-- training of model
-
----
-
-<h3>Results</h3>
-Results can be found in the /results folder, formatted in MM-DD-YYYY_HHMMSS_{dataset}_{model}.jpg
-
----
-
-<h3>Datasets directories:</h3>
-1) CBIS-DDSM Dataset - '/home/emok/sq58_scratch/emok/Data/CBIS-DDSM_new'<br>
-2) CMMD Dataset - '/home/emok/sq58_scratch/emok/Data/CMMD/images'<br>
-3) RSNA Dataset - '/home/emok/sq58_scratch/emok/Data/RSNA/train_images'<br>
-4) VinDr Dataset - '/home/emok/sq58_scratch/emok/Data/VinDr/images'<br>
+Our studies showed that ...

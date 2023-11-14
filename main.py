@@ -201,7 +201,7 @@ if val_loss < best_metric:
     best_batchsize = BATCH_SIZE
     best_learningrate = LEARNING_RATE
 
-# generateHeatMap(sample_images, sample_titles, model, DEVICE)
+generateHeatMap(sample_images, sample_titles, model, DEVICE)
 average_train_acc = np.mean(split_train_accuracy_history)
 average_train_loss = np.mean(split_train_loss_history)
 average_val_acc = np.mean(split_val_accuracy_history)

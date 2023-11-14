@@ -20,3 +20,10 @@ Class Distribution: 29.7% Benign; 70.3% Malignant
 VinDr</h3>
 [VinDr](https://physionet.org/content/vindr-mammo/1.0.0/)
 Class Distribution: 94.8% Benign; 5.2% Malignant
+
+
+<h3>Datasets Directories in M3:</h3>
+1) CBIS-DDSM Dataset - '/home/emok/sq58_scratch/emok/Data/CBIS-DDSM_new'<br>
+2) CMMD Dataset - '/home/emok/sq58_scratch/emok/Data/CMMD/images'<br>
+3) RSNA Dataset - '/home/emok/sq58_scratch/emok/Data/RSNA/train_images'<br>
+4) VinDr Dataset - '/home/emok/sq58_scratch/emok/Data/VinDr/images'<br>
