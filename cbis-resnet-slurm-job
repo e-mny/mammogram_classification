@@ -79,8 +79,8 @@ conda activate exp1
 
 if [ "$DATA_AUG" == "true" ]; then
     echo "Running script with data augmentation"
-    srun --exclusive python main.py --model resnet50 --dataset CBIS-DDSM_new --num_epochs $EPOCHS --data_augment --no-early_stopping
+    srun --exclusive python main.py --model resnet50 --dataset CBIS-DDSM --num_epochs $EPOCHS --data_augment --no-early_stopping
 else
     echo "Running script without data augmentation"
-    srun --exclusive python main.py --model resnet50 --dataset CBIS-DDSM_new --num_epochs $EPOCHS --no-data_augment
+    srun --exclusive python main.py --model resnet50 --dataset CBIS-DDSM --num_epochs $EPOCHS --no-data_augment
 fi

@@ -1,12 +1,10 @@
 from pytorch_grad_cam import GradCAM
 import torch
-from pytorch_grad_cam.utils.image import deprocess_image, show_cam_on_image, preprocess_image
+from pytorch_grad_cam.utils.image import show_cam_on_image
 import os
 import cv2
 from datetime import datetime
 import matplotlib.pyplot as plt
-import numpy as np
-import torch.nn as nn
 import torch
 from pytorch_grad_cam.utils.image import show_cam_on_image
 

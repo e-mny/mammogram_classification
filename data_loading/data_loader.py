@@ -1,7 +1,8 @@
 from torchvision import transforms
-from data_loading.datasets import CBISDataset, RSNADataset, VinDrDataset, CMMDDataset, CBISNewDataset, CBISCombinedDataset, CBISROIDataset, CBISNewNewDataset
-from collections import Counter
-from torch.utils.data import DataLoader, SubsetRandomSampler, Dataset, Subset, random_split
+from data_loading.data_augment import createTransforms
+from data_loading.datasets import CBISDataset, RSNADataset, VinDrDataset, CMMDDataset
+from data_loading.classDistribution import calcClassDistribution
+from torch.utils.data import DataLoader, Dataset
 from data_loading.displayImage import displaySample
 import os
 import pydicom
@@ -25,55 +26,6 @@ import numpy as np
 import cv2
 from PIL import Image
 
-
-def createTransforms(data_augmentation_bool):
-    # Define transformations
-    basic_transform = transforms.Compose([
-        transforms.Resize((224, 224)),
-        transforms.ToTensor(),
-    ])
-
-    train_transform = transforms.Compose([
-        transforms.Resize((224, 224)),
-        # transforms.CenterCrop(190),
-        # transforms.RandomAffine(degrees=0, scale=(1, 1.2)),
-        transforms.RandomVerticalFlip(),
-        transforms.RandomHorizontalFlip(),
-        # transforms.RandomRotation(degrees=90, expand=False),
-        # transforms.ColorJitter(brightness = 0.2, contrast= 0.2),
-        # transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
-        transforms.ToTensor(),
-    ])
-
-    val_transform = basic_transform
-    
-    if data_augmentation_bool:
-        return train_transform, val_transform
-    else:
-        return basic_transform, val_transform
-
-def calcClassDistribution(train_loader, val_loader):
-    # Initialize counters for class distribution
-    train_class_distribution = Counter()
-    val_class_distribution = Counter()
-
-    # Iterate through the training DataLoader to count class occurrences
-    for _, labels in train_loader:
-        train_class_distribution.update(labels.tolist())
-
-    # Iterate through the validation DataLoader to count class occurrences
-    for _, labels in val_loader:
-        val_class_distribution.update(labels.tolist())
-
-    # Print class distribution for training DataLoader
-    print("Class distribution for training DataLoader:")
-    for class_label, count in train_class_distribution.items():
-        print(f"Class {class_label}: {count} samples")
-
-    # Print class distribution for validation DataLoader
-    print("\nClass distribution for validation DataLoader:")
-    for class_label, count in val_class_distribution.items():
-        print(f"Class {class_label}: {count} samples")
 
 def createDataLoaders(batch_size, dataset, data_augment, val_ratio):
     
@@ -117,22 +69,7 @@ def createDatasets(dataset, data_augment, val_ratio):
         combined_dataset = CBISDataset(view = None, mode = "combined", transform = None)
         X, y = np.array(combined_dataset.data), np.array(combined_dataset.labels)
         return X, y, transforms
-    elif dataset == "CBIS-DDSM_new":
-        # Create PyTorch DataLoader
-        whole_dataset = CBISNewDataset(form = 'mass', mode = "train", transform = None)
-        # Calculate the sizes of the train and validation sets
-        total_size = len(whole_dataset)
-        val_size = int(val_ratio * total_size)  # You can adjust the split ratio
-
-        # Split the dataset into train and validation
-        train_dataset, val_dataset = random_split(whole_dataset, [total_size - val_size, val_size])
-        
-        
-        train_dataset = CBISCombinedDataset(train_dataset.data, train_dataset.labels, transform = train_transform)
-        val_dataset = CBISCombinedDataset(val_dataset.data, val_dataset.labels, transform = val_transform)
-        
-        test_dataset = CBISNewDataset(form = 'mass', mode = "test", transform = val_transform)
-        return train_dataset, val_dataset
+    
     elif dataset == "CMMD":
         # Create PyTorch DataLoader
         train_dataset = CMMDDataset(mode = "train", transform = train_transform)
@@ -150,8 +87,8 @@ def stratifiedDataLoader(X, y, train_index, val_index, transforms, batch_size):
     print(train_transforms)
     print(val_transforms)
     # Create DataLoader objects for training, validation, and test sets
-    train_dataset = CBISCombinedDataset(X_train, y_train, transform=train_transforms)
-    val_dataset = CBISCombinedDataset(X_val, y_val, transform=val_transforms)  # No augmentation for validation
+    # train_dataset = CBISCombinedDataset(X_train, y_train, transform=train_transforms)
+    # val_dataset = CBISCombinedDataset(X_val, y_val, transform=val_transforms)  # No augmentation for validation
     
     # testNumWorkers(train_dataset)
 

@@ -6,12 +6,12 @@ import numpy as np
 from PIL import Image
 import torch
 import cv2
-from data_loading.preprocessFunc import removeArtifacts
 import random
+from utils.config import VAL_RATIO
 
 
 class CustomImageDataset(Dataset):
-    def __init__(self, directory, form = 'calc', mode = 'train', transform = None, train = True, val_ratio = 0.2):
+    def __init__(self, directory, form = 'calc', mode = 'train', transform = None, train = True, val_ratio = VAL_RATIO):
         self.directory = directory
         self.form = form
         self.train = train
@@ -28,7 +28,6 @@ class CustomImageDataset(Dataset):
         self.data = []
         self.labels = []
         self.transform = transform
-        self.removeArtifacts = removeArtifacts
        
         # Create a CLAHE object (Contrast Limited Adaptive Histogram Equalization)
         self.clahe = cv2.createCLAHE(clipLimit=2.0, tileGridSize=(8, 8))
@@ -114,7 +113,7 @@ class CustomImageDataset(Dataset):
         random.seed(42) # Set seed num for reproducibility of splitting images from training data into training and validation sets
         
         # Generate random indices for the training set
-        train_indices_list = sorted(random.sample(range(self.df_len), int((1 - val_ratio) * self.df_len)))
+        train_indices_list = sorted(random.sample(range(self.df_len), int((1 - self.val_ratio) * self.df_len)))
         # Define the validation indices by excluding the training indices
         val_indices_list = [idx for idx in range(self.df_len) if idx not in train_indices_list]
         if self.train:
@@ -137,7 +136,7 @@ class CBISDataset(CustomImageDataset):
     }
     """
     
-    def __init__(self, directory = "/home/emok/sq58_scratch/emok/Data/CBIS-DDSM_new", form = 'calc', mode = 'train', transform = None, train = True, val_ratio = 0.2, preprocess = True, ROI = False):
+    def __init__(self, directory = "/home/emok/sq58_scratch/emok/Data/CBIS-DDSM_new", form = 'calc', mode = 'train', transform = None, train = True, val_ratio = VAL_RATIO, preprocess = True, ROI = False):
         super(CBISDataset, self).__init__(form, mode, transform, train, val_ratio)
         self.train = train
         self.directory = os.path.join(directory, form + "_" + mode + "_new")
@@ -177,7 +176,7 @@ class CBISDataset(CustomImageDataset):
         
 
 class RSNADataset(CustomImageDataset):
-    def __init__(self, directory = "/home/emok/sq58_scratch/emok/Data/RSNA", mode = 'train', transform = None, train = True, preprocess = True, val_ratio = 0.2):
+    def __init__(self, directory = "/home/emok/sq58_scratch/emok/Data/RSNA", mode = 'train', transform = None, train = True, preprocessed = True, val_ratio = VAL_RATIO):
         super(RSNADataset, self).__init__(mode, transform, train, val_ratio)
         self.mode = mode
         self.transform = transform
@@ -186,7 +185,7 @@ class RSNADataset(CustomImageDataset):
         self.dataframe = pd.read_csv(self.df_dir)
         
         # Control preprocessed here 
-        self.preprocessed = preprocess
+        self.preprocessed = preprocessed
         self.file_name = self.preprocessFile(self.preprocessed)
         
         indices_list = self.generateTrainValSplit()
@@ -206,7 +205,7 @@ class RSNADataset(CustomImageDataset):
     
 
 class VinDrDataset(CustomImageDataset):
-    def __init__(self, directory = "/home/emok/sq58/Code/Data/VinDr", mode="train", transform = None, train = True, preprocess = True, val_ratio = 0.2):
+    def __init__(self, directory = "/home/emok/sq58/Code/Data/VinDr", mode="train", transform = None, train = True, preprocessed = True, val_ratio = VAL_RATIO):
         super(VinDrDataset, self).__init__(mode, transform, train, val_ratio)
         self.mode = mode
         self.transform = transform
@@ -235,7 +234,7 @@ class VinDrDataset(CustomImageDataset):
     
 
 class CMMDDataset(CustomImageDataset):
-    def __init__(self, directory = "/home/emok/sq58/Code/Data/CMMD", mode = "train", transform=None, train = True, preprocess = True, val_ratio = 0.2):
+    def __init__(self, directory = "/home/emok/sq58/Code/Data/CMMD", mode = "train", transform=None, train = True, preprocessed = True, val_ratio = VAL_RATIO):
         super(CMMDDataset, self).__init__(mode, transform, train, val_ratio)
         self.mode = mode
         self.transform = transform

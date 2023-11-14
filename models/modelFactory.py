@@ -258,20 +258,6 @@ def replaceFCLayer(model, out_classes):
     
     return model
 
-# Define a Gaussian initialization for the final layer
-# def weights_init(m):
-#     if isinstance(m, nn.Linear):
-#         nn.init.normal_(m.weight, mean=0, std=1e-2)
-#         nn.init.constant_(m.bias, 0)
-
-# # Example usage
-# num_classes = 2
-# input_channels = 1
-# pretrained = True
-
-# # # Create a GoogLeNet model
-# model_factory = ModelFactory(model_name="mobilenet_v2", num_classes=num_classes, input_channels=input_channels, pretrained=pretrained)
-# mobilenet = model_factory.create_model()
-
-# # Print model architecture
-# print(mobilenet)
+def create_model(model_name, num_classes, input_channels, pretrained):
+    """Create a model factory object."""
+    return ModelFactory(model_name=model_name, num_classes=num_classes, input_channels=input_channels, pretrained=pretrained).create_model()
