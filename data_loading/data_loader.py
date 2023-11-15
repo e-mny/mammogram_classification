@@ -27,15 +27,15 @@ import cv2
 from PIL import Image
 
 
-def createDataLoaders(batch_size, dataset, data_augment, val_ratio):
+def createDataLoaders(batch_size, dataset, data_augment):
     
     train_transform, val_transform = createTransforms(data_augment)
     print(f"Transforms on Train dataset: {train_transform}")
         
     if dataset == "CBIS-DDSM":
         # Create PyTorch DataLoader
-        train_dataset = CBISDataset(form = "mass", mode = "train", transform = train_transform, train = True, val_ratio = val_ratio)
-        val_dataset = CBISDataset(form = "mass", mode = "train", transform = val_transform, train = False, val_ratio = val_ratio)
+        train_dataset = CBISDataset(form = "mass", mode = "train", transform = train_transform, train = True)
+        val_dataset = CBISDataset(form = "mass", mode = "train", transform = val_transform, train = False)
         
         test_dataset = CBISDataset(form = 'mass', mode = "test", transform = val_transform)
     elif dataset == "CMMD":

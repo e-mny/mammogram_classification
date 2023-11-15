@@ -72,7 +72,7 @@ def main():
     start_fold_time = time.time()
 
     # Testing
-    train_loader, val_loader, train_transform, sample_images, sample_titles = createDataLoaders(BATCH_SIZE, DATASET, DATA_AUGMENT_BOOL, VAL_RATIO)
+    train_loader, val_loader, train_transform, sample_images, sample_titles = createDataLoaders(BATCH_SIZE, DATASET, DATA_AUGMENT_BOOL)
     transforms = train_transform
     train_accuracy_history, train_loss_history, val_accuracy_history, val_loss_history, val_precision_history, val_recall_history, val_preds, val_targets, early_stopped_epoch = stratified_train(model, train_loader, val_loader, DEVICE, criterion, optimizer, epochs = NUM_EPOCHS, early_stopping = EARLY_STOPPING_BOOL)
 

@@ -11,12 +11,12 @@ from utils.config import VAL_RATIO
 
 
 class CustomImageDataset(Dataset):
-    def __init__(self, directory, form = 'calc', mode = 'train', transform = None, train = True, val_ratio = VAL_RATIO):
+    def __init__(self, directory, form = 'calc', mode = 'train', transform = None, train = True):
         self.directory = directory
         self.form = form
         self.train = train
         self.mode = mode
-        self.val_ratio = val_ratio
+        self.val_ratio = VAL_RATIO
         if self.mode == "train":
             self.df_dir = os.path.join(self.directory, "train.csv")
         elif self.mode == "val":
@@ -136,8 +136,8 @@ class CBISDataset(CustomImageDataset):
     }
     """
     
-    def __init__(self, directory = "/home/emok/sq58_scratch/emok/Data/CBIS-DDSM_new", form = 'calc', mode = 'train', transform = None, train = True, val_ratio = VAL_RATIO, preprocess = True, ROI = False):
-        super(CBISDataset, self).__init__(form, mode, transform, train, val_ratio)
+    def __init__(self, directory = "/home/emok/sq58_scratch/emok/Data/CBIS-DDSM_new", form = 'calc', mode = 'train', transform = None, train = True, preprocess = True, ROI = False):
+        super(CBISDataset, self).__init__(form, mode, transform, train)
         self.train = train
         self.directory = os.path.join(directory, form + "_" + mode + "_new")
         self.df_dir = os.path.join(directory, f"{form}_case_description_{mode}_set.csv")
@@ -146,6 +146,7 @@ class CBISDataset(CustomImageDataset):
         self.dataframe = pd.read_csv(self.df_dir)
         self.df_len = len(self.dataframe)
         # print(self.df_len)
+        print(self.val_ratio)
         
         # Control preprocessed here 
         self.preprocessed = preprocess
@@ -176,12 +177,11 @@ class CBISDataset(CustomImageDataset):
         
 
 class RSNADataset(CustomImageDataset):
-    def __init__(self, directory = "/home/emok/sq58_scratch/emok/Data/RSNA", mode = 'train', transform = None, train = True, preprocessed = True, val_ratio = VAL_RATIO):
-        super(RSNADataset, self).__init__(mode, transform, train, val_ratio)
+    def __init__(self, directory = "/home/emok/sq58_scratch/emok/Data/RSNA", mode = 'train', transform = None, train = True, preprocessed = True):
+        super(RSNADataset, self).__init__(mode, transform, train)
         self.mode = mode
         self.transform = transform
         self.train = train
-        self.val_ratio = val_ratio
         self.dataframe = pd.read_csv(self.df_dir)
         
         # Control preprocessed here 
@@ -205,12 +205,11 @@ class RSNADataset(CustomImageDataset):
     
 
 class VinDrDataset(CustomImageDataset):
-    def __init__(self, directory = "/home/emok/sq58/Code/Data/VinDr", mode="train", transform = None, train = True, preprocessed = True, val_ratio = VAL_RATIO):
-        super(VinDrDataset, self).__init__(mode, transform, train, val_ratio)
+    def __init__(self, directory = "/home/emok/sq58/Code/Data/VinDr", mode="train", transform = None, train = True, preprocessed = True):
+        super(VinDrDataset, self).__init__(mode, transform, train)
         self.mode = mode
         self.transform = transform
         self.train = train
-        self.val_ratio = val_ratio
         self.dataframe = pd.read_csv(self.df_dir)
         
         # Control preprocessed here
@@ -234,12 +233,11 @@ class VinDrDataset(CustomImageDataset):
     
 
 class CMMDDataset(CustomImageDataset):
-    def __init__(self, directory = "/home/emok/sq58/Code/Data/CMMD", mode = "train", transform=None, train = True, preprocessed = True, val_ratio = VAL_RATIO):
-        super(CMMDDataset, self).__init__(mode, transform, train, val_ratio)
+    def __init__(self, directory = "/home/emok/sq58/Code/Data/CMMD", mode = "train", transform=None, train = True, preprocessed = True):
+        super(CMMDDataset, self).__init__(mode, transform, train)
         self.mode = mode
         self.transform = transform
         self.train = train
-        self.val_ratio = val_ratio
         self.dataframe = pd.read_csv(self.df_dir)
         
         # Control preprocessed here

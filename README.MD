@@ -18,7 +18,7 @@ Specifically, the project aims to:
 - [Results](#results)
 
 ## Overview
-The project aims to classify mammograms using Deep Learning. It uses Convolutional Neural Networks (CNNs) to analyse medical images and determine whether the lesion is malignant or benign.
+The project aims to classify mammograms using Deep Learning in a Federated Learning setting. By collaborating with multiple institutions, training of a central model can leverage on private data kept in the institutions, moving only the model and not the data.
 
 ## Installation
 To install the required libraries, use the following commands:
@@ -34,13 +34,12 @@ To execute training using ResNet50 on the CBIS-DDSM dataset, use the following c
 python main.py --model resnet50 --dataset CBIS-DDSM --num_epochs 100 --data_augment --early_stopping
 ```
 
-This command runs the code with the following parameters:
-
-Model: ResNet50
-Dataset: CBIS-DDSM
-Epochs: 100
-With Data Augmentation
-Early Stopping (Patience: 5)
+| Option              | Description                                     | Examples                         |
+|---------------------|-------------------------------------------------|---------------------------------|
+| `--model`         | Selection of model                          | `--model efficientnet_b0` <br> `--model densenet121` <br> `--model mobiletnet_v2` <br>    |
+| `--dataset`   | Selection of dataset             | `--dataset CMMD` <br> `--dataset RSNA` <br> `--dataset VinDr` |
+| `--data_augment`            | Flag for data augmentation          | `--data_augment` <br> `--no-data_augment`       |
+| `--early_stopping`            | Flag for early stopping          | `--early_stopping` <br> `--no-early_stopping`       |
 
 If using SLURM, use:
 
@@ -48,12 +47,14 @@ If using SLURM, use:
 sbatch cbis-resnet-slurm-job 100 true
 ```
 First argument (100) is the number of epochs
+
 Second argument (true) indicates data augmentation
+
 
 ## Dataset
 Refer to [Datasets.MD](data/datasets.MD).
 
-For data augmentation properties, refer to [data_loader.py](data_loading/data_loader.py).
+For data augmentation properties, refer to [data_augment.py](data_loading/data_augment.py).
 
 ## Model Architecture
 For our experiments, we used ResNet50 for training as we found it to have the best performance out of the state-of-the-art (SOTA) networks (Xception, MobileNet_v2, DenseNet121, EfficientNet_b0).
@@ -73,9 +74,13 @@ Training file can be found [train_loader.py](train/train_loader.py).
 The model achieved an accuracy of __ on the test set, outperforming previous state-of-the-art models. Evaluation metrics included accuracy, precision, recall, and F1-score.
 
 Accuracy:
+
 Precision:
+
 Recall:
+
 F1-Score:
+
 
 ## Results
 Results are saved in the [Results](results) folder, formatted as MM-DD-YYYY_HHMMSS_{dataset}_{model}.jpg.
