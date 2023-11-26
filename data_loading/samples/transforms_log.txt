@@ -1696,3 +1696,996 @@
 [Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
 13-11-23-145424
 [Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+15-11-23-133635
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+15-11-23-134942
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+15-11-23-135232
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+16-11-23-153323
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+16-11-23-153608
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+16-11-23-154108
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+16-11-23-154237
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+16-11-23-155033
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+16-11-23-192217
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+16-11-23-193120
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+16-11-23-193208
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CMMD
+16-11-23-193208
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+16-11-23-195402
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CMMD
+16-11-23-195402
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+16-11-23-195935
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CMMD
+16-11-23-195935
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+16-11-23-204314
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), <function equalize at 0x7fbc6cd84dd0>]
+CBIS-DDSM
+16-11-23-210914
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), <function equalize at 0x7ff421de8dd0>]
+CBIS-DDSM
+16-11-23-233733
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), <function equalize at 0x7fa1294a2440>]
+CMMD
+16-11-23-234304
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), <function equalize at 0x7f16b08ecb00>]
+CBIS-DDSM
+16-11-23-234304
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), <function equalize at 0x7f00aa3be440>]
+CMMD
+16-11-23-235011
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), <function equalize at 0x7f6e2dee9b00>]
+CBIS-DDSM
+16-11-23-235011
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), <function equalize at 0x7f235b3a9440>]
+CMMD
+16-11-23-235235
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), <function equalize at 0x7fd646bbac20>]
+CBIS-DDSM
+16-11-23-235235
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), <function equalize at 0x7f7c1e9d3440>]
+CMMD
+16-11-23-235613
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), <function equalize at 0x7f22e1e15c20>]
+CBIS-DDSM
+16-11-23-235613
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), <function equalize at 0x7f940e668050>]
+CMMD
+17-11-23-000421
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), <function equalize at 0x7f78cc414c20>]
+CBIS-DDSM
+17-11-23-000421
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), <function equalize at 0x7fb6d7beab90>]
+CMMD
+17-11-23-103348
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), <function equalize at 0x7f664a1b6c20>]
+CBIS-DDSM
+17-11-23-103348
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), <function equalize at 0x7fbfd09eac20>]
+CMMD
+17-11-23-131133
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), <function equalize at 0x7fe3afd5cc20>]
+CBIS-DDSM
+17-11-23-131133
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), <function equalize at 0x7efe7b14ec20>]
+CMMD
+17-11-23-131410
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), <function equalize at 0x7fcd99bf4c20>]
+CBIS-DDSM
+17-11-23-131410
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), <function equalize at 0x7f00fbb10c20>]
+CBIS-DDSM
+17-11-23-131809
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), <function equalize at 0x7f3a3747ac20>]
+CMMD
+17-11-23-131809
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), <function equalize at 0x7f292af7ac20>]
+CMMD
+17-11-23-132026
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), <function equalize at 0x7f7180ea6c20>]
+CBIS-DDSM
+17-11-23-132026
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), <function equalize at 0x7fa69f6f0c20>]
+CBIS-DDSM
+17-11-23-132142
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), <function equalize at 0x7f0be8591c20>]
+CMMD
+17-11-23-132142
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), <function equalize at 0x7f0bdd7d0c20>]
+CBIS-DDSM
+17-11-23-132917
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), <function equalize at 0x7f85299dac20>]
+CMMD
+17-11-23-132917
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), <function equalize at 0x7f2b11c5ac20>]
+CMMD
+17-11-23-134440
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), <function equalize at 0x7efdfe25cc20>]
+CBIS-DDSM
+17-11-23-134440
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), <function equalize at 0x7feb7419ac20>]
+CBIS-DDSM
+17-11-23-144601
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), <function equalize at 0x7f07f9009d40>]
+CBIS-DDSM
+17-11-23-150417
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), <function equalize at 0x7f1d868ecd40>, RandomRotation(degrees=[-90.0, 90.0], interpolation=nearest, expand=False, fill=0)]
+CBIS-DDSM
+17-11-23-151012
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+17-11-23-151026
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+17-11-23-153646
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-90.0, 90.0], interpolation=nearest, expand=False, fill=0)]
+CBIS-DDSM
+17-11-23-154600
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-90.0, 90.0], interpolation=nearest, expand=False, fill=0)]
+CBIS-DDSM
+17-11-23-160245
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5), RandomRotation(degrees=[-90.0, 90.0], interpolation=nearest, expand=False, fill=0)]
+CBIS-DDSM
+17-11-23-162650
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2))]
+CBIS-DDSM
+17-11-23-165525
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+17-11-23-172212
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+17-11-23-172429
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+17-11-23-174755
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+17-11-23-181619
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+17-11-23-183006
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+17-11-23-185549
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+17-11-23-191506
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+17-11-23-193912
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+17-11-23-195226
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+17-11-23-200148
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+17-11-23-201649
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+17-11-23-203002
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+17-11-23-204254
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+17-11-23-205558
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+17-11-23-210842
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+17-11-23-211129
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+17-11-23-212114
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+17-11-23-213410
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+17-11-23-214710
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+17-11-23-220751
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+17-11-23-222312
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+17-11-23-223625
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+17-11-23-224917
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+17-11-23-230209
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+17-11-23-231522
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+17-11-23-232751
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+17-11-23-234031
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+17-11-23-235307
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+18-11-23-001337
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+18-11-23-002855
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+18-11-23-004206
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+18-11-23-005503
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+18-11-23-010750
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+18-11-23-012028
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+18-11-23-013256
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+18-11-23-014545
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+18-11-23-015818
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+18-11-23-021834
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+18-11-23-023403
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+18-11-23-024710
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+18-11-23-025953
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+18-11-23-031226
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+18-11-23-032648
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+18-11-23-033918
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+18-11-23-035220
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+18-11-23-040532
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+18-11-23-042628
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+18-11-23-044226
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+18-11-23-045726
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+18-11-23-051041
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+18-11-23-052338
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+18-11-23-053702
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+18-11-23-054939
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+18-11-23-060318
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+18-11-23-112155
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+18-11-23-113943
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+18-11-23-114505
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+18-11-23-115143
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+18-11-23-120222
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+18-11-23-121521
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+18-11-23-122959
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+18-11-23-123245
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+18-11-23-124338
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+18-11-23-125730
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+18-11-23-130102
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+18-11-23-131343
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+18-11-23-132647
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+18-11-23-135453
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+18-11-23-140625
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+18-11-23-141314
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+18-11-23-142015
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+18-11-23-143249
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+18-11-23-143554
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+18-11-23-144901
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+18-11-23-150327
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+18-11-23-150611
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+18-11-23-194041
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+18-11-23-200319
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+18-11-23-200751
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+18-11-23-201303
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+18-11-23-201911
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+18-11-23-203003
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+18-11-23-213035
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+18-11-23-214814
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+18-11-23-215137
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+18-11-23-215621
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+18-11-23-220156
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+18-11-23-221110
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+18-11-23-222403
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+18-11-23-222627
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+18-11-23-224145
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+18-11-23-232638
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+18-11-23-234045
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+18-11-23-234340
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+19-11-23-001300
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+19-11-23-002711
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+19-11-23-003103
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+19-11-23-003742
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+19-11-23-004750
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+19-11-23-005032
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+19-11-23-122623
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+19-11-23-123340
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+19-11-23-125118
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+19-11-23-125746
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+19-11-23-130208
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+19-11-23-130638
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+19-11-23-131009
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+19-11-23-131458
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+19-11-23-131910
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+19-11-23-132302
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+19-11-23-132838
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+19-11-23-134509
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+19-11-23-140510
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+19-11-23-142157
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+19-11-23-152220
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CMMD
+19-11-23-172527
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+19-11-23-172527
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CMMD
+19-11-23-184119
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+19-11-23-184119
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CMMD
+19-11-23-234328
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+19-11-23-234328
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+20-11-23-111252
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CMMD
+20-11-23-112000
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+20-11-23-112000
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+20-11-23-112505
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+20-11-23-125018
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+20-11-23-125555
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+20-11-23-125815
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+20-11-23-130329
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+20-11-23-130511
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+20-11-23-130603
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+20-11-23-130640
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+20-11-23-130847
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+20-11-23-131605
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+20-11-23-131848
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+20-11-23-132027
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+20-11-23-132532
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CMMD
+20-11-23-132532
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CMMD
+20-11-23-133645
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+20-11-23-133645
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+20-11-23-135738
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CMMD
+20-11-23-135738
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+20-11-23-140439
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CMMD
+20-11-23-140439
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+20-11-23-141236
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CMMD
+20-11-23-141236
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+20-11-23-141750
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CMMD
+20-11-23-141750
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CMMD
+20-11-23-141904
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+20-11-23-143015
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CMMD
+20-11-23-143014
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CMMD
+20-11-23-144811
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+20-11-23-144811
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CMMD
+20-11-23-164223
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+20-11-23-164224
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CMMD
+21-11-23-002135
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+21-11-23-002135
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+21-11-23-002715
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CMMD
+21-11-23-002715
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CMMD
+21-11-23-002820
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+21-11-23-002955
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CMMD
+21-11-23-002955
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+21-11-23-003325
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CMMD
+21-11-23-003325
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+21-11-23-003522
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CMMD
+21-11-23-003522
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CMMD
+21-11-23-005027
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+21-11-23-005027
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CMMD
+21-11-23-130346
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+21-11-23-130347
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CMMD
+21-11-23-135358
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+21-11-23-135358
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+21-11-23-145801
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CMMD
+21-11-23-151915
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+21-11-23-170346
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CMMD
+21-11-23-170346
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+21-11-23-171047
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CMMD
+21-11-23-171047
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CMMD
+21-11-23-173915
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CMMD
+21-11-23-182023
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+21-11-23-204904
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CMMD
+21-11-23-204904
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CMMD
+21-11-23-210915
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+21-11-23-210915
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CMMD
+22-11-23-134437
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CMMD
+22-11-23-143313
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+RSNA
+22-11-23-204159
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+RSNA
+22-11-23-205132
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+RSNA
+22-11-23-215545
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+VinDr
+22-11-23-231810
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CMMD
+22-11-23-235332
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CMMD
+23-11-23-011002
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+23-11-23-010958
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+VinDr
+23-11-23-011006
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+RSNA
+23-11-23-011049
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CMMD
+23-11-23-105741
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+RSNA
+23-11-23-112218
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+VinDr
+23-11-23-120625
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+VinDr
+23-11-23-130740
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+RSNA
+23-11-23-134704
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CMMD
+23-11-23-143904
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+VinDr
+23-11-23-144147
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CMMD
+23-11-23-224713
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+23-11-23-224709
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+VinDr
+23-11-23-224716
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+RSNA
+23-11-23-224748
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CMMD
+23-11-23-231344
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+23-11-23-231342
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+VinDr
+23-11-23-231349
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+RSNA
+23-11-23-231425
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CMMD
+24-11-23-111420
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+24-11-23-111417
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+VinDr
+24-11-23-111424
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CMMD
+24-11-23-111520
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+RSNA
+24-11-23-111456
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+VinDr
+24-11-23-111523
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+RSNA
+24-11-23-111556
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+24-11-23-114519
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CMMD
+24-11-23-114522
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+VinDr
+24-11-23-114527
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+RSNA
+24-11-23-114611
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CMMD
+24-11-23-115242
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+24-11-23-115239
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CMMD
+24-11-23-115529
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+24-11-23-115529
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CMMD
+24-11-23-115619
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+24-11-23-115618
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CMMD
+24-11-23-115711
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+24-11-23-115711
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CMMD
+24-11-23-115836
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+24-11-23-115835
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+VinDr
+24-11-23-115846
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+RSNA
+24-11-23-115931
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CMMD
+24-11-23-134837
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+24-11-23-134835
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+VinDr
+24-11-23-134845
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+RSNA
+24-11-23-134920
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CMMD
+24-11-23-135954
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+24-11-23-135951
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+VinDr
+24-11-23-140002
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+RSNA
+24-11-23-140037
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CMMD
+24-11-23-140422
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+24-11-23-140419
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+VinDr
+24-11-23-140431
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+RSNA
+24-11-23-140511
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CMMD
+24-11-23-142602
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+24-11-23-142600
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+VinDr
+24-11-23-142608
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+RSNA
+24-11-23-142651
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CMMD
+24-11-23-160852
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+24-11-23-160859
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+VinDr
+24-11-23-160857
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+RSNA
+24-11-23-160935
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CMMD
+24-11-23-171452
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+24-11-23-171448
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+VinDr
+24-11-23-171456
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+RSNA
+24-11-23-171534
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+24-11-23-175341
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CMMD
+24-11-23-175344
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+VinDr
+24-11-23-175350
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+RSNA
+24-11-23-175426
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CMMD
+24-11-23-184835
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+24-11-23-184833
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+VinDr
+24-11-23-184843
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+RSNA
+24-11-23-184928
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CMMD
+24-11-23-192755
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+24-11-23-192753
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+VinDr
+24-11-23-192802
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+RSNA
+24-11-23-192846
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CMMD
+24-11-23-202340
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+24-11-23-202337
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+VinDr
+24-11-23-202346
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+RSNA
+24-11-23-202443
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CBIS-DDSM
+24-11-23-205446
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+CMMD
+24-11-23-205449
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+VinDr
+24-11-23-205453
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]
+RSNA
+24-11-23-205524
+[Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None), RandomAffine(degrees=[0.0, 0.0], scale=(1, 1.2)), RandomVerticalFlip(p=0.5), RandomHorizontalFlip(p=0.5)]

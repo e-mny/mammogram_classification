@@ -10,7 +10,7 @@ from pytorch_grad_cam.utils.image import show_cam_on_image
 
 def generateHeatMap(sample_image, sample_title, model, device):
     currdatetime = datetime.now()
-    formatted_datetime = currdatetime.strftime("%d-%m-%y-%H%M%S")
+    formatted_datetime = currdatetime.strftime("%m-%d-%y-%H%M%S")
     output_dir = os.path.join("./visualization/samples", formatted_datetime)
     os.mkdir(output_dir)
     for i in range(len(sample_image)):

@@ -1,0 +1,11 @@
+exp1 | INFO flwr 2023-11-21 13:00:21,814 | app.py:151 | Starting Flower server, config: ServerConfig(num_rounds=20, round_timeout=None)
+exp1 | INFO flwr 2023-11-21 13:00:25,824 | app.py:172 | Flower ECE: gRPC server running (20 rounds), SSL is disabled
+exp1 | INFO flwr 2023-11-21 13:00:25,824 | server.py:86 | Initializing global parameters
+exp1 | INFO flwr 2023-11-21 13:00:25,824 | server.py:273 | Requesting initial parameters from one random client
+exp1 | INFO flwr 2023-11-21 13:12:22,824 | server.py:277 | Received initial parameters from one random client
+exp1 | INFO flwr 2023-11-21 13:12:22,824 | server.py:88 | Evaluating initial parameters
+exp1 | INFO flwr 2023-11-21 13:12:22,825 | server.py:101 | FL starting
+exp1 | DEBUG flwr 2023-11-21 13:21:18,142 | server.py:223 | fit_round 1: strategy sampled 2 clients (out of 2)
+exp1 | DEBUG flwr 2023-11-21 13:38:56,932 | server.py:237 | fit_round 1 received 2 results and 0 failures
+exp1 | WARNING flwr 2023-11-21 13:39:02,333 | fedavg.py:243 | No fit_metrics_aggregation_fn provided
+exp1 | DEBUG flwr 2023-11-21 13:39:02,334 | server.py:173 | evaluate_round 1: strategy sampled 2 clients (out of 2)

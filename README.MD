@@ -21,13 +21,19 @@ Specifically, the project aims to:
 The project aims to classify mammograms using Deep Learning in a Federated Learning setting. By collaborating with multiple institutions, training of a central model can leverage on private data kept in the institutions, moving only the model and not the data.
 
 ## Installation
-To install the required libraries, use the following commands:
+To clone the library and install the required libraries, use the following commands:
 
 ```bash
+git clone https://github.com/e-mny/mammo_classification.git
 pip install -r requirements.txt
 ```
 
-## Usage
+Export the base directory to your PYTHONPATH
+```bash
+export PYTHONPATH="$PYTHONPATH:/path/to/base_dir"
+```
+
+## Usage (Centralized Training)
 To execute training using ResNet50 on the CBIS-DDSM dataset, use the following command:
 
 ```bash
@@ -49,6 +55,9 @@ sbatch cbis-resnet-slurm-job 100 true
 First argument (100) is the number of epochs
 
 Second argument (true) indicates data augmentation
+
+## Usage (Federated Learning)
+To execute training of a model on 
 
 
 ## Dataset
@@ -84,5 +93,7 @@ F1-Score:
 
 ## Results
 Results are saved in the [Results](results) folder, formatted as MM-DD-YYYY_HHMMSS_{dataset}_{model}.jpg.
+
+Visualization of GradCAM on sample images can be found in [Visualization](visualization/samples/) folder, formatted as MM-DD-YYYY_HHMMSS.
 
 Our studies showed that ...

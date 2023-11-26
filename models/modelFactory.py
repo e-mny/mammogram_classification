@@ -92,15 +92,16 @@ class ModelFactory:
             # else:
             param.requires_grad = False
             
-        for name, param in model.layer4[-1:].named_parameters():
-            # param.requires_grad = True # All layers
+        
+        # for name, param in model.layer3.named_parameters():
+        #     param.requires_grad = True # All layers
+        for name, param in model.layer4.named_parameters():
+            param.requires_grad = True # All layers
             # if "2" in name: # Second last layer of layer4[-1]
             #     param.requires_grad = True
-            if "3" in name: # Last layer of layer4[-1]
-                param.requires_grad = True
-            
-        # for param in model.layer3[-1:].parameters():
-        #     param.requires_grad = True
+            # if "3" in name: # Last layer of layer4[-1]
+            #     param.requires_grad = True
+
 
         # num_features = model.fc.in_features
         # model.fc = nn.Linear(num_features, self.num_classes)

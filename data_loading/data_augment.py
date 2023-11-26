@@ -11,7 +11,7 @@ def createTransforms(data_augmentation_bool):
     train_transform = transforms.Compose([
         transforms.Resize((224, 224)),
         # transforms.CenterCrop(190),
-        # transforms.RandomAffine(degrees=0, scale=(1, 1.2)),
+        transforms.RandomAffine(degrees=0, scale=(1, 1.2)),
         transforms.RandomVerticalFlip(),
         transforms.RandomHorizontalFlip(),
         # transforms.RandomRotation(degrees=90, expand=False),

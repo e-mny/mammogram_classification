@@ -1,0 +1,94 @@
+exp1 | INFO flwr 2023-11-23 23:13:04,557 | app.py:151 | Starting Flower server, config: ServerConfig(num_rounds=20, round_timeout=None)
+exp1 | INFO flwr 2023-11-23 23:13:05,887 | app.py:172 | Flower ECE: gRPC server running (20 rounds), SSL is disabled
+exp1 | INFO flwr 2023-11-23 23:13:05,887 | server.py:86 | Initializing global parameters
+exp1 | INFO flwr 2023-11-23 23:13:05,887 | server.py:273 | Requesting initial parameters from one random client
+exp1 | INFO flwr 2023-11-23 23:24:05,655 | server.py:277 | Received initial parameters from one random client
+exp1 | INFO flwr 2023-11-23 23:24:05,656 | server.py:88 | Evaluating initial parameters
+exp1 | INFO flwr 2023-11-23 23:24:05,656 | server.py:101 | FL starting
+exp1 | DEBUG flwr 2023-11-23 23:24:43,283 | server.py:223 | fit_round 1: strategy sampled 2 clients (out of 2)
+exp1 | DEBUG flwr 2023-11-23 23:39:40,325 | server.py:237 | fit_round 1 received 2 results and 0 failures
+exp1 | WARNING flwr 2023-11-23 23:39:40,880 | fedavg.py:243 | No fit_metrics_aggregation_fn provided
+exp1 | DEBUG flwr 2023-11-23 23:39:40,880 | server.py:173 | evaluate_round 1: strategy sampled 4 clients (out of 4)
+exp1 | DEBUG flwr 2023-11-23 23:42:51,826 | server.py:187 | evaluate_round 1 received 4 results and 0 failures
+exp1 | DEBUG flwr 2023-11-23 23:42:51,827 | server.py:223 | fit_round 2: strategy sampled 4 clients (out of 4)
+exp1 | DEBUG flwr 2023-11-24 00:13:46,740 | server.py:237 | fit_round 2 received 4 results and 0 failures
+exp1 | DEBUG flwr 2023-11-24 00:13:47,499 | server.py:173 | evaluate_round 2: strategy sampled 4 clients (out of 4)
+exp1 | DEBUG flwr 2023-11-24 00:16:47,528 | server.py:187 | evaluate_round 2 received 4 results and 0 failures
+exp1 | DEBUG flwr 2023-11-24 00:16:47,558 | server.py:223 | fit_round 3: strategy sampled 4 clients (out of 4)
+exp1 | DEBUG flwr 2023-11-24 00:47:49,114 | server.py:237 | fit_round 3 received 4 results and 0 failures
+exp1 | DEBUG flwr 2023-11-24 00:47:49,761 | server.py:173 | evaluate_round 3: strategy sampled 4 clients (out of 4)
+exp1 | DEBUG flwr 2023-11-24 00:50:44,555 | server.py:187 | evaluate_round 3 received 4 results and 0 failures
+exp1 | DEBUG flwr 2023-11-24 00:50:44,556 | server.py:223 | fit_round 4: strategy sampled 4 clients (out of 4)
+exp1 | DEBUG flwr 2023-11-24 01:21:45,611 | server.py:237 | fit_round 4 received 4 results and 0 failures
+exp1 | DEBUG flwr 2023-11-24 01:21:46,823 | server.py:173 | evaluate_round 4: strategy sampled 4 clients (out of 4)
+exp1 | DEBUG flwr 2023-11-24 01:24:52,625 | server.py:187 | evaluate_round 4 received 4 results and 0 failures
+exp1 | DEBUG flwr 2023-11-24 01:24:52,665 | server.py:223 | fit_round 5: strategy sampled 4 clients (out of 4)
+exp1 | DEBUG flwr 2023-11-24 01:55:55,160 | server.py:237 | fit_round 5 received 4 results and 0 failures
+exp1 | DEBUG flwr 2023-11-24 01:55:55,666 | server.py:173 | evaluate_round 5: strategy sampled 4 clients (out of 4)
+exp1 | DEBUG flwr 2023-11-24 01:58:49,237 | server.py:187 | evaluate_round 5 received 4 results and 0 failures
+exp1 | DEBUG flwr 2023-11-24 01:58:49,240 | server.py:223 | fit_round 6: strategy sampled 4 clients (out of 4)
+exp1 | DEBUG flwr 2023-11-24 02:29:48,441 | server.py:237 | fit_round 6 received 4 results and 0 failures
+exp1 | DEBUG flwr 2023-11-24 02:29:49,670 | server.py:173 | evaluate_round 6: strategy sampled 4 clients (out of 4)
+exp1 | DEBUG flwr 2023-11-24 02:32:47,134 | server.py:187 | evaluate_round 6 received 4 results and 0 failures
+exp1 | DEBUG flwr 2023-11-24 02:32:47,159 | server.py:223 | fit_round 7: strategy sampled 4 clients (out of 4)
+exp1 | DEBUG flwr 2023-11-24 03:03:48,697 | server.py:237 | fit_round 7 received 4 results and 0 failures
+exp1 | DEBUG flwr 2023-11-24 03:03:49,182 | server.py:173 | evaluate_round 7: strategy sampled 4 clients (out of 4)
+exp1 | DEBUG flwr 2023-11-24 03:06:42,391 | server.py:187 | evaluate_round 7 received 4 results and 0 failures
+exp1 | DEBUG flwr 2023-11-24 03:06:42,392 | server.py:223 | fit_round 8: strategy sampled 4 clients (out of 4)
+exp1 | DEBUG flwr 2023-11-24 03:37:49,987 | server.py:237 | fit_round 8 received 4 results and 0 failures
+exp1 | DEBUG flwr 2023-11-24 03:37:51,225 | server.py:173 | evaluate_round 8: strategy sampled 4 clients (out of 4)
+exp1 | DEBUG flwr 2023-11-24 03:40:49,766 | server.py:187 | evaluate_round 8 received 4 results and 0 failures
+exp1 | DEBUG flwr 2023-11-24 03:40:49,791 | server.py:223 | fit_round 9: strategy sampled 4 clients (out of 4)
+exp1 | DEBUG flwr 2023-11-24 04:11:44,096 | server.py:237 | fit_round 9 received 4 results and 0 failures
+exp1 | DEBUG flwr 2023-11-24 04:11:44,575 | server.py:173 | evaluate_round 9: strategy sampled 4 clients (out of 4)
+exp1 | DEBUG flwr 2023-11-24 04:14:38,166 | server.py:187 | evaluate_round 9 received 4 results and 0 failures
+exp1 | DEBUG flwr 2023-11-24 04:14:38,166 | server.py:223 | fit_round 10: strategy sampled 4 clients (out of 4)
+exp1 | DEBUG flwr 2023-11-24 04:45:37,041 | server.py:237 | fit_round 10 received 4 results and 0 failures
+exp1 | DEBUG flwr 2023-11-24 04:45:38,205 | server.py:173 | evaluate_round 10: strategy sampled 4 clients (out of 4)
+exp1 | DEBUG flwr 2023-11-24 04:48:32,123 | server.py:187 | evaluate_round 10 received 4 results and 0 failures
+exp1 | DEBUG flwr 2023-11-24 04:48:32,141 | server.py:223 | fit_round 11: strategy sampled 4 clients (out of 4)
+exp1 | DEBUG flwr 2023-11-24 05:19:29,796 | server.py:237 | fit_round 11 received 4 results and 0 failures
+exp1 | DEBUG flwr 2023-11-24 05:19:30,187 | server.py:173 | evaluate_round 11: strategy sampled 4 clients (out of 4)
+exp1 | DEBUG flwr 2023-11-24 05:22:23,393 | server.py:187 | evaluate_round 11 received 4 results and 0 failures
+exp1 | DEBUG flwr 2023-11-24 05:22:23,395 | server.py:223 | fit_round 12: strategy sampled 4 clients (out of 4)
+exp1 | DEBUG flwr 2023-11-24 05:53:27,431 | server.py:237 | fit_round 12 received 4 results and 0 failures
+exp1 | DEBUG flwr 2023-11-24 05:53:28,760 | server.py:173 | evaluate_round 12: strategy sampled 4 clients (out of 4)
+exp1 | DEBUG flwr 2023-11-24 05:56:24,177 | server.py:187 | evaluate_round 12 received 4 results and 0 failures
+exp1 | DEBUG flwr 2023-11-24 05:56:24,178 | server.py:223 | fit_round 13: strategy sampled 4 clients (out of 4)
+exp1 | DEBUG flwr 2023-11-24 06:27:15,953 | server.py:237 | fit_round 13 received 4 results and 0 failures
+exp1 | DEBUG flwr 2023-11-24 06:27:16,399 | server.py:173 | evaluate_round 13: strategy sampled 4 clients (out of 4)
+exp1 | DEBUG flwr 2023-11-24 06:30:08,862 | server.py:187 | evaluate_round 13 received 4 results and 0 failures
+exp1 | DEBUG flwr 2023-11-24 06:30:08,863 | server.py:223 | fit_round 14: strategy sampled 4 clients (out of 4)
+exp1 | DEBUG flwr 2023-11-24 07:01:24,291 | server.py:237 | fit_round 14 received 4 results and 0 failures
+exp1 | DEBUG flwr 2023-11-24 07:01:25,423 | server.py:173 | evaluate_round 14: strategy sampled 4 clients (out of 4)
+exp1 | DEBUG flwr 2023-11-24 07:04:19,159 | server.py:187 | evaluate_round 14 received 4 results and 0 failures
+exp1 | DEBUG flwr 2023-11-24 07:04:19,180 | server.py:223 | fit_round 15: strategy sampled 4 clients (out of 4)
+exp1 | DEBUG flwr 2023-11-24 07:35:16,689 | server.py:237 | fit_round 15 received 4 results and 0 failures
+exp1 | DEBUG flwr 2023-11-24 07:35:17,162 | server.py:173 | evaluate_round 15: strategy sampled 4 clients (out of 4)
+exp1 | DEBUG flwr 2023-11-24 07:38:07,984 | server.py:187 | evaluate_round 15 received 4 results and 0 failures
+exp1 | DEBUG flwr 2023-11-24 07:38:07,985 | server.py:223 | fit_round 16: strategy sampled 4 clients (out of 4)
+exp1 | DEBUG flwr 2023-11-24 08:09:13,653 | server.py:237 | fit_round 16 received 4 results and 0 failures
+exp1 | DEBUG flwr 2023-11-24 08:09:14,937 | server.py:173 | evaluate_round 16: strategy sampled 4 clients (out of 4)
+exp1 | DEBUG flwr 2023-11-24 08:12:12,373 | server.py:187 | evaluate_round 16 received 4 results and 0 failures
+exp1 | DEBUG flwr 2023-11-24 08:12:12,396 | server.py:223 | fit_round 17: strategy sampled 4 clients (out of 4)
+exp1 | DEBUG flwr 2023-11-24 08:42:58,262 | server.py:237 | fit_round 17 received 4 results and 0 failures
+exp1 | DEBUG flwr 2023-11-24 08:42:58,751 | server.py:173 | evaluate_round 17: strategy sampled 4 clients (out of 4)
+exp1 | DEBUG flwr 2023-11-24 08:45:55,506 | server.py:187 | evaluate_round 17 received 4 results and 0 failures
+exp1 | DEBUG flwr 2023-11-24 08:45:55,507 | server.py:223 | fit_round 18: strategy sampled 4 clients (out of 4)
+exp1 | DEBUG flwr 2023-11-24 09:16:52,700 | server.py:237 | fit_round 18 received 4 results and 0 failures
+exp1 | DEBUG flwr 2023-11-24 09:16:53,542 | server.py:173 | evaluate_round 18: strategy sampled 4 clients (out of 4)
+exp1 | DEBUG flwr 2023-11-24 09:19:47,544 | server.py:187 | evaluate_round 18 received 4 results and 0 failures
+exp1 | DEBUG flwr 2023-11-24 09:19:47,544 | server.py:223 | fit_round 19: strategy sampled 4 clients (out of 4)
+exp1 | DEBUG flwr 2023-11-24 09:50:46,210 | server.py:237 | fit_round 19 received 4 results and 0 failures
+exp1 | DEBUG flwr 2023-11-24 09:50:46,704 | server.py:173 | evaluate_round 19: strategy sampled 4 clients (out of 4)
+exp1 | DEBUG flwr 2023-11-24 09:53:41,673 | server.py:187 | evaluate_round 19 received 4 results and 0 failures
+exp1 | DEBUG flwr 2023-11-24 09:53:41,675 | server.py:223 | fit_round 20: strategy sampled 4 clients (out of 4)
+exp1 | DEBUG flwr 2023-11-24 10:24:37,861 | server.py:237 | fit_round 20 received 4 results and 0 failures
+exp1 | DEBUG flwr 2023-11-24 10:24:39,224 | server.py:173 | evaluate_round 20: strategy sampled 4 clients (out of 4)
+exp1 | DEBUG flwr 2023-11-24 10:27:32,426 | server.py:187 | evaluate_round 20 received 4 results and 0 failures
+exp1 | INFO flwr 2023-11-24 10:27:32,452 | server.py:147 | FL finished in 39806.795942991
+exp1 | INFO flwr 2023-11-24 10:27:32,453 | app.py:218 | app_fit: losses_distributed [(1, 0.9539933275862449), (2, 0.6723671587480202), (3, 0.6158983451458832), (4, 0.6637221982427509), (5, 0.682268304692499), (6, 0.7640826603150659), (7, 0.7282067297178961), (8, 0.6312951628094222), (9, 0.6833287146948243), (10, 0.6609216856429404), (11, 0.822328326506987), (12, 0.6240332355391609), (13, 0.5873418404376406), (14, 0.5520396679920176), (15, 0.7444858668776806), (16, 0.6560014370523974), (17, 0.849366767575521), (18, 0.9360364028029249), (19, 0.6131855173567389), (20, 0.47445915849670867)]
+exp1 | INFO flwr 2023-11-24 10:27:32,453 | app.py:219 | app_fit: metrics_distributed_fit {}
+exp1 | INFO flwr 2023-11-24 10:27:32,454 | app.py:220 | app_fit: metrics_distributed {'f1_score': [(1, 0.7223009761803006), (2, 0.6879086146239798), (3, 0.5732802528098595), (4, 0.6306756550379478), (5, 0.5688689143422447), (6, 0.4537667505438603), (7, 0.44108226247642646), (8, 0.5596916616856487), (9, 0.49380893228410744), (10, 0.6076443741257432), (11, 0.569565474919217), (12, 0.5890657084589782), (13, 0.5778955706452256), (14, 0.48402402889002555), (15, 0.4695197002658394), (16, 0.5520571933116548), (17, 0.5695531393416787), (18, 0.5285595212311315), (19, 0.5716913573833519), (20, 0.5516844821232806)], 'loss': [(1, 0.9539933275862449), (2, 0.6723671587480202), (3, 0.6158983451458832), (4, 0.6637221982427509), (5, 0.682268304692499), (6, 0.7640826603150659), (7, 0.7282067297178961), (8, 0.6312951628094222), (9, 0.6833287146948243), (10, 0.6609216856429404), (11, 0.822328326506987), (12, 0.6240332355391609), (13, 0.5873418404376406), (14, 0.5520396679920176), (15, 0.7444858668776806), (16, 0.6560014370523974), (17, 0.849366767575521), (18, 0.9360364028029249), (19, 0.6131855173567389), (20, 0.47445915849670867)], 'recall': [(1, 1.0), (2, 0.8196320923551471), (3, 0.6571220347532263), (4, 0.7110199811795718), (5, 0.6514523070508411), (6, 0.5599388953858684), (7, 0.5809304562579581), (8, 0.6261643461679357), (9, 0.5976559185404593), (10, 0.6664558150844366), (11, 0.6518396117780214), (12, 0.6367105873167694), (13, 0.6219318810492857), (14, 0.5364510084946651), (15, 0.583287045844215), (16, 0.6001823528306162), (17, 0.6392869826485867), (18, 0.6387879585171338), (19, 0.5926701750113454), (20, 0.5477738354972106)], 'precision': [(1, 0.5759879396576811), (2, 0.6240230581841261), (3, 0.6494201677576394), (4, 0.6312551149503001), (5, 0.6371291971060578), (6, 0.6771155824841392), (7, 0.6683975152847109), (8, 0.6463123443166564), (9, 0.6661616834242021), (10, 0.6462073836811099), (11, 0.6477420510102662), (12, 0.6381647164763196), (13, 0.6395438857229007), (14, 0.6651021949357553), (15, 0.6684235681435243), (16, 0.6626724715480855), (17, 0.6477267741625395), (18, 0.6490249245726722), (19, 0.6557970227289688), (20, 0.6550719412763911)], 'auc': [(1, 0.5), (2, 0.571993818448106), (3, 0.5732164127851337), (4, 0.5745475175690865), (5, 0.5610382989232223), (6, 0.5512045343945884), (7, 0.5322404718427372), (8, 0.566966800561531), (9, 0.5608390078595691), (10, 0.5807888412694144), (11, 0.5693028621876743), (12, 0.5685749547300666), (13, 0.5648657240618457), (14, 0.5613638932124801), (15, 0.5479480317210678), (16, 0.575621543824366), (17, 0.5720507522735031), (18, 0.5543568467475736), (19, 0.581023916769568), (20, 0.5728946695743606)], 'accuracy': [(1, 0.5759879396576811), (2, 0.5857336798392044), (3, 0.5119569869547873), (4, 0.5490437191354914), (5, 0.5069120335249859), (6, 0.4650057465321717), (7, 0.4412329105592369), (8, 0.5091465336259152), (9, 0.47936537707919097), (10, 0.5394220403983054), (11, 0.513570891923525), (12, 0.5281151553646258), (13, 0.5179386659468821), (14, 0.48365532662046534), (15, 0.4583326329013504), (16, 0.5161748529456998), (17, 0.5153628523553467), (18, 0.4789091718966446), (19, 0.534624850015999), (20, 0.5332664471216282)], 'prauc': [(1, 0.7879939698288406), (2, 0.7780579802787796), (3, 0.7700094195315802), (4, 0.7652938423039675), (5, 0.7609501191151252), (6, 0.7682862975071811), (7, 0.7704781454012525), (8, 0.7601158688555344), (9, 0.7702594329178689), (10, 0.7645362450213475), (11, 0.7668325461173559), (12, 0.7538387705344438), (13, 0.7520640269243823), (14, 0.7535636794906133), (15, 0.7698358955176948), (16, 0.762190831730121), (17, 0.7638122891481444), (18, 0.7693803064592004), (19, 0.7538798586963745), (20, 0.7409433117863299)]}
+exp1 | INFO flwr 2023-11-24 10:27:32,454 | app.py:221 | app_fit: losses_centralized []
+exp1 | INFO flwr 2023-11-24 10:27:32,454 | app.py:222 | app_fit: metrics_centralized {}

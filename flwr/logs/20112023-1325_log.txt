@@ -1,0 +1,33 @@
+exp1 | INFO flwr 2023-11-20 13:25:28,615 | app.py:151 | Starting Flower server, config: ServerConfig(num_rounds=60, round_timeout=None)
+exp1 | INFO flwr 2023-11-20 13:25:29,832 | app.py:172 | Flower ECE: gRPC server running (60 rounds), SSL is disabled
+exp1 | INFO flwr 2023-11-20 13:25:29,832 | server.py:86 | Initializing global parameters
+exp1 | INFO flwr 2023-11-20 13:25:29,832 | server.py:273 | Requesting initial parameters from one random client
+exp1 | INFO flwr 2023-11-20 13:26:52,958 | server.py:277 | Received initial parameters from one random client
+exp1 | INFO flwr 2023-11-20 13:26:52,958 | server.py:88 | Evaluating initial parameters
+exp1 | INFO flwr 2023-11-20 13:26:52,958 | server.py:101 | FL starting
+exp1 | DEBUG flwr 2023-11-20 13:27:41,911 | server.py:223 | fit_round 1: strategy sampled 2 clients (out of 2)
+exp1 | DEBUG flwr 2023-11-20 13:32:38,877 | server.py:237 | fit_round 1 received 2 results and 0 failures
+exp1 | WARNING flwr 2023-11-20 13:32:40,133 | fedavg.py:243 | No fit_metrics_aggregation_fn provided
+exp1 | DEBUG flwr 2023-11-20 13:32:40,135 | server.py:173 | evaluate_round 1: strategy sampled 2 clients (out of 2)
+exp1 | DEBUG flwr 2023-11-20 13:33:05,495 | server.py:187 | evaluate_round 1 received 2 results and 0 failures
+exp1 | DEBUG flwr 2023-11-20 13:33:05,496 | server.py:223 | fit_round 2: strategy sampled 2 clients (out of 2)
+exp1 | DEBUG flwr 2023-11-20 13:36:51,899 | server.py:237 | fit_round 2 received 2 results and 0 failures
+exp1 | DEBUG flwr 2023-11-20 13:36:52,235 | server.py:173 | evaluate_round 2: strategy sampled 2 clients (out of 2)
+exp1 | DEBUG flwr 2023-11-20 13:37:23,760 | server.py:187 | evaluate_round 2 received 2 results and 0 failures
+exp1 | DEBUG flwr 2023-11-20 13:37:23,761 | server.py:223 | fit_round 3: strategy sampled 2 clients (out of 2)
+exp1 | DEBUG flwr 2023-11-20 13:41:07,622 | server.py:237 | fit_round 3 received 2 results and 0 failures
+exp1 | DEBUG flwr 2023-11-20 13:41:07,908 | server.py:173 | evaluate_round 3: strategy sampled 2 clients (out of 2)
+exp1 | DEBUG flwr 2023-11-20 13:41:26,165 | server.py:187 | evaluate_round 3 received 2 results and 0 failures
+exp1 | DEBUG flwr 2023-11-20 13:41:26,166 | server.py:223 | fit_round 4: strategy sampled 2 clients (out of 2)
+exp1 | DEBUG flwr 2023-11-20 13:44:52,577 | server.py:237 | fit_round 4 received 2 results and 0 failures
+exp1 | DEBUG flwr 2023-11-20 13:44:52,874 | server.py:173 | evaluate_round 4: strategy sampled 2 clients (out of 2)
+exp1 | DEBUG flwr 2023-11-20 13:45:12,924 | server.py:187 | evaluate_round 4 received 2 results and 0 failures
+exp1 | DEBUG flwr 2023-11-20 13:45:12,925 | server.py:223 | fit_round 5: strategy sampled 2 clients (out of 2)
+exp1 | DEBUG flwr 2023-11-20 13:48:31,586 | server.py:237 | fit_round 5 received 2 results and 0 failures
+exp1 | DEBUG flwr 2023-11-20 13:48:31,878 | server.py:173 | evaluate_round 5: strategy sampled 2 clients (out of 2)
+exp1 | DEBUG flwr 2023-11-20 13:48:50,081 | server.py:187 | evaluate_round 5 received 2 results and 0 failures
+exp1 | DEBUG flwr 2023-11-20 13:48:50,082 | server.py:223 | fit_round 6: strategy sampled 2 clients (out of 2)
+exp1 | DEBUG flwr 2023-11-20 13:52:09,863 | server.py:237 | fit_round 6 received 2 results and 0 failures
+exp1 | DEBUG flwr 2023-11-20 13:52:10,156 | server.py:173 | evaluate_round 6: strategy sampled 2 clients (out of 2)
+exp1 | DEBUG flwr 2023-11-20 13:52:25,644 | server.py:187 | evaluate_round 6 received 2 results and 0 failures
+exp1 | DEBUG flwr 2023-11-20 13:52:25,645 | server.py:223 | fit_round 7: strategy sampled 2 clients (out of 2)

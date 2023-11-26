@@ -2,24 +2,24 @@ from torchvision import transforms
 from data_loading.data_augment import createTransforms
 from data_loading.datasets import CBISDataset, RSNADataset, VinDrDataset, CMMDDataset
 from data_loading.classDistribution import calcClassDistribution
-from torch.utils.data import DataLoader, Dataset
+from torch.utils.data import DataLoader, Dataset, WeightedRandomSampler
 from data_loading.displayImage import displaySample
 import os
 import pydicom
-# import multiprocessing
 import warnings
-
 # Ignore the specific warning about the number of worker processes
 warnings.filterwarnings("ignore", category=UserWarning)
 
 
+
+# import multiprocessing
 # Get the number of CPU cores
 # NUM_CPU_CORES = multiprocessing.cpu_count()
 
 # Set num_workers based on the number of CPU cores
 # NUM_WORKERS = min(16, NUM_CPU_CORES)  # You can adjust the maximum value as needed
 # NUM_WORKERS = os.cpu_count()
-NUM_WORKERS = 6
+NUM_WORKERS = 0
 print(f"NUM_WORKERS: {NUM_WORKERS}")
 
 import numpy as np
@@ -37,21 +37,41 @@ def createDataLoaders(batch_size, dataset, data_augment):
         train_dataset = CBISDataset(form = "mass", mode = "train", transform = train_transform, train = True)
         val_dataset = CBISDataset(form = "mass", mode = "train", transform = val_transform, train = False)
         
-        test_dataset = CBISDataset(form = 'mass', mode = "test", transform = val_transform)
+        test_dataset = CBISDataset(form = "mass", mode = "test", transform = val_transform)
     elif dataset == "CMMD":
         # Create PyTorch DataLoader
-        train_dataset = CMMDDataset(mode = "train", transform = train_transform)
-        val_dataset = CMMDDataset(mode = "val", transform = val_transform)
+        train_dataset = CMMDDataset(mode = "train", transform = train_transform, train = True)
+        val_dataset = CMMDDataset(mode = "train", transform = val_transform, train = False)
+
+        test_dataset = CMMDDataset(mode = "test", transform = val_transform)
+    elif dataset == "VinDr":
+        # Create PyTorch DataLoader
+        train_dataset = VinDrDataset(mode = "train", transform = train_transform, train = True)
+        train_dataset = train_dataset.undersample()
+        val_dataset = VinDrDataset(mode = "train", transform = val_transform, train = False)
+        val_dataset = val_dataset.undersample()
+
+        test_dataset = VinDrDataset(mode = "test", transform = val_transform)
+        test_dataset = test_dataset.undersample()
+    elif dataset == "RSNA":
+        # Create PyTorch DataLoader
+        train_dataset = RSNADataset(mode = "train", transform = train_transform, train = True)
+        train_dataset = train_dataset.undersample()
+        val_dataset = RSNADataset(mode = "train", transform = val_transform, train = False)
+        val_dataset = val_dataset.undersample()
+
+        test_dataset = RSNADataset(mode = "test", transform = val_transform)
+        test_dataset = test_dataset.undersample()
     train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True, num_workers=NUM_WORKERS, pin_memory=True)
     val_loader = DataLoader(val_dataset, batch_size=batch_size, num_workers=NUM_WORKERS, pin_memory=True)
-
+    test_loader = DataLoader(test_dataset, batch_size=batch_size, num_workers=NUM_WORKERS, pin_memory=True)
     print("Created DataLoaders")
-    # print(f"Num of CPU Cores: {os.cpu_count()}")
-    sample_images, sample_titles = displaySample(train_loader, val_loader, train_transform) # For visualizing transforms
+    sample_images, sample_titles = displaySample(dataset, train_loader, val_loader, train_transform) # For visualizing transforms
     calcClassDistribution(train_loader, val_loader)
+    num_examples = {"trainset": len(train_dataset), "testset": len(val_dataset)}
    
         
-    return train_loader, val_loader, train_transform, sample_images, sample_titles
+    return train_loader, val_loader, test_loader, train_transform, sample_images, sample_titles, num_examples
 
 
 def createDatasets(dataset, data_augment, val_ratio):
@@ -113,3 +133,21 @@ def testNumWorkers(train_dataset):
                 pass
         end = time()
         print("Finish with:{} second, num_workers={}".format(end - start, num_workers))
+        
+def generateSamplerObject(dataset):
+    # Determine the class distribution in the dataset
+    labels = dataset.labels
+    class_sample_count = defaultdict(int)
+    for label in targets:
+        class_sample_count[label] += 1
+
+    # Find the minority class size
+    minority_class_count = min(class_sample_count.values())
+
+    # Compute weights for each sample
+    class_weights = {label: 1.0 / count for label, count in class_sample_count.items()}
+    weights = [class_weights[label] for label in targets]
+
+    # Create sampler using WeightedRandomSampler
+    return WeightedRandomSampler(weights, len(weights))
+    

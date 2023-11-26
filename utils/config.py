@@ -1,14 +1,24 @@
-from utils.arguments import parse_arguments
 import os
 
 NUM_FOLDS = 1
-BATCH_SIZE = 512
+BATCH_SIZE = 16
 SEED = 42
 NUM_CLASSES = 2
 LEARNING_RATE = 1e-4
+PATIENCE = 15
 WEIGHT_DECAY = 1e-2
 RESAMPLE_RESOLUTION = (224, 224)
 BASE_MODEL_PATH = "./models/base_model.pth"
+PRETRAINED_ROI_MODEL_PATH = "./models/pretrained_CBISMassROI.pth"
+
+# FL
+NUM_ROUNDS = 60
+TRAIN_EPOCHS = 3
+DATA_AUGMENT_BOOL = True
+MODEL = "resnet50"
+PRETRAINED_BOOL = True
+os.environ["GRPC_POLL_STRATEGY"] = "epoll1"
+PRETRAINED_MODEL_PATH = None # <- Change the starting FL model weights from here
 
 # Use default train/test split
 # Train/validation Ratio: 80/20
@@ -33,17 +43,3 @@ split_val_loss_history = []
 split_val_precision_history = []
 split_val_recall_history = []
 split_val_f1_history = []
-
-args = parse_arguments()
-# Access the parsed arguments
-MODEL = args.model
-DATASET = args.dataset
-PRETRAINED_BOOL = args.pretrained
-NUM_EPOCHS = args.num_epochs
-EARLY_STOPPING_BOOL = args.early_stopping
-DATA_AUGMENT_BOOL = args.data_augment
-data_folder = os.path.join('/home/emok/sq58_scratch/emok/Data/', DATASET)
-print(f"MODEL: {MODEL}\t"
-    f"DATASET: {DATASET}\t"
-    f"DATA AUGMENT: {DATA_AUGMENT_BOOL}"
-)

@@ -14,6 +14,9 @@ def plotGraph(DATASET, MODEL, train_accuracy_history, train_loss_history, val_ac
     fpr, tpr, _ = roc_curve(y_preds, y_targets)
     roc_auc = auc(fpr, tpr)
     print(f"ROC_AUC: {roc_auc}")
+    # print(f"FPR: {fpr}, TPR: {tpr}")
+    # print(f"Predicted: {y_preds}")
+    # print(f"Ground truth: {y_targets}")
 
     # PRAUC
     precision, recall, thresholds = precision_recall_curve(y_preds, y_targets)

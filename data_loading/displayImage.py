@@ -35,7 +35,7 @@ def getSamples(data_loader):
     return None
 
 # Define a function to display multiple images in a 4x4 grid
-def show_images(images, titles, rows, cols, time):
+def show_images(dataset, images, titles, rows, cols, time):
 
     fig, axes = plt.subplots(rows, cols, figsize=(20, 20))
     for i, ax in enumerate(axes.ravel()):
@@ -47,10 +47,10 @@ def show_images(images, titles, rows, cols, time):
     # plt.subplots_adjust(wspace=0.25, hspace=0.25)
     plt.tight_layout()
     # plt.show()
-    plt.savefig(f"./data_loading/samples/{time}_transformed.png")
+    plt.savefig(f"./data_loading/samples/{time}_{dataset}_transformed.png")
 
 
-def displaySample(train_loader, val_loader, transforms_func):            
+def displaySample(dataset, train_loader, val_loader, transforms_func):            
     sample_images = []
     sample_titles = []
     formatted_datetime = datetime.now().strftime("%d-%m-%y-%H%M%S")
@@ -81,15 +81,17 @@ def displaySample(train_loader, val_loader, transforms_func):
             sample_images.append(image)
 
     # Show the images in a 4x4 grid
-    show_images(sample_images, sample_titles, rows=4, cols=4, time=formatted_datetime)
+    show_images(dataset, sample_images, sample_titles, rows=4, cols=4, time=formatted_datetime)
 
     transformation_list = [transform for transform in train_transforms.transforms if not isinstance(transform, transforms.ToTensor)]
 
     with open("./data_loading/samples/transforms_log.txt", 'a') as f:
+        f.write(dataset)
+        f.write("\n")
         f.write(formatted_datetime)
         f.write("\n")
         f.write(''.join(str(transformation_list)))
         f.write("\n")
         
-    print("Created Samples")
+    print(f"Created Samples for {dataset}")
     return sample_images, sample_titles

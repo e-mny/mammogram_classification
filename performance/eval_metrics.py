@@ -1,7 +1,6 @@
 from performance.show_graph import plotGraph
-from utils.config import NUM_EPOCHS, DATASET, MODEL
 
-def evaluate_performance(train_accuracy_history, train_loss_history, val_accuracy_history, val_loss_history, val_precision_history, val_recall_history, val_preds, val_targets, early_stopped_epoch):
+def evaluate_performance(train_accuracy_history, train_loss_history, val_accuracy_history, val_loss_history, val_precision_history, val_recall_history):
     train_acc = train_accuracy_history[-1]
     train_loss = train_loss_history[-1]
     val_acc = val_accuracy_history[-1]
@@ -12,7 +11,7 @@ def evaluate_performance(train_accuracy_history, train_loss_history, val_accurac
 
     return train_acc, train_loss, val_acc, val_loss, val_precision, val_recall, val_f1
 
-def plot_and_log(train_accuracy_history, train_loss_history, val_accuracy_history, val_loss_history, early_stopped_epoch, val_preds, val_targets):
+def plot_and_log(train_accuracy_history, train_loss_history, val_accuracy_history, val_loss_history, early_stopped_epoch, val_preds, val_targets, NUM_EPOCHS, DATASET, MODEL):
     if early_stopped_epoch < NUM_EPOCHS:
         roc_auc, pr_auc = plotGraph(DATASET, MODEL, train_accuracy_history, train_loss_history, val_accuracy_history, val_loss_history, early_stopped_epoch, val_preds, val_targets)
     else:
