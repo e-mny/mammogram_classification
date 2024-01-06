@@ -57,8 +57,20 @@ First argument (100) is the number of epochs
 Second argument (true) indicates data augmentation
 
 ## Usage (Federated Learning)
-To execute training of a model on 
+To execute training of an FL model on the same machine, run the following code:
+```bash
+python ./flwr/server.py
+python ./clients/CBIS_client.py
+python ./clients/CMMD_client.py
+python ./clients/RSNA_client.py
+python ./clients/VinDr_client.py
+```
 
+Performances of each FL run can be found in the ./flwr/logs folder.
+
+Visualization of the performance is done manually, copying the values into /flwr/graph/displayGraph.py before running the Python script.
+
+The images of the graphs will then be saved in the /flwr/performance_metrics folder
 
 ## Dataset
 Refer to [Datasets.MD](data/datasets.MD).
@@ -80,20 +92,20 @@ Training file can be found [train_loader.py](train/train_loader.py).
 
 
 ## Evaluation
-The model achieved an accuracy of __ on the test set, outperforming previous state-of-the-art models. Evaluation metrics included accuracy, precision, recall, and F1-score.
+The model achieved the following metrics on the test set, and metrics included accuracy, precision, recall, F1-score and AUC.
 
-Accuracy:
+Accuracy: 0.6258
 
-Precision:
+Precision: 0.6503
 
-Recall:
+Recall: 0.7248
 
-F1-Score:
+F1-Score: 0.6691
+
+AUC: 0.5951
 
 
 ## Results
 Results are saved in the [Results](results) folder, formatted as MM-DD-YYYY_HHMMSS_{dataset}_{model}.jpg.
 
 Visualization of GradCAM on sample images can be found in [Visualization](visualization/samples/) folder, formatted as MM-DD-YYYY_HHMMSS.
-
-Our studies showed that ...
