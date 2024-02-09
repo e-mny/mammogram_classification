@@ -1,11 +1,5 @@
 # Federated Learning for Breast Cancer Classification
 
-This project focuses on implementing and evaluating classification models for breast cancer diagnosis using Federated Learning (FL).
-Specifically, the project aims to:
-1) Implement a classification model for mammograms.
-2) Incorporate the classification model into a Federated Learning framework.
-3) Conduct experiments to assess the impact of Federated Learning on classification performance.
-
 ## Table of Contents
 
 - [Overview](#overview)
@@ -19,6 +13,10 @@ Specifically, the project aims to:
 
 ## Overview
 The project aims to classify mammograms using Deep Learning in a Federated Learning setting. By collaborating with multiple institutions, training of a central model can leverage on private data kept in the institutions, moving only the model and not the data.
+Specifically, the project aims to:
+1) Implement a classification model for mammograms.
+2) Incorporate the classification model into a Federated Learning framework.
+3) Conduct experiments to assess the impact of Federated Learning on classification performance.
 
 ## Installation
 To clone the library and install the required libraries, use the following commands:
